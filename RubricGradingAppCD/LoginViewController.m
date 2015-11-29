@@ -63,7 +63,7 @@
             else {
                 return NO;
             }
-
+            
         }
         
     }
@@ -82,7 +82,7 @@
         [alert addAction:defaultAction];
         [self presentViewController:alert animated:YES completion:nil];
         
-       
+        
     }
     else {
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Incorrect"                                                                       message:@"The password or username you entered is incorrect. Please try again." preferredStyle:UIAlertControllerStyleAlert];
@@ -91,19 +91,20 @@
         
         [alert addAction:defaultAction];
         [self presentViewController:alert animated:YES completion:nil];
-
+        
     }
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"adminProjects"]){
         
-                AdminTableViewController *atvc = (AdminTableViewController *)[segue destinationViewController];
-        
+        UINavigationController *navigation = (UINavigationController *)[segue destinationViewController];
+        AdminTableViewController *atvc = (AdminTableViewController*)[navigation topViewController];
         atvc.managedObjectContext = self.managedObjectContext;
-        [atvc instantiateWithLoginID:@"SomeString"];
+        
     }
 }
+
 @end
 
 
@@ -114,4 +115,4 @@
  
  [alert addAction:defaultAction];
  [self presentViewController:alert animated:YES completion:nil];
-*/
+ */
