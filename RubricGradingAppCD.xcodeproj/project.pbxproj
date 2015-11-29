@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A853FDE11C01CE79005ABB49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDE01C01CE79005ABB49 /* main.m */; };
+		A853FDE41C01CE79005ABB49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDE31C01CE79005ABB49 /* AppDelegate.m */; };
+		A853FDEA1C01CE79005ABB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A853FDE81C01CE79005ABB49 /* Main.storyboard */; };
+		A853FDED1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A853FDEB1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld */; };
+		A853FDEF1C01CE79005ABB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A853FDEE1C01CE79005ABB49 /* Assets.xcassets */; };
+		A853FDF21C01CE79005ABB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A853FDF01C01CE79005ABB49 /* LaunchScreen.storyboard */; };
+		A853FDFD1C01CE79005ABB49 /* RubricGradingAppCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDFC1C01CE79005ABB49 /* RubricGradingAppCDTests.m */; };
+		A853FE081C01CE79005ABB49 /* RubricGradingAppCDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE071C01CE79005ABB49 /* RubricGradingAppCDUITests.m */; };
+		A853FE171C01D5BC005ABB49 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE161C01D5BC005ABB49 /* LoginViewController.m */; };
+		A853FE1D1C01D5F8005ABB49 /* AdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE1C1C01D5F8005ABB49 /* AdminTableViewController.m */; };
+		A853FE201C027E74005ABB49 /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE1F1C027E74005ABB49 /* AddProjectViewController.m */; };
+		A853FE231C0287BB005ABB49 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE221C0287BB005ABB49 /* Project.m */; };
+		A853FE3D1C02C8D1005ABB49 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE2D1C02C8D1005ABB49 /* Admin.m */; };
+		A853FE431C02C8D1005ABB49 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE391C02C8D1005ABB49 /* Person.m */; };
+		A853FE461C02CB42005ABB49 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE451C02CB42005ABB49 /* Student.m */; };
+		A853FE491C02D5D3005ABB49 /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE481C02D5D3005ABB49 /* Professor.m */; };
+		A853FE4C1C03DA94005ABB49 /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A853FDF91C01CE79005ABB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A853FDD41C01CE79005ABB49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A853FDDB1C01CE79005ABB49;
+			remoteInfo = RubricGradingAppCD;
+		};
+		A853FE041C01CE79005ABB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A853FDD41C01CE79005ABB49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A853FDDB1C01CE79005ABB49;
+			remoteInfo = RubricGradingAppCD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A853FDDC1C01CE79005ABB49 /* RubricGradingAppCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubricGradingAppCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A853FDE01C01CE79005ABB49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A853FDE21C01CE79005ABB49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A853FDE31C01CE79005ABB49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A853FDE91C01CE79005ABB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A853FDEC1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RubricGradingAppCD.xcdatamodel; sourceTree = "<group>"; };
+		A853FDEE1C01CE79005ABB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A853FDF11C01CE79005ABB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A853FDF31C01CE79005ABB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A853FDF81C01CE79005ABB49 /* RubricGradingAppCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubricGradingAppCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A853FDFC1C01CE79005ABB49 /* RubricGradingAppCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubricGradingAppCDTests.m; sourceTree = "<group>"; };
+		A853FDFE1C01CE79005ABB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A853FE031C01CE79005ABB49 /* RubricGradingAppCDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubricGradingAppCDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A853FE071C01CE79005ABB49 /* RubricGradingAppCDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubricGradingAppCDUITests.m; sourceTree = "<group>"; };
+		A853FE091C01CE79005ABB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A853FE151C01D5BC005ABB49 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		A853FE161C01D5BC005ABB49 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		A853FE1B1C01D5F8005ABB49 /* AdminTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminTableViewController.h; sourceTree = "<group>"; };
+		A853FE1C1C01D5F8005ABB49 /* AdminTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminTableViewController.m; sourceTree = "<group>"; };
+		A853FE1E1C027E74005ABB49 /* AddProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddProjectViewController.h; sourceTree = "<group>"; };
+		A853FE1F1C027E74005ABB49 /* AddProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddProjectViewController.m; sourceTree = "<group>"; };
+		A853FE211C0287BB005ABB49 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		A853FE221C0287BB005ABB49 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		A853FE251C028EDE005ABB49 /* RubricGradingAppCD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RubricGradingAppCD-Prefix.pch"; sourceTree = "<group>"; };
+		A853FE2C1C02C8D1005ABB49 /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Admin.h; path = Classes/Admin.h; sourceTree = "<group>"; };
+		A853FE2D1C02C8D1005ABB49 /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Admin.m; path = Classes/Admin.m; sourceTree = "<group>"; };
+		A853FE381C02C8D1005ABB49 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Classes/Person.h; sourceTree = "<group>"; };
+		A853FE391C02C8D1005ABB49 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Classes/Person.m; sourceTree = "<group>"; };
+		A853FE441C02CB42005ABB49 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		A853FE451C02CB42005ABB49 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		A853FE471C02D5D3005ABB49 /* Professor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Professor.h; sourceTree = "<group>"; };
+		A853FE481C02D5D3005ABB49 /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Professor.m; sourceTree = "<group>"; };
+		A853FE4A1C03DA94005ABB49 /* StudentsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsListTableViewController.h; sourceTree = "<group>"; };
+		A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsListTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A853FDD91C01CE79005ABB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A853FDF51C01CE79005ABB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A853FE001C01CE79005ABB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A853FDD31C01CE79005ABB49 = {
+			isa = PBXGroup;
+			children = (
+				A853FDDE1C01CE79005ABB49 /* RubricGradingAppCD */,
+				A853FDFB1C01CE79005ABB49 /* RubricGradingAppCDTests */,
+				A853FE061C01CE79005ABB49 /* RubricGradingAppCDUITests */,
+				A853FDDD1C01CE79005ABB49 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A853FDDD1C01CE79005ABB49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A853FDDC1C01CE79005ABB49 /* RubricGradingAppCD.app */,
+				A853FDF81C01CE79005ABB49 /* RubricGradingAppCDTests.xctest */,
+				A853FE031C01CE79005ABB49 /* RubricGradingAppCDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A853FDDE1C01CE79005ABB49 /* RubricGradingAppCD */ = {
+			isa = PBXGroup;
+			children = (
+				A853FDE21C01CE79005ABB49 /* AppDelegate.h */,
+				A853FDE31C01CE79005ABB49 /* AppDelegate.m */,
+				A853FDE81C01CE79005ABB49 /* Main.storyboard */,
+				A853FDEE1C01CE79005ABB49 /* Assets.xcassets */,
+				A853FDF01C01CE79005ABB49 /* LaunchScreen.storyboard */,
+				A853FDF31C01CE79005ABB49 /* Info.plist */,
+				A853FDEB1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld */,
+				A853FDDF1C01CE79005ABB49 /* Supporting Files */,
+				A853FE151C01D5BC005ABB49 /* LoginViewController.h */,
+				A853FE161C01D5BC005ABB49 /* LoginViewController.m */,
+				A853FE1B1C01D5F8005ABB49 /* AdminTableViewController.h */,
+				A853FE1C1C01D5F8005ABB49 /* AdminTableViewController.m */,
+				A853FE1E1C027E74005ABB49 /* AddProjectViewController.h */,
+				A853FE1F1C027E74005ABB49 /* AddProjectViewController.m */,
+				A853FE4A1C03DA94005ABB49 /* StudentsListTableViewController.h */,
+				A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */,
+				A853FE381C02C8D1005ABB49 /* Person.h */,
+				A853FE391C02C8D1005ABB49 /* Person.m */,
+				A853FE471C02D5D3005ABB49 /* Professor.h */,
+				A853FE481C02D5D3005ABB49 /* Professor.m */,
+				A853FE2C1C02C8D1005ABB49 /* Admin.h */,
+				A853FE2D1C02C8D1005ABB49 /* Admin.m */,
+				A853FE211C0287BB005ABB49 /* Project.h */,
+				A853FE221C0287BB005ABB49 /* Project.m */,
+				A853FE441C02CB42005ABB49 /* Student.h */,
+				A853FE451C02CB42005ABB49 /* Student.m */,
+			);
+			path = RubricGradingAppCD;
+			sourceTree = "<group>";
+		};
+		A853FDDF1C01CE79005ABB49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A853FDE01C01CE79005ABB49 /* main.m */,
+				A853FE251C028EDE005ABB49 /* RubricGradingAppCD-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A853FDFB1C01CE79005ABB49 /* RubricGradingAppCDTests */ = {
+			isa = PBXGroup;
+			children = (
+				A853FDFC1C01CE79005ABB49 /* RubricGradingAppCDTests.m */,
+				A853FDFE1C01CE79005ABB49 /* Info.plist */,
+			);
+			path = RubricGradingAppCDTests;
+			sourceTree = "<group>";
+		};
+		A853FE061C01CE79005ABB49 /* RubricGradingAppCDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A853FE071C01CE79005ABB49 /* RubricGradingAppCDUITests.m */,
+				A853FE091C01CE79005ABB49 /* Info.plist */,
+			);
+			path = RubricGradingAppCDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A853FDDB1C01CE79005ABB49 /* RubricGradingAppCD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A853FE0C1C01CE79005ABB49 /* Build configuration list for PBXNativeTarget "RubricGradingAppCD" */;
+			buildPhases = (
+				A853FDD81C01CE79005ABB49 /* Sources */,
+				A853FDD91C01CE79005ABB49 /* Frameworks */,
+				A853FDDA1C01CE79005ABB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RubricGradingAppCD;
+			productName = RubricGradingAppCD;
+			productReference = A853FDDC1C01CE79005ABB49 /* RubricGradingAppCD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A853FDF71C01CE79005ABB49 /* RubricGradingAppCDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A853FE0F1C01CE79005ABB49 /* Build configuration list for PBXNativeTarget "RubricGradingAppCDTests" */;
+			buildPhases = (
+				A853FDF41C01CE79005ABB49 /* Sources */,
+				A853FDF51C01CE79005ABB49 /* Frameworks */,
+				A853FDF61C01CE79005ABB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A853FDFA1C01CE79005ABB49 /* PBXTargetDependency */,
+			);
+			name = RubricGradingAppCDTests;
+			productName = RubricGradingAppCDTests;
+			productReference = A853FDF81C01CE79005ABB49 /* RubricGradingAppCDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A853FE021C01CE79005ABB49 /* RubricGradingAppCDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A853FE121C01CE79005ABB49 /* Build configuration list for PBXNativeTarget "RubricGradingAppCDUITests" */;
+			buildPhases = (
+				A853FDFF1C01CE79005ABB49 /* Sources */,
+				A853FE001C01CE79005ABB49 /* Frameworks */,
+				A853FE011C01CE79005ABB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A853FE051C01CE79005ABB49 /* PBXTargetDependency */,
+			);
+			name = RubricGradingAppCDUITests;
+			productName = RubricGradingAppCDUITests;
+			productReference = A853FE031C01CE79005ABB49 /* RubricGradingAppCDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A853FDD41C01CE79005ABB49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = iosProject;
+				TargetAttributes = {
+					A853FDDB1C01CE79005ABB49 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 496YHQMK4E;
+					};
+					A853FDF71C01CE79005ABB49 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 496YHQMK4E;
+						TestTargetID = A853FDDB1C01CE79005ABB49;
+					};
+					A853FE021C01CE79005ABB49 = {
+						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 496YHQMK4E;
+						TestTargetID = A853FDDB1C01CE79005ABB49;
+					};
+				};
+			};
+			buildConfigurationList = A853FDD71C01CE79005ABB49 /* Build configuration list for PBXProject "RubricGradingAppCD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A853FDD31C01CE79005ABB49;
+			productRefGroup = A853FDDD1C01CE79005ABB49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A853FDDB1C01CE79005ABB49 /* RubricGradingAppCD */,
+				A853FDF71C01CE79005ABB49 /* RubricGradingAppCDTests */,
+				A853FE021C01CE79005ABB49 /* RubricGradingAppCDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A853FDDA1C01CE79005ABB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A853FDF21C01CE79005ABB49 /* LaunchScreen.storyboard in Resources */,
+				A853FDEF1C01CE79005ABB49 /* Assets.xcassets in Resources */,
+				A853FDEA1C01CE79005ABB49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A853FDF61C01CE79005ABB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A853FE011C01CE79005ABB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A853FDD81C01CE79005ABB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A853FE201C027E74005ABB49 /* AddProjectViewController.m in Sources */,
+				A853FE491C02D5D3005ABB49 /* Professor.m in Sources */,
+				A853FE1D1C01D5F8005ABB49 /* AdminTableViewController.m in Sources */,
+				A853FE3D1C02C8D1005ABB49 /* Admin.m in Sources */,
+				A853FE431C02C8D1005ABB49 /* Person.m in Sources */,
+				A853FE231C0287BB005ABB49 /* Project.m in Sources */,
+				A853FDE41C01CE79005ABB49 /* AppDelegate.m in Sources */,
+				A853FE4C1C03DA94005ABB49 /* StudentsListTableViewController.m in Sources */,
+				A853FE461C02CB42005ABB49 /* Student.m in Sources */,
+				A853FDED1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld in Sources */,
+				A853FDE11C01CE79005ABB49 /* main.m in Sources */,
+				A853FE171C01D5BC005ABB49 /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A853FDF41C01CE79005ABB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A853FDFD1C01CE79005ABB49 /* RubricGradingAppCDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A853FDFF1C01CE79005ABB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A853FE081C01CE79005ABB49 /* RubricGradingAppCDUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A853FDFA1C01CE79005ABB49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A853FDDB1C01CE79005ABB49 /* RubricGradingAppCD */;
+			targetProxy = A853FDF91C01CE79005ABB49 /* PBXContainerItemProxy */;
+		};
+		A853FE051C01CE79005ABB49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A853FDDB1C01CE79005ABB49 /* RubricGradingAppCD */;
+			targetProxy = A853FE041C01CE79005ABB49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A853FDE81C01CE79005ABB49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A853FDE91C01CE79005ABB49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A853FDF01C01CE79005ABB49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A853FDF11C01CE79005ABB49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A853FE0A1C01CE79005ABB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A853FE0B1C01CE79005ABB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A853FE0D1C01CE79005ABB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "RubricGradingAppCD/RubricGradingAppCD-Prefix.pch";
+				INFOPLIST_FILE = RubricGradingAppCD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosProject.RubricGradingAppCD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A853FE0E1C01CE79005ABB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "RubricGradingAppCD/RubricGradingAppCD-Prefix.pch";
+				INFOPLIST_FILE = RubricGradingAppCD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosProject.RubricGradingAppCD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A853FE101C01CE79005ABB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RubricGradingAppCDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosProject.RubricGradingAppCDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RubricGradingAppCD.app/RubricGradingAppCD";
+			};
+			name = Debug;
+		};
+		A853FE111C01CE79005ABB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RubricGradingAppCDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosProject.RubricGradingAppCDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RubricGradingAppCD.app/RubricGradingAppCD";
+			};
+			name = Release;
+		};
+		A853FE131C01CE79005ABB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RubricGradingAppCDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosProject.RubricGradingAppCDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RubricGradingAppCD;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		A853FE141C01CE79005ABB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RubricGradingAppCDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = iosProject.RubricGradingAppCDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RubricGradingAppCD;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A853FDD71C01CE79005ABB49 /* Build configuration list for PBXProject "RubricGradingAppCD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A853FE0A1C01CE79005ABB49 /* Debug */,
+				A853FE0B1C01CE79005ABB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A853FE0C1C01CE79005ABB49 /* Build configuration list for PBXNativeTarget "RubricGradingAppCD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A853FE0D1C01CE79005ABB49 /* Debug */,
+				A853FE0E1C01CE79005ABB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A853FE0F1C01CE79005ABB49 /* Build configuration list for PBXNativeTarget "RubricGradingAppCDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A853FE101C01CE79005ABB49 /* Debug */,
+				A853FE111C01CE79005ABB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A853FE121C01CE79005ABB49 /* Build configuration list for PBXNativeTarget "RubricGradingAppCDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A853FE131C01CE79005ABB49 /* Debug */,
+				A853FE141C01CE79005ABB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A853FDEB1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A853FDEC1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodel */,
+			);
+			currentVersion = A853FDEC1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodel */;
+			path = RubricGradingAppCD.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A853FDD41C01CE79005ABB49 /* Project object */;
+}

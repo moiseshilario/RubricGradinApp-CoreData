@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9057" systemVersion="15A284" minimumToolsVersion="Automatic">
+    <entity name="Admin" representedClassName="Admin" parentEntity="Person" syncable="YES">
+        <relationship name="project" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Project" inverseName="admin" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="Person" representedClassName="Person" syncable="YES">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Professor" representedClassName="Professor" parentEntity="Person" syncable="YES">
+        <relationship name="projectChair" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="professorChair" inverseEntity="Project" syncable="YES"/>
+        <relationship name="projectFaculty" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Project" inverseName="professorFaculty" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <entity name="Project" representedClassName="Project" syncable="YES">
+        <attribute name="briefDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="grade" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="admin" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Admin" inverseName="project" inverseEntity="Admin" syncable="YES"/>
+        <relationship name="professorChair" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professor" inverseName="projectChair" inverseEntity="Professor" syncable="YES"/>
+        <relationship name="professorFaculty" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Professor" inverseName="projectFaculty" inverseEntity="Professor" syncable="YES"/>
+        <relationship name="student" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Student" inverseName="project" inverseEntity="Student" syncable="YES"/>
+    </entity>
+    <entity name="Student" representedClassName="Student" parentEntity="Person" syncable="YES">
+        <attribute name="grade" optional="YES" attributeType="Float" defaultValueString="0.0" syncable="YES"/>
+        <relationship name="project" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Project" inverseName="student" inverseEntity="Project" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Project" positionX="-299" positionY="-4" width="128" height="148"/>
+        <element name="Professor" positionX="-522" positionY="-243" width="128" height="73"/>
+        <element name="Student" positionX="-101" positionY="-288" width="128" height="73"/>
+        <element name="Person" positionX="-290" positionY="-351" width="128" height="103"/>
+        <element name="Admin" positionX="-281" positionY="-171" width="128" height="58"/>
+    </elements>
+</model>
