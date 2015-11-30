@@ -96,8 +96,8 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     if([segue.identifier isEqualToString:@"adminProjects"]){
-        
         UINavigationController *navigation = (UINavigationController *)[segue destinationViewController];
         AdminTableViewController *atvc = (AdminTableViewController*)[navigation topViewController];
         atvc.managedObjectContext = self.managedObjectContext;

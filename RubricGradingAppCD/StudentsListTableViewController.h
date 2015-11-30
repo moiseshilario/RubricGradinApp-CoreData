@@ -10,7 +10,7 @@
 
 @interface StudentsListTableViewController : UITableViewController
 
-@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
-@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic) NSMutableArray *allProfessorsArray;
+@property (nonatomic) NSMutableArray *allStudentsArray;
 
 @end

@@ -15,24 +15,18 @@
 
 @implementation StudentsListTableViewController
 
-@synthesize fetchedResultsController = _fetchedResultsController;
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.tableView.allowsMultipleSelection = YES;
     
     // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+     self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    NSError *error = nil;
-    if (![_fetchedResultsController performFetch:&error]) {
-        // Replace this implementation with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +42,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return [[self.fetchedResultsController fetchedObjects]count];
+    return [self.allStudentsArray count];
 }
 
 
@@ -57,7 +51,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    Student *student = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Student *student = [self.allStudentsArray objectAtIndex:indexPath.row];
     cell.textLabel.text = student.name;
     
     return cell;
@@ -98,6 +92,15 @@
 }
 */
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+}
+
 /*
 #pragma mark - Navigation
 
@@ -108,33 +111,10 @@
 }
 */
 
-#pragma mark - Fecthed Result Controller section
-- (NSFetchedResultsController *)fetchedResultsController
-{
-    if (_fetchedResultsController != nil) {
-        return _fetchedResultsController;
-    }
-    
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Student"
-                                              inManagedObjectContext:self.managedObjectContext];
-    [fetchRequest setEntity:entity];
-    
-    
-    // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
-    NSArray *sortDescriptors = @[sortDescriptor];
-    
-    [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    // Edit the section name key path and cache name if appropriate.
-    // nil for section name key path means "no sections".
-    _fetchedResultsController = [[NSFetchedResultsController alloc]  initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
-    
-    
-    return _fetchedResultsController;
-}
+
+ 
+
+
 
 
 @end

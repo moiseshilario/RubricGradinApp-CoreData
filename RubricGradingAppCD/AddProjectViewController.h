@@ -12,12 +12,19 @@
 @protocol AddProjectViewControllerDelegate;
 
 
-@interface AddProjectViewController : UIViewController
+@interface AddProjectViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+
 
 @property (weak, nonatomic) IBOutlet UITextField *projectNameField;
 @property (weak, nonatomic) IBOutlet UITextView *briefDescriptionField;
 @property (weak, nonatomic) IBOutlet UILabel *chairField;
-
+@property (weak, nonatomic) IBOutlet UITableView *facultyTableView;
+@property (weak, nonatomic) IBOutlet UITableView *studentTableView;
+@property (nonatomic) NSMutableArray *facultyArray;
+@property (nonatomic) NSMutableArray *studentsArray;
+@property (nonatomic) NSMutableArray *allProfessorsArray;
+@property (nonatomic) NSMutableArray *allStudentsArray;
 
 @property (nonatomic, weak) id <AddProjectViewControllerDelegate> delegate;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
