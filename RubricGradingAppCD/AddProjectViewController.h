@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "Project.h"
+#import "StudentsListTableViewController.h"
 
 @protocol AddProjectViewControllerDelegate;
 
 
-@interface AddProjectViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+@interface AddProjectViewController : UIViewController <UITableViewDelegate, UITableViewDataSource,StudentsListTableViewControllerDelegate>
 
 
 

@@ -7,8 +7,9 @@
 //
 
 #import "AddProjectViewController.h"
-#import "StudentsListTableViewController.h"
+#import "Student.h"
 #import "Professor.h"
+#import "StudentsListTableViewController.h"
 
 @interface AddProjectViewController ()
 
@@ -20,17 +21,11 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.projectNameField.text = self.currentProject.name;
-    self.briefDescriptionField.text = self.currentProject.briefDescription;
-    Professor *pc = self.currentProject.professorChair;
-    self.chairField.text = pc.name;
-    NSMutableArray *facultyArray = [NSMutableArray arrayWithArray:[self.currentProject.professorFaculty allObjects]];
-    self.facultyArray = facultyArray;
-    NSMutableArray *studentsArray = [NSMutableArray arrayWithArray:[self.currentProject.student allObjects]];
-    self.facultyArray = facultyArray;
-    self.studentsArray = studentsArray;
+    self.studentTableView.delegate = self;
+    self.studentTableView.dataSource = self;
     
-    
+    self.facultyTableView.delegate = self;
+    self.facultyTableView.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,6 +46,7 @@
         
         StudentsListTableViewController *studentsList = (StudentsListTableViewController*) [navigation topViewController];
         studentsList.allStudentsArray = self.allStudentsArray;
+        studentsList.delegate = self;
     }
 }
 
@@ -62,7 +58,8 @@
         cell.textLabel.text = [self.facultyArray objectAtIndex:indexPath.row];
     }
     else {
-        cell.textLabel.text = [self.studentsArray objectAtIndex:indexPath.row];
+        Student *s = [self.studentsArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = s.name;
     }
     
     return cell;
@@ -78,13 +75,31 @@
     }
 }
 
+-(void)studentsListDidCancel{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
+-(void)studentsListDidDone:selectedStudents{
+    /*for (Student *s in selectedStudents) {
+        NSLog(@"---------Student: %@", s.name);
+    }
+    
+    
+    for (Student *s in self.studentsArray) {
+        NSLog(@"---------Student ARRAY: %@", s.name);
+    }
+     */
+    
+    self.studentsArray = selectedStudents;
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.studentTableView reloadData];
+}
 
 - (IBAction)cancel:(id)sender {
 }
 
 - (IBAction)save:(id)sender {
     
-   
+    
 }
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "AdminTableViewController.h"
+#import "Student.h"
 
 #import "StudentsListTableViewController.h"
 
@@ -105,25 +106,24 @@
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"addProject"]){
-        UINavigationController *navigation = (UINavigationController*)[segue destinationViewController];
+        UINavigationController *navigation = (UINavigationController*) [segue destinationViewController];
         
-        AddProjectViewController *apvc = (AddProjectViewController *) [navigation topViewController];
+        AddProjectViewController *apvc = (AddProjectViewController *)[navigation topViewController];
         apvc.delegate = self;
-        apvc.managedObjectContext = self.managedObjectContext;
         
         Project *newProject = (Project *)[NSEntityDescription insertNewObjectForEntityForName:@"Project" inManagedObjectContext:[self managedObjectContext]];
         
         apvc.currentProject = newProject;
         apvc.allProfessorsArray = [self allProfessors];
+        
+        
         apvc.allStudentsArray = [self allStudents];
+        
+        for (Student *s in apvc.allStudentsArray) {
+            NSLog(@"Student Name: %@", s.name);
+        }
     }
     
-    /*if([segue.identifier isEqualToString:@"showStudents"]){
-     StudentsListTableViewController *tvc = (StudentsListTableViewController *)[segue destinationViewController];
-     tvc.managedObjectContext = self.managedObjectContext;
-     }*/
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
 
 #pragma mark - Fecthed Result Controller section
