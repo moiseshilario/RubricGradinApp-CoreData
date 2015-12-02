@@ -13,7 +13,7 @@
 
 @interface StudentsListTableViewController : UITableViewController
 
-@property (nonatomic) NSMutableArray *allProfessorsArray;
+
 @property (nonatomic) NSMutableArray *allStudentsArray;
 @property (nonatomic) NSMutableArray *selectedStudents;
 @property (nonatomic, weak) id <StudentsListTableViewControllerDelegate> delegate;

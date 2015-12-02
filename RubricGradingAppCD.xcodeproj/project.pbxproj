@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A84A98361C0ED079007A33D5 /* FacultyListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84A98351C0ED079007A33D5 /* FacultyListTableViewController.m */; };
 		A853FDE11C01CE79005ABB49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDE01C01CE79005ABB49 /* main.m */; };
 		A853FDE41C01CE79005ABB49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDE31C01CE79005ABB49 /* AppDelegate.m */; };
 		A853FDEA1C01CE79005ABB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A853FDE81C01CE79005ABB49 /* Main.storyboard */; };
@@ -44,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A84A98341C0ED079007A33D5 /* FacultyListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacultyListTableViewController.h; sourceTree = "<group>"; };
+		A84A98351C0ED079007A33D5 /* FacultyListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacultyListTableViewController.m; sourceTree = "<group>"; };
 		A853FDDC1C01CE79005ABB49 /* RubricGradingAppCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubricGradingAppCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A853FDE01C01CE79005ABB49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A853FDE21C01CE79005ABB49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -144,6 +147,8 @@
 				A853FE1F1C027E74005ABB49 /* AddProjectViewController.m */,
 				A853FE4A1C03DA94005ABB49 /* StudentsListTableViewController.h */,
 				A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */,
+				A84A98341C0ED079007A33D5 /* FacultyListTableViewController.h */,
+				A84A98351C0ED079007A33D5 /* FacultyListTableViewController.m */,
 				A853FE381C02C8D1005ABB49 /* Person.h */,
 				A853FE391C02C8D1005ABB49 /* Person.m */,
 				A853FE471C02D5D3005ABB49 /* Professor.h */,
@@ -318,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A84A98361C0ED079007A33D5 /* FacultyListTableViewController.m in Sources */,
 				A853FE201C027E74005ABB49 /* AddProjectViewController.m in Sources */,
 				A853FE491C02D5D3005ABB49 /* Professor.m in Sources */,
 				A853FE1D1C01D5F8005ABB49 /* AdminTableViewController.m in Sources */,

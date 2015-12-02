@@ -315,7 +315,7 @@
         <!--Select the faculty-->
         <scene sceneID="IBQ-Qb-zIv">
             <objects>
-                <tableViewController id="OaI-gG-Tua" sceneMemberID="viewController">
+                <tableViewController id="OaI-gG-Tua" customClass="FacultyListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="h3r-ft-lgI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -339,13 +339,21 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Select the faculty" id="pMB-SI-MxQ">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Z1g-2m-8yI"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="4gk-gG-oE8"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="qXp-1k-9N8">
+                            <connections>
+                                <action selector="cancel:" destination="OaI-gG-Tua" id="KJz-uz-A4c"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="2g3-vM-7LW">
+                            <connections>
+                                <action selector="done:" destination="OaI-gG-Tua" id="nDj-Mo-JLR"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLk-Zm-AQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4323" y="-183"/>
+            <point key="canvasLocation" x="4261" y="-189"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vby-A5-lMk">

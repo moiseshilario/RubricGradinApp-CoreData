@@ -115,13 +115,7 @@
         
         apvc.currentProject = newProject;
         apvc.allProfessorsArray = [self allProfessors];
-        
-        
         apvc.allStudentsArray = [self allStudents];
-        
-        for (Student *s in apvc.allStudentsArray) {
-            NSLog(@"Student Name: %@", s.name);
-        }
     }
     
 }

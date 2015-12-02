@@ -9,7 +9,6 @@
 #import "AddProjectViewController.h"
 #import "Student.h"
 #import "Professor.h"
-#import "StudentsListTableViewController.h"
 
 @interface AddProjectViewController ()
 
@@ -49,6 +48,14 @@
         studentsList.allStudentsArray = self.allStudentsArray;
         studentsList.delegate = self;
     }
+    else if([segue.identifier isEqualToString:@"addFaculty"]){
+        
+        UINavigationController *navigation = (UINavigationController*) [segue destinationViewController];
+        
+        FacultyListTableViewController *facultyList = (FacultyListTableViewController*) [navigation topViewController];
+        facultyList.allProfessorsArray = self.allProfessorsArray;
+        facultyList.delegate = self;
+    }
 }
 
 #pragma mark - Faculty Table View
@@ -56,7 +63,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     
     if(tableView == self.facultyTableView){
-        cell.textLabel.text = [self.facultyArray objectAtIndex:indexPath.row];
+        Professor *p = [self.facultyArray objectAtIndex:indexPath.row];
+        cell.textLabel.text = p.name;
     }
     else {
         Student *s = [self.studentsArray objectAtIndex:indexPath.row];
@@ -81,20 +89,21 @@
 }
 
 -(void)studentsListDidDone:selectedStudents{
-    /*for (Student *s in selectedStudents) {
-        NSLog(@"---------Student: %@", s.name);
-    }
-    
-    
-    for (Student *s in self.studentsArray) {
-        NSLog(@"---------Student ARRAY: %@", s.name);
-    }
-     */
-    
     self.studentsArray = selectedStudents;
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.studentTableView reloadData];
 }
+
+-(void)facultyListDidCancel{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+-(void)facultyListDidDone:(NSMutableArray *)selectedProfessors {
+    self.facultyArray = selectedProfessors;
+    [self dismissViewControllerAnimated:YES completion:nil];
+    [self.facultyTableView reloadData];
+}
+
 
 - (IBAction)cancel:(id)sender {
 }
