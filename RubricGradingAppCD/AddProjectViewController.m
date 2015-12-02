@@ -26,6 +26,7 @@
     
     self.facultyTableView.delegate = self;
     self.facultyTableView.dataSource = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
