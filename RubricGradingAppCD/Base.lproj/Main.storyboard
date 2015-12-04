@@ -405,11 +405,6 @@
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F1z-ti-xSW">
                                 <rect key="frame" x="218" y="121" width="176" height="49"/>
                                 <animations/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="Sophisticated (5)" value=""/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="Competent (3)" value=""/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="Not Yet Competent (1)" value=""/>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dataSource" destination="1Np-74-96p" id="n6o-6h-JxK"/>
                                     <outlet property="delegate" destination="1Np-74-96p" id="TnR-jS-WSa"/>
