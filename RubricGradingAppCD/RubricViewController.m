@@ -17,6 +17,8 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *peckerWrintingPro;
 @property NSArray *gradingScale;
 
+@property (weak, nonatomic) IBOutlet UILabel *totalGrading;
+
 @end
 
 @implementation RubricViewController
@@ -97,6 +99,7 @@
     double p5;
     double p6;
     double sum;
+    
     if (pickerView == self.pickerOverallProduct) {
         
         // As in the Rubric the firt criteria has wight 0.05 therefore we multiply the point gaving in 0.25
@@ -246,6 +249,9 @@
     sum = p1+p2+p3+p4+p5+p6;
            // to convert the sumation to percentage
     sum = (sum / 5) * 100;
+    
+    
+        self.totalGrading.text = [NSString stringWithFormat:@"%f",sum];
     
 }
 

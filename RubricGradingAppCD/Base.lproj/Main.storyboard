@@ -541,6 +541,20 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhR-Nj-AGz">
+                                <rect key="frame" x="54" y="610" width="122" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFL-K6-3hZ">
+                                <rect key="frame" x="227" y="610" width="124" height="34"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -552,6 +566,7 @@
                         <outlet property="pickerDepthContent" destination="Qja-5W-9sl" id="aij-5L-pMq"/>
                         <outlet property="pickerOverallProduct" destination="F1z-ti-xSW" id="J3I-hF-exg"/>
                         <outlet property="pickerQuality" destination="eY7-ph-XP4" id="eY2-b4-DEq"/>
+                        <outlet property="totalGrading" destination="cFL-K6-3hZ" id="qeA-ck-U5o"/>
                         <segue destination="XZ3-A0-TGs" kind="push" id="90p-2J-txq"/>
                     </connections>
                 </viewController>

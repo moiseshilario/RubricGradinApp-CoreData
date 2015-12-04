@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RubricViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
-
+@property NSString *stringSum;
 @end
