@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ooC-e3-p06">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ooC-e3-p06">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
     </dependencies>
     <scenes>
         <!--Login-->
@@ -402,38 +403,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F1z-ti-xSW">
-                                <rect key="frame" x="218" y="155" width="176" height="49"/>
+                                <rect key="frame" x="218" y="121" width="176" height="49"/>
                                 <animations/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="Sophisticated (5)" value=""/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="Competent (3)" value=""/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="Not Yet Competent (1)" value=""/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Np-74-96p" id="n6o-6h-JxK"/>
+                                    <outlet property="delegate" destination="1Np-74-96p" id="TnR-jS-WSa"/>
+                                </connections>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GxC-Id-FDp">
-                                <rect key="frame" x="218" y="229" width="176" height="49"/>
+                                <rect key="frame" x="218" y="195" width="176" height="49"/>
                                 <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Np-74-96p" id="Bac-qL-GY2"/>
+                                    <outlet property="delegate" destination="1Np-74-96p" id="sUz-ux-dtA"/>
+                                </connections>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d6q-Cd-NCO">
-                                <rect key="frame" x="218" y="296" width="176" height="49"/>
+                                <rect key="frame" x="218" y="262" width="176" height="49"/>
                                 <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Np-74-96p" id="XlU-b1-2zQ"/>
+                                    <outlet property="delegate" destination="1Np-74-96p" id="6NM-1D-qr5"/>
+                                </connections>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qja-5W-9sl">
-                                <rect key="frame" x="218" y="363" width="176" height="49"/>
+                                <rect key="frame" x="218" y="329" width="176" height="49"/>
                                 <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Np-74-96p" id="77X-QX-afy"/>
+                                    <outlet property="delegate" destination="1Np-74-96p" id="Ylc-kC-CRW"/>
+                                </connections>
                             </pickerView>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eY7-ph-XP4">
-                                <rect key="frame" x="218" y="441" width="176" height="49"/>
+                                <rect key="frame" x="218" y="398" width="176" height="49"/>
                                 <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Np-74-96p" id="guz-vU-wcV"/>
+                                    <outlet property="delegate" destination="1Np-74-96p" id="Ff4-aN-h8f"/>
+                                </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKQ-Zz-a5h">
-                                <rect key="frame" x="20" y="155" width="170" height="49"/>
+                                <rect key="frame" x="15" y="121" width="190" height="49"/>
                                 <animations/>
                                 <attributedString key="attributedText">
                                     <fragment content="Overall product &amp; process assessment">
                                         <attributes>
                                             <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
@@ -441,12 +462,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60d-Lr-9uX">
-                                <rect key="frame" x="20" y="229" width="173" height="49"/>
+                                <rect key="frame" x="20" y="195" width="190" height="49"/>
                                 <animations/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Content foundations / literature analysis">
+                                    <fragment content="Content foundations  literature analysis">
                                         <attributes>
-                                            <font key="NSFont" size="17" name="TimesNewRomanPS-BoldMT"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -455,13 +476,13 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw8-vh-X8I">
-                                <rect key="frame" x="20" y="296" width="170" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw8-vh-X8I">
+                                <rect key="frame" x="20" y="262" width="190" height="49"/>
                                 <animations/>
                                 <attributedString key="attributedText">
                                     <fragment content="Depth of analysis">
                                         <attributes>
-                                            <font key="NSFont" size="18" name="TimesNewRomanPS-BoldMT"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -470,15 +491,15 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-dk-goL">
-                                <rect key="frame" x="20" y="363" width="170" height="49"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-dk-goL">
+                                <rect key="frame" x="20" y="329" width="190" height="49"/>
                                 <animations/>
                                 <attributedString key="attributedText">
                                     <fragment>
                                         <string key="content">Depth of content
 </string>
                                         <attributes>
-                                            <font key="NSFont" size="18" name="TimesNewRomanPS-BoldMT"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -488,12 +509,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6N-77-tzn">
-                                <rect key="frame" x="29" y="441" width="170" height="49"/>
+                                <rect key="frame" x="20" y="398" width="190" height="49"/>
                                 <animations/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Overall quality / professionalism">
+                                    <fragment content="Overall quality  professionalism">
                                         <attributes>
-                                            <font key="NSFont" size="18" name="TimesNewRomanPS-BoldMT"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
                                                 <tabStops/>
                                             </paragraphStyle>
@@ -503,11 +524,15 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAT-0L-7rk">
-                                <rect key="frame" x="218" y="512" width="176" height="49"/>
+                                <rect key="frame" x="218" y="478" width="176" height="49"/>
                                 <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="1Np-74-96p" id="Z0o-8b-NDI"/>
+                                    <outlet property="delegate" destination="1Np-74-96p" id="iqa-lr-cIf"/>
+                                </connections>
                             </pickerView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erL-wy-BeL">
-                                <rect key="frame" x="20" y="512" width="170" height="49"/>
+                                <rect key="frame" x="20" y="478" width="190" height="49"/>
                                 <animations/>
                                 <attributedString key="attributedText">
                                     <fragment content="Writing proficiency">
@@ -526,6 +551,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="peckerWrintingPro" destination="YAT-0L-7rk" id="DVi-Me-1ja"/>
+                        <outlet property="pickerContentAnalysis" destination="GxC-Id-FDp" id="eZ4-oS-hKX"/>
+                        <outlet property="pickerDepthAnalysis" destination="d6q-Cd-NCO" id="9i7-En-gYs"/>
+                        <outlet property="pickerDepthContent" destination="Qja-5W-9sl" id="aij-5L-pMq"/>
+                        <outlet property="pickerOverallProduct" destination="F1z-ti-xSW" id="J3I-hF-exg"/>
+                        <outlet property="pickerQuality" destination="eY7-ph-XP4" id="eY2-b4-DEq"/>
                         <segue destination="XZ3-A0-TGs" kind="push" id="90p-2J-txq"/>
                     </connections>
                 </viewController>
@@ -580,6 +611,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sYN-WH-pP3">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -597,10 +629,12 @@
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hlm-Zd-4FJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nvz-WS-r1d">
                             <rect key="frame" x="0.0" y="136" width="414" height="3"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <animations/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </tableView>
                         <prototypes>
@@ -610,7 +644,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wiL-gc-5WC" id="Nh8-JW-UUJ">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
                                 </tableViewCellContentView>
+                                <animations/>
                             </tableViewCell>
                         </prototypes>
                         <connections>

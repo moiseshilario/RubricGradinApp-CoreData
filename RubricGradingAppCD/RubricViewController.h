@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RubricViewController : UIViewController
+@interface RubricViewController : UIViewController<UIPickerViewDataSource,UIPickerViewDelegate>
 
 @end
