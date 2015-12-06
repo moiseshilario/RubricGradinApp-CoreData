@@ -8,7 +8,15 @@
 
 #import "RubricViewController.h"
 
-@interface RubricViewController ()
+@interface RubricViewController (){
+    double p1;
+    double p2;
+    double p3;
+    double p4;
+    double p5;
+    double p6;
+    double sum;
+}
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerOverallProduct;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerContentAnalysis;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerDepthAnalysis;
@@ -92,13 +100,12 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     
-    double p1;
-    double p2;
-    double p3;
-    double p4;
-    double p5;
-    double p6;
-    double sum;
+    p1 = 5 * 0.25;
+    p2 = 5 * 0.05;
+    p3 = 5 * 0.20;
+    p4 = 5 * 0.20;
+    p5 = 5 * 0.15;
+    p6 = 5 * 0.15;
     
     if (pickerView == self.pickerOverallProduct) {
         
@@ -246,19 +253,26 @@
         }
     }
            // Here the sum of the grading
-    sum = p1+p2+p3+p4+p5+p6;
+    
            // to convert the sumation to percentage
+    
+    
+}
+- (IBAction)Total:(id)sender {
+    sum = p1+p2+p3+p4+p5+p6;
     sum = (sum / 5) * 100;
     
     
-        self.totalGrading.text = [NSString stringWithFormat:@"%f",sum];
+    self.totalGrading.text = [NSString stringWithFormat:@"%.f",sum];
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.gradingScale = @[@"Sophisticated(5)",@"Competent(4)",@"Competent(3)",@"Not Competent(2)",@"Not Competent(1)"];
+   // self.gradingScale = @[@"Sophisticated(5)",@"Competent(4)",@"Competent(3)",@"Not Competent(2)",@"Not Competent(1)"];
+    
+    self.gradingScale = @[@"(5)",@"(4)",@"(3)",@"(2)",@"(1)"];
 }
 
 - (void)didReceiveMemoryWarning {

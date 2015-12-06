@@ -448,7 +448,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="Overall product &amp; process assessment">
                                         <attributes>
-                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -541,20 +541,21 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JhR-Nj-AGz">
-                                <rect key="frame" x="54" y="610" width="122" height="34"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFL-K6-3hZ">
-                                <rect key="frame" x="227" y="610" width="124" height="34"/>
+                                <rect key="frame" x="212" y="593" width="124" height="34"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzP-Js-696">
+                                <rect key="frame" x="90" y="593" width="83" height="34"/>
+                                <animations/>
+                                <state key="normal" title="Total"/>
+                                <connections>
+                                    <action selector="Total:" destination="1Np-74-96p" eventType="touchUpInside" id="Db7-gX-VkO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
