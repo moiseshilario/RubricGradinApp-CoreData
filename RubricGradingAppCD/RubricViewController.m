@@ -113,18 +113,23 @@
         
        switch (row) {
            case 0:
+               p1 = 0;
                p1 = 5 * 0.25;
              break;
            case 1:
+               p1 = 0;
                p1 = 4 * 0.25;
                break;
            case 2:
+               p1 = 0;
                p1 = 3 * 0.25;
                break;
            case 3:
+               p1 = 0;
                p1 = 2 * 0.25;
                break;
            case 4:
+               p1 = 0;
                p1 = 1 * 0.25;
                break;
             
@@ -137,18 +142,23 @@
             
             switch (row) {
                 case 0:
+                    p2 = 0;
                     p2 = 5 * 0.05;
                     break;
                 case 1:
+                      p2 = 0;
                     p2 = 4 * 0.05;
                     break;
                 case 2:
+                      p2 = 0;
                     p2 = 3 * 0.05;
                     break;
                 case 3:
+                      p2 = 0;
                     p2 = 2 * 0.05;
                     break;
                 case 4:
+                      p2 = 0;
                     p2 = 1 * 0.05;
                     break;
                     
@@ -161,18 +171,23 @@
         
         switch (row) {
             case 0:
+                p3 = 0;
                 p3 = 5 * 0.20;
                 break;
             case 1:
+                p3 = 0;
                 p3 = 4 * 0.20;
                 break;
             case 2:
+                p3 = 0;
                 p3 = 3 * 0.20;
                 break;
             case 3:
+                p3 = 0;
                 p3 = 2 * 0.20;
                 break;
             case 4:
+                p3 = 0;
                 p3 = 1 * 0.20;
                 break;
                 
@@ -185,18 +200,23 @@
         
         switch (row) {
             case 0:
+                p4 = 0;
                 p4 = 5 * 0.20;
                 break;
             case 1:
+                p4 = 0;
                 p4 = 4 * 0.20;
                 break;
             case 2:
+                p4 = 0;
                 p4 = 3 * 0.20;
                 break;
             case 3:
+                p4 = 0;
                 p4 = 2 * 0.20;
                 break;
             case 4:
+                p4 = 0;
                 p4 = 1 * 0.20;
                 break;
                 
@@ -209,18 +229,23 @@
         
         switch (row) {
             case 0:
+                p5 = 0;
                 p5 = 5 * 0.15;
                 break;
             case 1:
+                p5 = 0;
                 p5 = 4 * 0.15;
                 break;
             case 2:
+                p5 = 0;
                 p5 = 3 * 0.15;
                 break;
             case 3:
+                p5 = 0;
                 p5 = 2 * 0.15;
                 break;
             case 4:
+                p5 = 0;
                 p5 = 1 * 0.15;
                 break;
                 
@@ -233,18 +258,23 @@
         
         switch (row) {
             case 0:
+                p6 = 0;
                 p6 = 5 * 0.15;
                 break;
             case 1:
+                p6 = 0;
                 p6 = 4 * 0.15;
                 break;
             case 2:
+                p6 = 0;
                 p6 = 3 * 0.15;
                 break;
             case 3:
+                p6 = 0;
                 p6 = 2 * 0.15;
                 break;
             case 4:
+                p6 = 0;
                 p6 = 1 * 0.15;
                 break;
                 
