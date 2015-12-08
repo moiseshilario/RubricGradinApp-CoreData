@@ -170,10 +170,66 @@
     Student *s3 = [NSEntityDescription
                    insertNewObjectForEntityForName:@"Student"
                    inManagedObjectContext:[self managedObjectContext]];
-    s3.name = @"Abishek";
+    s3.name = @"John";
     s3.username = @"abishek001";
     s3.password = @"passwordAbishek";
     s3.type = @"student";
+    
+    Student *s4 = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"Student"
+                   inManagedObjectContext:[self managedObjectContext]];
+    s4.name = @"James";
+    s4.username = @"abishek001";
+    s4.password = @"passwordAbishek";
+    s4.type = @"student";
+    
+    Student *s5 = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"Student"
+                   inManagedObjectContext:[self managedObjectContext]];
+    s5.name = @"Elza";
+    s5.username = @"abishek001";
+    s5.password = @"passwordAbishek";
+    s5.type = @"student";
+    
+    Student *s6 = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"Student"
+                   inManagedObjectContext:[self managedObjectContext]];
+    s6.name = @"Maria";
+    s6.username = @"abishek001";
+    s6.password = @"passwordAbishek";
+    s6.type = @"student";
+    
+    Student *s7 = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"Student"
+                   inManagedObjectContext:[self managedObjectContext]];
+    s7.name = @"Emily";
+    s7.username = @"abishek001";
+    s7.password = @"passwordAbishek";
+    s7.type = @"student";
+    
+    Student *s8 = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"Student"
+                   inManagedObjectContext:[self managedObjectContext]];
+    s8.name = @"Paul";
+    s8.username = @"abishek001";
+    s8.password = @"passwordAbishek";
+    s8.type = @"student";
+    
+    Student *s9 = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"Student"
+                   inManagedObjectContext:[self managedObjectContext]];
+    s9.name = @"Swain";
+    s9.username = @"abishek001";
+    s9.password = @"passwordAbishek";
+    s9.type = @"student";
+    
+    Student *s10 = [NSEntityDescription
+                   insertNewObjectForEntityForName:@"Student"
+                   inManagedObjectContext:[self managedObjectContext]];
+    s10.name = @"Drake";
+    s10.username = @"abishek001";
+    s10.password = @"passwordAbishek";
+    s10.type = @"student";
     
      //INITIALIZING ADMIN
     Admin *a1 = [NSEntityDescription
@@ -210,9 +266,33 @@
     p3.password = @"passwordVitolo";
     p3.type = @"professor";
     
+    Professor *p4 = [NSEntityDescription
+                     insertNewObjectForEntityForName:@"Professor"
+                     inManagedObjectContext:[self managedObjectContext]];
+    p4.name = @"Dr. Brinkman";
+    p4.username = @"vitolo001";
+    p4.password = @"passwordVitolo";
+    p4.type = @"professor";
+    
+    Professor *p5 = [NSEntityDescription
+                     insertNewObjectForEntityForName:@"Professor"
+                     inManagedObjectContext:[self managedObjectContext]];
+    p5.name = @"Mr. Cannell";
+    p5.username = @"vitolo001";
+    p5.password = @"passwordVitolo";
+    p5.type = @"professor";
+    
+    Professor *p6 = [NSEntityDescription
+                     insertNewObjectForEntityForName:@"Professor"
+                     inManagedObjectContext:[self managedObjectContext]];
+    p6.name = @"Dr. Tang";
+    p6.username = @"vitolo001";
+    p6.password = @"passwordVitolo";
+    p6.type = @"professor";
+    
    //INITIALIZING A PROJECT
     Project *p = [NSEntityDescription insertNewObjectForEntityForName:@"Project" inManagedObjectContext:context];
-    p.name = @"Rubric Grading";
+    p.name = @"Project 1";
     [p addStudentObject:s1];
     [p addStudentObject:s2];
     [p addProfessorFacultyObject:p1];
@@ -220,6 +300,39 @@
     p.professorChair = p3;
     p.briefDescription = @"An app to grade the students";
     p.admin = a1;
+    
+    Project *project2 = [NSEntityDescription insertNewObjectForEntityForName:@"Project" inManagedObjectContext:context];
+    project2.name = @"Project 2";
+    [project2 addStudentObject:s1];
+    [project2 addStudentObject:s2];
+    [project2 addProfessorFacultyObject:p1];
+    [project2 addProfessorFacultyObject:p2];
+    project2.professorChair = p3;
+    project2.briefDescription = @"An app to grade the students";
+    project2.admin = a1;
+
+    
+    Project *project3 = [NSEntityDescription insertNewObjectForEntityForName:@"Project" inManagedObjectContext:context];
+    project3.name = @"Project 3";
+    [project3 addStudentObject:s1];
+    [project3 addStudentObject:s2];
+    [project3 addProfessorFacultyObject:p1];
+    [project3 addProfessorFacultyObject:p2];
+    project3.professorChair = p3;
+    project3.briefDescription = @"An app to grade the students";
+    project3.admin = a1;
+    
+    Project *project4 = [NSEntityDescription insertNewObjectForEntityForName:@"Project" inManagedObjectContext:context];
+    project4.name = @"Rubric Grading App Project";
+    [project4 addStudentObject:s1];
+    [project4 addStudentObject:s2];
+    [project4 addProfessorFacultyObject:p1];
+    [project4 addProfessorFacultyObject:p2];
+    project4.professorChair = p3;
+    project4.briefDescription = @"An app to grade the students";
+    project4.admin = a1;
+
+
     
 
     NSError *error;

@@ -34,6 +34,13 @@
 }
 
 
+- (IBAction)cancel:(id)sender {
+}
+
+- (IBAction)save:(id)sender {
+}
+
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -84,6 +91,8 @@
     }
 }
 
+#pragma mark - Delegate functions
+
 -(void)studentsListDidCancel{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -104,12 +113,4 @@
     [self.facultyTableView reloadData];
 }
 
-
-- (IBAction)cancel:(id)sender {
-}
-
-- (IBAction)save:(id)sender {
-    
-    
-}
 @end
