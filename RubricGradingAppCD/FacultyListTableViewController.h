@@ -15,6 +15,8 @@
 
 @property (nonatomic) NSMutableArray *allProfessorsArray;
 @property (nonatomic) NSMutableArray *selectedProfessors;
+@property (nonatomic) NSMutableArray *selectedRows;
+
 @property (nonatomic, weak) id <FacultyListTableViewControllerDelegate> delegate;
 - (IBAction)cancel:(id)sender;
 - (IBAction)done:(id)sender;
@@ -25,6 +27,6 @@
 @protocol FacultyListTableViewControllerDelegate <NSObject>
 
 -(void)facultyListDidCancel;
--(void)facultyListDidDone: (NSMutableArray*) selectedProfessors;
+-(void)facultyListDidDone: (NSMutableArray*) selectedProfessors inSelectedRows: (NSMutableArray*)selectedRows;
 
 @end

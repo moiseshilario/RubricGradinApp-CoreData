@@ -47,16 +47,32 @@
     // Configure the cell...
     Professor *p = [self.allProfessorsArray objectAtIndex:indexPath.row];
     cell.textLabel.text = p.name;
+    
+    if([self.selectedRows containsObject:indexPath]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        [tableView selectRowAtIndexPath:indexPath
+                                animated:NO
+                          scrollPosition:UITableViewScrollPositionNone];
+        
+    }
+    else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        
+    }
+    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+    
+    
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+
 }
 
 
@@ -111,12 +127,12 @@
 
 - (IBAction)done:(id)sender {
     self.selectedProfessors = [[NSMutableArray alloc] init];
-    NSArray *professorsIndexPaths = [[NSMutableArray alloc] initWithArray:[self.tableView indexPathsForSelectedRows]];
-    for (NSIndexPath *index in professorsIndexPaths) {
+    self.selectedRows = [[NSMutableArray alloc] initWithArray:[self.tableView indexPathsForSelectedRows]];
+    for (NSIndexPath *index in self.selectedRows) {
         [self.selectedProfessors addObject: [self.allProfessorsArray objectAtIndex:index.row]];
-        
     }
-    [self.delegate facultyListDidDone: self.selectedProfessors];
+    
+    [self.delegate facultyListDidDone: self.selectedProfessors inSelectedRows:self.selectedRows];
 }
 
 

@@ -54,6 +54,16 @@
     Student *student = [self.allStudentsArray objectAtIndex:indexPath.row];
     cell.textLabel.text = student.name;
     
+    if([self.selectedRows containsObject:indexPath]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        [tableView selectRowAtIndexPath:indexPath
+                               animated:NO
+                         scrollPosition:UITableViewScrollPositionNone];
+    }
+    else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        
+    }
     return cell;
 }
 
@@ -117,11 +127,11 @@
 
 - (IBAction)done:(id)sender {
     self.selectedStudents = [[NSMutableArray alloc] init];
-    NSArray *studentsIndexPaths = [[NSMutableArray alloc] initWithArray:[self.tableView indexPathsForSelectedRows]];
-    for (NSIndexPath *index in studentsIndexPaths) {
+    self.selectedRows = [[NSMutableArray alloc] initWithArray:[self.tableView indexPathsForSelectedRows]];
+    for (NSIndexPath *index in self.selectedRows) {
         [self.selectedStudents addObject: [self.allStudentsArray objectAtIndex:index.row]];
         
     }
-    [self.delegate studentsListDidDone: self.selectedStudents];
+    [self.delegate studentsListDidDone: self.selectedStudents inSelectedRows:self.selectedRows];
 }
 @end

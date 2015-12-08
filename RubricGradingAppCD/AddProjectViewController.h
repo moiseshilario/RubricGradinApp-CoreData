@@ -27,6 +27,8 @@
 @property (nonatomic) NSMutableArray *studentsArray;
 @property (nonatomic) NSMutableArray *allProfessorsArray;
 @property (nonatomic) NSMutableArray *allStudentsArray;
+@property (nonatomic) NSMutableArray *facultySelectedRows;
+@property (nonatomic) NSMutableArray *studentsSelectedRows;
 
 @property (nonatomic, weak) id <AddProjectViewControllerDelegate> delegate;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

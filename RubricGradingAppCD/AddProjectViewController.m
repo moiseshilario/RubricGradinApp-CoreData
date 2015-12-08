@@ -53,6 +53,7 @@
         
         StudentsListTableViewController *studentsList = (StudentsListTableViewController*) [navigation topViewController];
         studentsList.allStudentsArray = self.allStudentsArray;
+        studentsList.selectedRows = self.studentsSelectedRows;
         studentsList.delegate = self;
     }
     else if([segue.identifier isEqualToString:@"addFaculty"]){
@@ -61,6 +62,7 @@
         
         FacultyListTableViewController *facultyList = (FacultyListTableViewController*) [navigation topViewController];
         facultyList.allProfessorsArray = self.allProfessorsArray;
+        facultyList.selectedRows = self.facultySelectedRows;
         facultyList.delegate = self;
     }
 }
@@ -97,8 +99,9 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)studentsListDidDone:selectedStudents{
+-(void)studentsListDidDone:selectedStudents inSelectedRows:(NSMutableArray *)selectedRows{
     self.studentsArray = selectedStudents;
+    self.studentsSelectedRows = selectedRows;
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.studentTableView reloadData];
 }
@@ -107,8 +110,9 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)facultyListDidDone:(NSMutableArray *)selectedProfessors {
+-(void)facultyListDidDone:(NSMutableArray *)selectedProfessors inSelectedRows: (NSMutableArray*)selectedRows {
     self.facultyArray = selectedProfessors;
+    self.facultySelectedRows = selectedRows;
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.facultyTableView reloadData];
 }
