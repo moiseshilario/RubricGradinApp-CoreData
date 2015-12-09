@@ -381,199 +381,14 @@
                     <navigationItem key="navigationItem" title="Faculty" id="UyA-Vp-vne">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CN1-CB-zlO">
                             <connections>
-                                <segue destination="1Np-74-96p" kind="show" id="WOh-c7-No2"/>
+                                <segue destination="FOj-Wt-Mhd" kind="show" id="nG3-6N-Dj1"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AjU-bo-srf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2955" y="1988"/>
-        </scene>
-        <!--Rubric View Controller-->
-        <scene sceneID="ZDM-xi-UF2">
-            <objects>
-                <viewController id="1Np-74-96p" customClass="RubricViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="X6t-9U-d80"/>
-                        <viewControllerLayoutGuide type="bottom" id="nTF-k6-qsU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="e4A-Ak-BPD">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F1z-ti-xSW">
-                                <rect key="frame" x="218" y="121" width="176" height="49"/>
-                                <animations/>
-                                <connections>
-                                    <outlet property="dataSource" destination="1Np-74-96p" id="n6o-6h-JxK"/>
-                                    <outlet property="delegate" destination="1Np-74-96p" id="TnR-jS-WSa"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GxC-Id-FDp">
-                                <rect key="frame" x="218" y="195" width="176" height="49"/>
-                                <animations/>
-                                <connections>
-                                    <outlet property="dataSource" destination="1Np-74-96p" id="Bac-qL-GY2"/>
-                                    <outlet property="delegate" destination="1Np-74-96p" id="sUz-ux-dtA"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d6q-Cd-NCO">
-                                <rect key="frame" x="218" y="262" width="176" height="49"/>
-                                <animations/>
-                                <connections>
-                                    <outlet property="dataSource" destination="1Np-74-96p" id="XlU-b1-2zQ"/>
-                                    <outlet property="delegate" destination="1Np-74-96p" id="6NM-1D-qr5"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qja-5W-9sl">
-                                <rect key="frame" x="218" y="329" width="176" height="49"/>
-                                <animations/>
-                                <connections>
-                                    <outlet property="dataSource" destination="1Np-74-96p" id="77X-QX-afy"/>
-                                    <outlet property="delegate" destination="1Np-74-96p" id="Ylc-kC-CRW"/>
-                                </connections>
-                            </pickerView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eY7-ph-XP4">
-                                <rect key="frame" x="218" y="398" width="176" height="49"/>
-                                <animations/>
-                                <connections>
-                                    <outlet property="dataSource" destination="1Np-74-96p" id="guz-vU-wcV"/>
-                                    <outlet property="delegate" destination="1Np-74-96p" id="Ff4-aN-h8f"/>
-                                </connections>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKQ-Zz-a5h">
-                                <rect key="frame" x="15" y="121" width="190" height="49"/>
-                                <animations/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Overall product &amp; process assessment">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="60d-Lr-9uX">
-                                <rect key="frame" x="20" y="195" width="190" height="49"/>
-                                <animations/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Content foundations  literature analysis">
-                                        <attributes>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qw8-vh-X8I">
-                                <rect key="frame" x="20" y="262" width="190" height="49"/>
-                                <animations/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Depth of analysis">
-                                        <attributes>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hKa-dk-goL">
-                                <rect key="frame" x="20" y="329" width="190" height="49"/>
-                                <animations/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Depth of content
-</string>
-                                        <attributes>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6N-77-tzn">
-                                <rect key="frame" x="20" y="398" width="190" height="49"/>
-                                <animations/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Overall quality  professionalism">
-                                        <attributes>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YAT-0L-7rk">
-                                <rect key="frame" x="218" y="478" width="176" height="49"/>
-                                <animations/>
-                                <connections>
-                                    <outlet property="dataSource" destination="1Np-74-96p" id="Z0o-8b-NDI"/>
-                                    <outlet property="delegate" destination="1Np-74-96p" id="iqa-lr-cIf"/>
-                                </connections>
-                            </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erL-wy-BeL">
-                                <rect key="frame" x="20" y="478" width="190" height="49"/>
-                                <animations/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Writing proficiency">
-                                        <attributes>
-                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
-                                                <tabStops/>
-                                            </paragraphStyle>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFL-K6-3hZ">
-                                <rect key="frame" x="212" y="593" width="124" height="34"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xzP-Js-696">
-                                <rect key="frame" x="90" y="593" width="83" height="34"/>
-                                <animations/>
-                                <state key="normal" title="Total"/>
-                                <connections>
-                                    <action selector="Total:" destination="1Np-74-96p" eventType="touchUpInside" id="Db7-gX-VkO"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <connections>
-                        <outlet property="peckerWrintingPro" destination="YAT-0L-7rk" id="DVi-Me-1ja"/>
-                        <outlet property="pickerContentAnalysis" destination="GxC-Id-FDp" id="eZ4-oS-hKX"/>
-                        <outlet property="pickerDepthAnalysis" destination="d6q-Cd-NCO" id="9i7-En-gYs"/>
-                        <outlet property="pickerDepthContent" destination="Qja-5W-9sl" id="aij-5L-pMq"/>
-                        <outlet property="pickerOverallProduct" destination="F1z-ti-xSW" id="J3I-hF-exg"/>
-                        <outlet property="pickerQuality" destination="eY7-ph-XP4" id="eY2-b4-DEq"/>
-                        <outlet property="totalGrading" destination="cFL-K6-3hZ" id="qeA-ck-U5o"/>
-                        <segue destination="XZ3-A0-TGs" kind="push" id="90p-2J-txq"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dj4-hK-ROR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3625" y="1384"/>
+            <point key="canvasLocation" x="2299" y="2164"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YaW-RC-Zek">
@@ -614,66 +429,6 @@
             <point key="canvasLocation" x="2616" y="30"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Txf-kz-IWB">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XZ3-A0-TGs" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationItem key="navigationItem" id="oiP-d2-Cu4"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sYN-WH-pP3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="WWN-wc-CAC" kind="relationship" relationship="rootViewController" id="dCu-mr-hpe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fk1-3o-nAQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4629" y="1515"/>
-        </scene>
-        <!--Rubric Table-->
-        <scene sceneID="zBe-2d-7e9">
-            <objects>
-                <tableViewController id="WWN-wc-CAC" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="hlm-Zd-4FJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nvz-WS-r1d">
-                            <rect key="frame" x="0.0" y="136" width="414" height="3"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <animations/>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        </tableView>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wiL-gc-5WC">
-                                <rect key="frame" x="0.0" y="92" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wiL-gc-5WC" id="Nh8-JW-UUJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                </tableViewCellContentView>
-                                <animations/>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="WWN-wc-CAC" id="3kX-ie-A6O"/>
-                            <outlet property="delegate" destination="WWN-wc-CAC" id="1El-ea-rLY"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Rubric Table" id="51q-81-Wzg">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="Psx-R8-3Wz"/>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zPq-vb-GUz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="5255" y="1472"/>
-        </scene>
-        <!--Navigation Controller-->
         <scene sceneID="OaY-qx-9fs">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="IDm-1K-8B6" sceneMemberID="viewController">
@@ -690,7 +445,482 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flI-pA-A0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2143" y="1988"/>
+            <point key="canvasLocation" x="1535" y="2140"/>
+        </scene>
+        <!--Writing Rubric-->
+        <scene sceneID="g0X-wC-vU2">
+            <objects>
+                <viewController id="6eI-JK-EH6" customClass="RubricViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Qp-yQ-Zew"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uul-Tr-OrI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8de-vZ-9ZB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HBF-0Q-4FU">
+                                <rect key="frame" x="218" y="86" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6eI-JK-EH6" id="Ipe-3Y-1QO"/>
+                                    <outlet property="delegate" destination="6eI-JK-EH6" id="CDs-5W-YxT"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0Df-Rn-bPt">
+                                <rect key="frame" x="218" y="177" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6eI-JK-EH6" id="gHG-wL-hPr"/>
+                                    <outlet property="delegate" destination="6eI-JK-EH6" id="KXC-pH-xJO"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AAT-Hr-bxW">
+                                <rect key="frame" x="218" y="262" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6eI-JK-EH6" id="wiB-PB-ajA"/>
+                                    <outlet property="delegate" destination="6eI-JK-EH6" id="ajm-Tt-J8O"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yzu-nO-3sL">
+                                <rect key="frame" x="218" y="359" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6eI-JK-EH6" id="dND-Of-oBn"/>
+                                    <outlet property="delegate" destination="6eI-JK-EH6" id="8LZ-I4-fEc"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sai-Lh-240">
+                                <rect key="frame" x="218" y="450" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6eI-JK-EH6" id="q3y-Z6-jEi"/>
+                                    <outlet property="delegate" destination="6eI-JK-EH6" id="1e9-iQ-A4z"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TI8-oH-lBz">
+                                <rect key="frame" x="15" y="86" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Overall product &amp; process assessment">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eKj-9R-jga">
+                                <rect key="frame" x="20" y="177" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Content foundations  literature analysis">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Ju-xg-UUt">
+                                <rect key="frame" x="20" y="262" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Depth of analysis">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hag-uo-M7s">
+                                <rect key="frame" x="20" y="359" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Depth of content
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ss8-Ob-Su8">
+                                <rect key="frame" x="20" y="450" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Overall quality  professionalism">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v08-bl-Mrr">
+                                <rect key="frame" x="218" y="540" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="6eI-JK-EH6" id="xjR-fx-lDP"/>
+                                    <outlet property="delegate" destination="6eI-JK-EH6" id="Rom-Ey-RMJ"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6J-bB-RXv">
+                                <rect key="frame" x="20" y="540" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Writing proficiency">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z5s-yX-MwA">
+                                <rect key="frame" x="0.0" y="629" width="414" height="58"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zte-zj-ZA0">
+                                        <rect key="frame" x="76" y="8" width="83" height="34"/>
+                                        <animations/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <state key="normal" title="Total">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Total:" destination="6eI-JK-EH6" eventType="touchUpInside" id="6lv-Mv-INO"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHA-w6-AWO">
+                                        <rect key="frame" x="231" y="8" width="124" height="34"/>
+                                        <animations/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvC-Xd-or9">
+                                <rect key="frame" x="117" y="698" width="181" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <state key="normal" title="Change to Oral Rubric"/>
+                                <connections>
+                                    <segue destination="EdB-qo-yfT" kind="show" id="alS-zF-pKy">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Writing Rubric" id="XIT-bM-2s7">
+                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="uVj-SQ-oUY"/>
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="buM-9d-0Bf">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="7wL-2p-eMb">
+                                <rect key="frame" x="372" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="peckerWrintingPro" destination="v08-bl-Mrr" id="LJh-ue-ILg"/>
+                        <outlet property="pickerContentAnalysis" destination="0Df-Rn-bPt" id="eyt-Bs-DTF"/>
+                        <outlet property="pickerDepthAnalysis" destination="AAT-Hr-bxW" id="QBM-5l-5Ln"/>
+                        <outlet property="pickerDepthContent" destination="Yzu-nO-3sL" id="VoM-Hu-r9Q"/>
+                        <outlet property="pickerOverallProduct" destination="HBF-0Q-4FU" id="vrP-WE-4Cq"/>
+                        <outlet property="pickerQuality" destination="sai-Lh-240" id="Gf6-RB-Fhs"/>
+                        <outlet property="totalGrading" destination="qHA-w6-AWO" id="2QL-dR-cz6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XZK-4b-ct3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4198" y="3074"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qgw-g8-teE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FOj-Wt-Mhd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sP5-6B-ylh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6eI-JK-EH6" kind="relationship" relationship="rootViewController" id="0Ne-67-htT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ady-mz-tJ2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2917" y="2243"/>
+        </scene>
+        <!--Oral Rubric-->
+        <scene sceneID="31E-Ms-Pgs">
+            <objects>
+                <viewController id="EdB-qo-yfT" customClass="OralRubricViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zmn-fo-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Uwu-RI-lhK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zRn-s8-LdY">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Kh-si-tVc">
+                                <rect key="frame" x="218" y="90" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EdB-qo-yfT" id="8RN-Mq-48M"/>
+                                    <outlet property="delegate" destination="EdB-qo-yfT" id="9Km-sK-7Zu"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DPi-lh-CIX">
+                                <rect key="frame" x="218" y="168" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EdB-qo-yfT" id="81j-kk-EEh"/>
+                                    <outlet property="delegate" destination="EdB-qo-yfT" id="Wmp-2o-BHp"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W8n-rN-zDl">
+                                <rect key="frame" x="218" y="246" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EdB-qo-yfT" id="h6Q-if-VnL"/>
+                                    <outlet property="delegate" destination="EdB-qo-yfT" id="cxe-KK-W4L"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d7b-V2-wWF">
+                                <rect key="frame" x="218" y="329" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EdB-qo-yfT" id="GTG-zb-W45"/>
+                                    <outlet property="delegate" destination="EdB-qo-yfT" id="EKc-qn-CfD"/>
+                                </connections>
+                            </pickerView>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NjX-2x-nDF">
+                                <rect key="frame" x="218" y="398" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EdB-qo-yfT" id="oTv-3W-scH"/>
+                                    <outlet property="delegate" destination="EdB-qo-yfT" id="e7b-4Q-SrW"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y0n-tL-Ng5">
+                                <rect key="frame" x="15" y="90" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Organization">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBZ-Eg-H2S">
+                                <rect key="frame" x="20" y="168" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Style">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52G-Kk-TZZ">
+                                <rect key="frame" x="20" y="246" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Use of communication aids">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Psn-eA-1pv">
+                                <rect key="frame" x="20" y="329" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Depth of content
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KtE-hj-dex">
+                                <rect key="frame" x="20" y="398" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Grammar and word choice">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5AI-E1-h2V">
+                                <rect key="frame" x="218" y="478" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EdB-qo-yfT" id="R9U-EF-KLu"/>
+                                    <outlet property="delegate" destination="EdB-qo-yfT" id="j1d-Ho-ZAb"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NgW-8E-3Fb">
+                                <rect key="frame" x="20" y="478" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Personal appearance">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3u-sr-cl0">
+                                <rect key="frame" x="20" y="548" width="190" height="49"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Verbal interaction">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q8n-IK-yqD">
+                                <rect key="frame" x="218" y="548" width="176" height="49"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="dataSource" destination="EdB-qo-yfT" id="Ws1-2y-ghP"/>
+                                    <outlet property="delegate" destination="EdB-qo-yfT" id="j0q-z9-03Y"/>
+                                </connections>
+                            </pickerView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5FD-9k-f09">
+                                <rect key="frame" x="0.0" y="629" width="414" height="58"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9o-EN-TCb">
+                                        <rect key="frame" x="76" y="8" width="83" height="34"/>
+                                        <animations/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <state key="normal" title="Total">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="Total:" destination="6eI-JK-EH6" eventType="touchUpInside" id="dtp-zW-2Be"/>
+                                            <action selector="oralSumation:" destination="EdB-qo-yfT" eventType="touchUpInside" id="HPU-TB-Zrj"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z30-U5-7M2">
+                                        <rect key="frame" x="231" y="8" width="124" height="34"/>
+                                        <animations/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="0.31372549020000001" green="0.019607843140000001" blue="0.047058823530000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="0.88235294119999996" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Oral Rubric" id="3gK-8k-wOo">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="BTh-PK-bIh">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoDark" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="mrp-9J-caL">
+                                <rect key="frame" x="372" y="11" width="22" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <animations/>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="oralTotalGrading" destination="Z30-U5-7M2" id="oBC-Tt-K8q"/>
+                        <outlet property="peckerWrintingPro" destination="5AI-E1-h2V" id="KSh-Nr-foY"/>
+                        <outlet property="pickerAppearance" destination="5AI-E1-h2V" id="YIP-R3-TWz"/>
+                        <outlet property="pickerCommunication" destination="W8n-rN-zDl" id="i0Y-xg-ESH"/>
+                        <outlet property="pickerContent" destination="d7b-V2-wWF" id="5CY-H3-WMq"/>
+                        <outlet property="pickerContentAnalysis" destination="DPi-lh-CIX" id="qzi-jf-w6I"/>
+                        <outlet property="pickerDepthAnalysis" destination="W8n-rN-zDl" id="xCr-AV-KJO"/>
+                        <outlet property="pickerDepthContent" destination="d7b-V2-wWF" id="8HS-4a-n6x"/>
+                        <outlet property="pickerGrammar" destination="NjX-2x-nDF" id="vS5-9h-Pin"/>
+                        <outlet property="pickerOrganization" destination="3Kh-si-tVc" id="lpt-xb-Z5x"/>
+                        <outlet property="pickerOverallProduct" destination="3Kh-si-tVc" id="S0H-JR-YdA"/>
+                        <outlet property="pickerQuality" destination="NjX-2x-nDF" id="nxJ-JX-QVD"/>
+                        <outlet property="pickerStyle" destination="DPi-lh-CIX" id="I3x-av-pxj"/>
+                        <outlet property="pickerVerbal" destination="q8n-IK-yqD" id="Fec-WW-pmU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SPk-3G-caM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4746" y="2881"/>
         </scene>
     </scenes>
 </document>
