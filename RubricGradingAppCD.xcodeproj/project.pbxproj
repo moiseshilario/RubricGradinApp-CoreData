@@ -7,29 +7,162 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5C116FB01C17BC9E00E634C7 /* OralRubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C116FAF1C17BC9E00E634C7 /* OralRubricViewController.m */; };
-		5CE96DE71C0E1037003ED05C /* FacultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE96DE61C0E1037003ED05C /* FacultyTableViewController.m */; };
-		5CE96DEA1C0E13C3003ED05C /* RubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE96DE91C0E13C3003ED05C /* RubricViewController.m */; };
-		A853FDE11C01CE79005ABB49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDE01C01CE79005ABB49 /* main.m */; };
-		A853FDE41C01CE79005ABB49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDE31C01CE79005ABB49 /* AppDelegate.m */; };
-		A853FDEA1C01CE79005ABB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A853FDE81C01CE79005ABB49 /* Main.storyboard */; };
-		A853FDED1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A853FDEB1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld */; };
-		A853FDEF1C01CE79005ABB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A853FDEE1C01CE79005ABB49 /* Assets.xcassets */; };
-		A853FDF21C01CE79005ABB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A853FDF01C01CE79005ABB49 /* LaunchScreen.storyboard */; };
-		A853FDFD1C01CE79005ABB49 /* RubricGradingAppCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDFC1C01CE79005ABB49 /* RubricGradingAppCDTests.m */; };
-		A853FE081C01CE79005ABB49 /* RubricGradingAppCDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE071C01CE79005ABB49 /* RubricGradingAppCDUITests.m */; };
-		A853FE171C01D5BC005ABB49 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE161C01D5BC005ABB49 /* LoginViewController.m */; };
-		A853FE1D1C01D5F8005ABB49 /* AdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE1C1C01D5F8005ABB49 /* AdminTableViewController.m */; };
-		A853FE201C027E74005ABB49 /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE1F1C027E74005ABB49 /* AddProjectViewController.m */; };
-		A853FE231C0287BB005ABB49 /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE221C0287BB005ABB49 /* Project.m */; };
-		A853FE3D1C02C8D1005ABB49 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE2D1C02C8D1005ABB49 /* Admin.m */; };
-		A853FE431C02C8D1005ABB49 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE391C02C8D1005ABB49 /* Person.m */; };
-		A853FE461C02CB42005ABB49 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE451C02CB42005ABB49 /* Student.m */; };
-		A853FE491C02D5D3005ABB49 /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE481C02D5D3005ABB49 /* Professor.m */; };
-		A853FE4C1C03DA94005ABB49 /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */; };
+		05F3294A1C18F2A6008AB7EB /* RubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F328F81C18F2A6008AB7EB /* RubricViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3294B1C18F2A6008AB7EB /* RubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F328F81C18F2A6008AB7EB /* RubricViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3294C1C18F2A6008AB7EB /* RubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F328F81C18F2A6008AB7EB /* RubricViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3294D1C18F2A6008AB7EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F328FA1C18F2A6008AB7EB /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		05F3294E1C18F2A6008AB7EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F328FA1C18F2A6008AB7EB /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		05F3294F1C18F2A6008AB7EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F328FA1C18F2A6008AB7EB /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		05F329501C18F2A6008AB7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F328FC1C18F2A6008AB7EB /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F329511C18F2A6008AB7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F328FC1C18F2A6008AB7EB /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F329521C18F2A6008AB7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F328FC1C18F2A6008AB7EB /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F329531C18F2A6008AB7EB /* OralRubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F328FE1C18F2A6008AB7EB /* OralRubricViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329541C18F2A6008AB7EB /* OralRubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F328FE1C18F2A6008AB7EB /* OralRubricViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329551C18F2A6008AB7EB /* OralRubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F328FE1C18F2A6008AB7EB /* OralRubricViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329561C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329001C18F2A6008AB7EB /* FacultyTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329571C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329001C18F2A6008AB7EB /* FacultyTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329581C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329001C18F2A6008AB7EB /* FacultyTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329591C18F2A6008AB7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F329011C18F2A6008AB7EB /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		05F3295A1C18F2A6008AB7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F329011C18F2A6008AB7EB /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		05F3295B1C18F2A6008AB7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F329011C18F2A6008AB7EB /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		05F3295C1C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F329031C18F2A6008AB7EB /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F3295D1C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F329031C18F2A6008AB7EB /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F3295E1C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F329031C18F2A6008AB7EB /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F3295F1C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329041C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329601C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329041C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329611C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329041C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329621C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 05F329061C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		05F329631C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 05F329061C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		05F329641C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 05F329061C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		05F329651C18F2A6008AB7EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329071C18F2A6008AB7EB /* main.m */; settings = {ASSET_TAGS = (); }; };
+		05F329661C18F2A6008AB7EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329071C18F2A6008AB7EB /* main.m */; settings = {ASSET_TAGS = (); }; };
+		05F329671C18F2A6008AB7EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329071C18F2A6008AB7EB /* main.m */; settings = {ASSET_TAGS = (); }; };
+		05F329681C18F2A6008AB7EB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3290B1C18F2A6008AB7EB /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329691C18F2A6008AB7EB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3290B1C18F2A6008AB7EB /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3296A1C18F2A6008AB7EB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3290B1C18F2A6008AB7EB /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3296B1C18F2A6008AB7EB /* AdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3290D1C18F2A6008AB7EB /* AdminTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3296C1C18F2A6008AB7EB /* AdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3290D1C18F2A6008AB7EB /* AdminTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3296D1C18F2A6008AB7EB /* AdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3290D1C18F2A6008AB7EB /* AdminTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3296E1C18F2A6008AB7EB /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3290F1C18F2A6008AB7EB /* AddProjectViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3296F1C18F2A6008AB7EB /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3290F1C18F2A6008AB7EB /* AddProjectViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329701C18F2A6008AB7EB /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3290F1C18F2A6008AB7EB /* AddProjectViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329711C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329111C18F2A6008AB7EB /* StudentsListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329721C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329111C18F2A6008AB7EB /* StudentsListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329731C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329111C18F2A6008AB7EB /* StudentsListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329741C18F2A6008AB7EB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329131C18F2A6008AB7EB /* Person.m */; settings = {ASSET_TAGS = (); }; };
+		05F329751C18F2A6008AB7EB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329131C18F2A6008AB7EB /* Person.m */; settings = {ASSET_TAGS = (); }; };
+		05F329761C18F2A6008AB7EB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329131C18F2A6008AB7EB /* Person.m */; settings = {ASSET_TAGS = (); }; };
+		05F329771C18F2A6008AB7EB /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329151C18F2A6008AB7EB /* Professor.m */; settings = {ASSET_TAGS = (); }; };
+		05F329781C18F2A6008AB7EB /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329151C18F2A6008AB7EB /* Professor.m */; settings = {ASSET_TAGS = (); }; };
+		05F329791C18F2A6008AB7EB /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329151C18F2A6008AB7EB /* Professor.m */; settings = {ASSET_TAGS = (); }; };
+		05F3297A1C18F2A6008AB7EB /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329171C18F2A6008AB7EB /* Admin.m */; settings = {ASSET_TAGS = (); }; };
+		05F3297B1C18F2A6008AB7EB /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329171C18F2A6008AB7EB /* Admin.m */; settings = {ASSET_TAGS = (); }; };
+		05F3297C1C18F2A6008AB7EB /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329171C18F2A6008AB7EB /* Admin.m */; settings = {ASSET_TAGS = (); }; };
+		05F3297D1C18F2A6008AB7EB /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329191C18F2A6008AB7EB /* Project.m */; settings = {ASSET_TAGS = (); }; };
+		05F3297E1C18F2A6008AB7EB /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329191C18F2A6008AB7EB /* Project.m */; settings = {ASSET_TAGS = (); }; };
+		05F3297F1C18F2A6008AB7EB /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329191C18F2A6008AB7EB /* Project.m */; settings = {ASSET_TAGS = (); }; };
+		05F329801C18F2A6008AB7EB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3291B1C18F2A6008AB7EB /* Student.m */; settings = {ASSET_TAGS = (); }; };
+		05F329811C18F2A6008AB7EB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3291B1C18F2A6008AB7EB /* Student.m */; settings = {ASSET_TAGS = (); }; };
+		05F329821C18F2A6008AB7EB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3291B1C18F2A6008AB7EB /* Student.m */; settings = {ASSET_TAGS = (); }; };
+		05F329831C18F2A6008AB7EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3291E1C18F2A6008AB7EB /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		05F329841C18F2A6008AB7EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3291E1C18F2A6008AB7EB /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		05F329851C18F2A6008AB7EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3291E1C18F2A6008AB7EB /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		05F329861C18F2A6008AB7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F329201C18F2A6008AB7EB /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F329871C18F2A6008AB7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F329201C18F2A6008AB7EB /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F329881C18F2A6008AB7EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F329201C18F2A6008AB7EB /* Main.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F329891C18F2A6008AB7EB /* OralRubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329221C18F2A6008AB7EB /* OralRubricViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3298A1C18F2A6008AB7EB /* OralRubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329221C18F2A6008AB7EB /* OralRubricViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3298B1C18F2A6008AB7EB /* OralRubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329221C18F2A6008AB7EB /* OralRubricViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3298C1C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329241C18F2A6008AB7EB /* FacultyTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3298D1C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329241C18F2A6008AB7EB /* FacultyTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3298E1C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329241C18F2A6008AB7EB /* FacultyTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3298F1C18F2A6008AB7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F329251C18F2A6008AB7EB /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		05F329901C18F2A6008AB7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F329251C18F2A6008AB7EB /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		05F329911C18F2A6008AB7EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05F329251C18F2A6008AB7EB /* Assets.xcassets */; settings = {ASSET_TAGS = (); }; };
+		05F329921C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F329271C18F2A6008AB7EB /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F329931C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F329271C18F2A6008AB7EB /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F329941C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05F329271C18F2A6008AB7EB /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
+		05F329951C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329281C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329961C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329281C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329971C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329281C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329981C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 05F3292A1C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		05F329991C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 05F3292A1C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		05F3299A1C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 05F3292A1C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		05F3299B1C18F2A6008AB7EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3292B1C18F2A6008AB7EB /* main.m */; settings = {ASSET_TAGS = (); }; };
+		05F3299C1C18F2A6008AB7EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3292B1C18F2A6008AB7EB /* main.m */; settings = {ASSET_TAGS = (); }; };
+		05F3299D1C18F2A6008AB7EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3292B1C18F2A6008AB7EB /* main.m */; settings = {ASSET_TAGS = (); }; };
+		05F3299E1C18F2A6008AB7EB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3292F1C18F2A6008AB7EB /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F3299F1C18F2A6008AB7EB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3292F1C18F2A6008AB7EB /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329A01C18F2A6008AB7EB /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3292F1C18F2A6008AB7EB /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329A11C18F2A6008AB7EB /* AdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329311C18F2A6008AB7EB /* AdminTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329A21C18F2A6008AB7EB /* AdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329311C18F2A6008AB7EB /* AdminTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329A31C18F2A6008AB7EB /* AdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329311C18F2A6008AB7EB /* AdminTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329A41C18F2A6008AB7EB /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329331C18F2A6008AB7EB /* AddProjectViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329A51C18F2A6008AB7EB /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329331C18F2A6008AB7EB /* AddProjectViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329A61C18F2A6008AB7EB /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329331C18F2A6008AB7EB /* AddProjectViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329A71C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329351C18F2A6008AB7EB /* StudentsListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329A81C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329351C18F2A6008AB7EB /* StudentsListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329A91C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329351C18F2A6008AB7EB /* StudentsListTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		05F329AA1C18F2A6008AB7EB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329371C18F2A6008AB7EB /* Person.m */; settings = {ASSET_TAGS = (); }; };
+		05F329AB1C18F2A6008AB7EB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329371C18F2A6008AB7EB /* Person.m */; settings = {ASSET_TAGS = (); }; };
+		05F329AC1C18F2A6008AB7EB /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329371C18F2A6008AB7EB /* Person.m */; settings = {ASSET_TAGS = (); }; };
+		05F329AD1C18F2A6008AB7EB /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329391C18F2A6008AB7EB /* Professor.m */; settings = {ASSET_TAGS = (); }; };
+		05F329AE1C18F2A6008AB7EB /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329391C18F2A6008AB7EB /* Professor.m */; settings = {ASSET_TAGS = (); }; };
+		05F329AF1C18F2A6008AB7EB /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329391C18F2A6008AB7EB /* Professor.m */; settings = {ASSET_TAGS = (); }; };
+		05F329B01C18F2A6008AB7EB /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3293B1C18F2A6008AB7EB /* Admin.m */; settings = {ASSET_TAGS = (); }; };
+		05F329B11C18F2A6008AB7EB /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3293B1C18F2A6008AB7EB /* Admin.m */; settings = {ASSET_TAGS = (); }; };
+		05F329B21C18F2A6008AB7EB /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3293B1C18F2A6008AB7EB /* Admin.m */; settings = {ASSET_TAGS = (); }; };
+		05F329B31C18F2A6008AB7EB /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3293D1C18F2A6008AB7EB /* Project.m */; settings = {ASSET_TAGS = (); }; };
+		05F329B41C18F2A6008AB7EB /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3293D1C18F2A6008AB7EB /* Project.m */; settings = {ASSET_TAGS = (); }; };
+		05F329B51C18F2A6008AB7EB /* Project.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3293D1C18F2A6008AB7EB /* Project.m */; settings = {ASSET_TAGS = (); }; };
+		05F329B61C18F2A6008AB7EB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3293F1C18F2A6008AB7EB /* Student.m */; settings = {ASSET_TAGS = (); }; };
+		05F329B71C18F2A6008AB7EB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3293F1C18F2A6008AB7EB /* Student.m */; settings = {ASSET_TAGS = (); }; };
+		05F329B81C18F2A6008AB7EB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F3293F1C18F2A6008AB7EB /* Student.m */; settings = {ASSET_TAGS = (); }; };
+		05F329B91C18F2A6008AB7EB /* RubricGradingAppCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329401C18F2A6008AB7EB /* RubricGradingAppCDTests.m */; settings = {ASSET_TAGS = (); }; };
+		05F329BA1C18F2A6008AB7EB /* RubricGradingAppCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329401C18F2A6008AB7EB /* RubricGradingAppCDTests.m */; settings = {ASSET_TAGS = (); }; };
+		05F329BB1C18F2A6008AB7EB /* RubricGradingAppCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329401C18F2A6008AB7EB /* RubricGradingAppCDTests.m */; settings = {ASSET_TAGS = (); }; };
+		05F329BC1C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329411C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329BD1C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329411C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329BE1C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329411C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329BF1C18F2A6008AB7EB /* RubricGradingAppCDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329431C18F2A6008AB7EB /* RubricGradingAppCDUITests.m */; settings = {ASSET_TAGS = (); }; };
+		05F329C01C18F2A6008AB7EB /* RubricGradingAppCDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329431C18F2A6008AB7EB /* RubricGradingAppCDUITests.m */; settings = {ASSET_TAGS = (); }; };
+		05F329C11C18F2A6008AB7EB /* RubricGradingAppCDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05F329431C18F2A6008AB7EB /* RubricGradingAppCDUITests.m */; settings = {ASSET_TAGS = (); }; };
+		05F329C21C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329441C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329C31C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329441C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329C41C18F2A6008AB7EB /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 05F329441C18F2A6008AB7EB /* Info.plist */; settings = {ASSET_TAGS = (); }; };
+		05F329C51C18F2A6008AB7EB /* RubricGradingAppCD.app in Resources */ = {isa = PBXBuildFile; fileRef = 05F329461C18F2A6008AB7EB /* RubricGradingAppCD.app */; settings = {ASSET_TAGS = (); }; };
+		05F329C61C18F2A6008AB7EB /* RubricGradingAppCD.app in Resources */ = {isa = PBXBuildFile; fileRef = 05F329461C18F2A6008AB7EB /* RubricGradingAppCD.app */; settings = {ASSET_TAGS = (); }; };
+		05F329C71C18F2A6008AB7EB /* RubricGradingAppCD.app in Resources */ = {isa = PBXBuildFile; fileRef = 05F329461C18F2A6008AB7EB /* RubricGradingAppCD.app */; settings = {ASSET_TAGS = (); }; };
+		05F329C81C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 05F329471C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest */; settings = {ASSET_TAGS = (); }; };
+		05F329C91C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 05F329471C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest */; settings = {ASSET_TAGS = (); }; };
+		05F329CA1C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 05F329471C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest */; settings = {ASSET_TAGS = (); }; };
+		05F329CB1C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 05F329481C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest */; settings = {ASSET_TAGS = (); }; };
+		05F329CC1C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 05F329481C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest */; settings = {ASSET_TAGS = (); }; };
+		05F329CD1C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest in Resources */ = {isa = PBXBuildFile; fileRef = 05F329481C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		05F329D11C18F2A6008AB7EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05F328F41C18F2A6008AB7EB /* RubricGradingAppCD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A853FDDC1C01CE79005ABB49;
+			remoteInfo = RubricGradingAppCD;
+		};
+		05F329D31C18F2A6008AB7EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05F328F41C18F2A6008AB7EB /* RubricGradingAppCD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A853FDF81C01CE79005ABB49;
+			remoteInfo = RubricGradingAppCDTests;
+		};
+		05F329D51C18F2A6008AB7EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05F328F41C18F2A6008AB7EB /* RubricGradingAppCD.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A853FE031C01CE79005ABB49;
+			remoteInfo = RubricGradingAppCDUITests;
+		};
 		A853FDF91C01CE79005ABB49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A853FDD41C01CE79005ABB49 /* Project object */;
@@ -47,46 +180,81 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5C116FAE1C17BC9E00E634C7 /* OralRubricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OralRubricViewController.h; sourceTree = "<group>"; };
-		5C116FAF1C17BC9E00E634C7 /* OralRubricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OralRubricViewController.m; sourceTree = "<group>"; };
-		5CE96DE51C0E1037003ED05C /* FacultyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacultyTableViewController.h; sourceTree = "<group>"; };
-		5CE96DE61C0E1037003ED05C /* FacultyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacultyTableViewController.m; sourceTree = "<group>"; };
-		5CE96DE81C0E13C3003ED05C /* RubricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RubricViewController.h; path = RubricGradingAppCD/RubricViewController.h; sourceTree = "<group>"; };
-		5CE96DE91C0E13C3003ED05C /* RubricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RubricViewController.m; path = RubricGradingAppCD/RubricViewController.m; sourceTree = "<group>"; };
-		A853FDDC1C01CE79005ABB49 /* RubricGradingAppCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubricGradingAppCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A853FDE01C01CE79005ABB49 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A853FDE21C01CE79005ABB49 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A853FDE31C01CE79005ABB49 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A853FDE91C01CE79005ABB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		A853FDEC1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RubricGradingAppCD.xcdatamodel; sourceTree = "<group>"; };
-		A853FDEE1C01CE79005ABB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		A853FDF11C01CE79005ABB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A853FDF31C01CE79005ABB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A853FDF81C01CE79005ABB49 /* RubricGradingAppCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubricGradingAppCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A853FDFC1C01CE79005ABB49 /* RubricGradingAppCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubricGradingAppCDTests.m; sourceTree = "<group>"; };
-		A853FDFE1C01CE79005ABB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A853FE031C01CE79005ABB49 /* RubricGradingAppCDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubricGradingAppCDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A853FE071C01CE79005ABB49 /* RubricGradingAppCDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubricGradingAppCDUITests.m; sourceTree = "<group>"; };
-		A853FE091C01CE79005ABB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A853FE151C01D5BC005ABB49 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
-		A853FE161C01D5BC005ABB49 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		A853FE1B1C01D5F8005ABB49 /* AdminTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminTableViewController.h; sourceTree = "<group>"; };
-		A853FE1C1C01D5F8005ABB49 /* AdminTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminTableViewController.m; sourceTree = "<group>"; };
-		A853FE1E1C027E74005ABB49 /* AddProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddProjectViewController.h; sourceTree = "<group>"; };
-		A853FE1F1C027E74005ABB49 /* AddProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddProjectViewController.m; sourceTree = "<group>"; };
-		A853FE211C0287BB005ABB49 /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
-		A853FE221C0287BB005ABB49 /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
-		A853FE251C028EDE005ABB49 /* RubricGradingAppCD-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RubricGradingAppCD-Prefix.pch"; sourceTree = "<group>"; };
-		A853FE2C1C02C8D1005ABB49 /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Admin.h; path = Classes/Admin.h; sourceTree = "<group>"; };
-		A853FE2D1C02C8D1005ABB49 /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Admin.m; path = Classes/Admin.m; sourceTree = "<group>"; };
-		A853FE381C02C8D1005ABB49 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Classes/Person.h; sourceTree = "<group>"; };
-		A853FE391C02C8D1005ABB49 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Classes/Person.m; sourceTree = "<group>"; };
-		A853FE441C02CB42005ABB49 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
-		A853FE451C02CB42005ABB49 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
-		A853FE471C02D5D3005ABB49 /* Professor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Professor.h; sourceTree = "<group>"; };
-		A853FE481C02D5D3005ABB49 /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Professor.m; sourceTree = "<group>"; };
-		A853FE4A1C03DA94005ABB49 /* StudentsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsListTableViewController.h; sourceTree = "<group>"; };
-		A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsListTableViewController.m; sourceTree = "<group>"; };
+		05F328F41C18F2A6008AB7EB /* RubricGradingAppCD.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RubricGradingAppCD.xcodeproj; path = "/Users/gharat001/Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD.xcodeproj"; sourceTree = "<absolute>"; };
+		05F328F71C18F2A6008AB7EB /* RubricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RubricViewController.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/RubricViewController.h"; sourceTree = "<group>"; };
+		05F328F81C18F2A6008AB7EB /* RubricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RubricViewController.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/RubricViewController.m"; sourceTree = "<group>"; };
+		05F328F91C18F2A6008AB7EB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		05F328FA1C18F2A6008AB7EB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		05F328FB1C18F2A6008AB7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05F328FD1C18F2A6008AB7EB /* OralRubricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OralRubricViewController.h; sourceTree = "<group>"; };
+		05F328FE1C18F2A6008AB7EB /* OralRubricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OralRubricViewController.m; sourceTree = "<group>"; };
+		05F328FF1C18F2A6008AB7EB /* FacultyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacultyTableViewController.h; sourceTree = "<group>"; };
+		05F329001C18F2A6008AB7EB /* FacultyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacultyTableViewController.m; sourceTree = "<group>"; };
+		05F329011C18F2A6008AB7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		05F329021C18F2A6008AB7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05F329041C18F2A6008AB7EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F329051C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RubricGradingAppCD.xcdatamodel; sourceTree = "<group>"; };
+		05F329071C18F2A6008AB7EB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05F329081C18F2A6008AB7EB /* RubricGradingAppCD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RubricGradingAppCD-Prefix.pch"; sourceTree = "<group>"; };
+		05F3290A1C18F2A6008AB7EB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		05F3290B1C18F2A6008AB7EB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		05F3290C1C18F2A6008AB7EB /* AdminTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdminTableViewController.h; sourceTree = "<group>"; };
+		05F3290D1C18F2A6008AB7EB /* AdminTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminTableViewController.m; sourceTree = "<group>"; };
+		05F3290E1C18F2A6008AB7EB /* AddProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddProjectViewController.h; sourceTree = "<group>"; };
+		05F3290F1C18F2A6008AB7EB /* AddProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddProjectViewController.m; sourceTree = "<group>"; };
+		05F329101C18F2A6008AB7EB /* StudentsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsListTableViewController.h; sourceTree = "<group>"; };
+		05F329111C18F2A6008AB7EB /* StudentsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsListTableViewController.m; sourceTree = "<group>"; };
+		05F329121C18F2A6008AB7EB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = Classes/Person.h; sourceTree = "<group>"; };
+		05F329131C18F2A6008AB7EB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = Classes/Person.m; sourceTree = "<group>"; };
+		05F329141C18F2A6008AB7EB /* Professor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Professor.h; sourceTree = "<group>"; };
+		05F329151C18F2A6008AB7EB /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Professor.m; sourceTree = "<group>"; };
+		05F329161C18F2A6008AB7EB /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Admin.h; path = Classes/Admin.h; sourceTree = "<group>"; };
+		05F329171C18F2A6008AB7EB /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Admin.m; path = Classes/Admin.m; sourceTree = "<group>"; };
+		05F329181C18F2A6008AB7EB /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Project.h; sourceTree = "<group>"; };
+		05F329191C18F2A6008AB7EB /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Project.m; sourceTree = "<group>"; };
+		05F3291A1C18F2A6008AB7EB /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		05F3291B1C18F2A6008AB7EB /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		05F3291D1C18F2A6008AB7EB /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/AppDelegate.h"; sourceTree = "<group>"; };
+		05F3291E1C18F2A6008AB7EB /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/AppDelegate.m"; sourceTree = "<group>"; };
+		05F3291F1C18F2A6008AB7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		05F329211C18F2A6008AB7EB /* OralRubricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OralRubricViewController.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/OralRubricViewController.h"; sourceTree = "<group>"; };
+		05F329221C18F2A6008AB7EB /* OralRubricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OralRubricViewController.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/OralRubricViewController.m"; sourceTree = "<group>"; };
+		05F329231C18F2A6008AB7EB /* FacultyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacultyTableViewController.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/FacultyTableViewController.h"; sourceTree = "<group>"; };
+		05F329241C18F2A6008AB7EB /* FacultyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacultyTableViewController.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/FacultyTableViewController.m"; sourceTree = "<group>"; };
+		05F329251C18F2A6008AB7EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Assets.xcassets"; sourceTree = "<group>"; };
+		05F329261C18F2A6008AB7EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		05F329281C18F2A6008AB7EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Info.plist"; sourceTree = "<group>"; };
+		05F329291C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RubricGradingAppCD.xcdatamodel; sourceTree = "<group>"; };
+		05F3292B1C18F2A6008AB7EB /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		05F3292C1C18F2A6008AB7EB /* RubricGradingAppCD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RubricGradingAppCD-Prefix.pch"; sourceTree = "<group>"; };
+		05F3292E1C18F2A6008AB7EB /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/LoginViewController.h"; sourceTree = "<group>"; };
+		05F3292F1C18F2A6008AB7EB /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/LoginViewController.m"; sourceTree = "<group>"; };
+		05F329301C18F2A6008AB7EB /* AdminTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AdminTableViewController.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/AdminTableViewController.h"; sourceTree = "<group>"; };
+		05F329311C18F2A6008AB7EB /* AdminTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AdminTableViewController.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/AdminTableViewController.m"; sourceTree = "<group>"; };
+		05F329321C18F2A6008AB7EB /* AddProjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddProjectViewController.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/AddProjectViewController.h"; sourceTree = "<group>"; };
+		05F329331C18F2A6008AB7EB /* AddProjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddProjectViewController.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/AddProjectViewController.m"; sourceTree = "<group>"; };
+		05F329341C18F2A6008AB7EB /* StudentsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudentsListTableViewController.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/StudentsListTableViewController.h"; sourceTree = "<group>"; };
+		05F329351C18F2A6008AB7EB /* StudentsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudentsListTableViewController.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/StudentsListTableViewController.m"; sourceTree = "<group>"; };
+		05F329361C18F2A6008AB7EB /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Classes/Person.h"; sourceTree = "<group>"; };
+		05F329371C18F2A6008AB7EB /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Classes/Person.m"; sourceTree = "<group>"; };
+		05F329381C18F2A6008AB7EB /* Professor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Professor.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Professor.h"; sourceTree = "<group>"; };
+		05F329391C18F2A6008AB7EB /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Professor.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Professor.m"; sourceTree = "<group>"; };
+		05F3293A1C18F2A6008AB7EB /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Admin.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Classes/Admin.h"; sourceTree = "<group>"; };
+		05F3293B1C18F2A6008AB7EB /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Admin.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Classes/Admin.m"; sourceTree = "<group>"; };
+		05F3293C1C18F2A6008AB7EB /* Project.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Project.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Project.h"; sourceTree = "<group>"; };
+		05F3293D1C18F2A6008AB7EB /* Project.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Project.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Project.m"; sourceTree = "<group>"; };
+		05F3293E1C18F2A6008AB7EB /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Student.h; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Student.h"; sourceTree = "<group>"; };
+		05F3293F1C18F2A6008AB7EB /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Student.m; path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/Student.m"; sourceTree = "<group>"; };
+		05F329401C18F2A6008AB7EB /* RubricGradingAppCDTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubricGradingAppCDTests.m; sourceTree = "<group>"; };
+		05F329411C18F2A6008AB7EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F329431C18F2A6008AB7EB /* RubricGradingAppCDUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubricGradingAppCDUITests.m; sourceTree = "<group>"; };
+		05F329441C18F2A6008AB7EB /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05F329461C18F2A6008AB7EB /* RubricGradingAppCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = RubricGradingAppCD.app; sourceTree = SOURCE_ROOT; };
+		05F329471C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = RubricGradingAppCDTests.xctest; sourceTree = SOURCE_ROOT; };
+		05F329481C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = RubricGradingAppCDUITests.xctest; sourceTree = SOURCE_ROOT; };
+		A853FDDC1C01CE79005ABB49 /* RubricGradingAppCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = RubricGradingAppCD.app; path = "/Users/gharat001/Documents/RubricGradinApp-CoreData/build/Debug-iphoneos/RubricGradingAppCD.app"; sourceTree = "<absolute>"; };
+		A853FDF81C01CE79005ABB49 /* RubricGradingAppCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RubricGradingAppCDTests.xctest; path = "/Users/gharat001/Documents/RubricGradinApp-CoreData/build/Debug-iphoneos/RubricGradingAppCDTests.xctest"; sourceTree = "<absolute>"; };
+		A853FE031C01CE79005ABB49 /* RubricGradingAppCDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = RubricGradingAppCDUITests.xctest; path = "/Users/gharat001/Documents/RubricGradinApp-CoreData/build/Debug-iphoneos/RubricGradingAppCDUITests.xctest"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,90 +282,145 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A853FDD31C01CE79005ABB49 = {
+		05F328F51C18F2A6008AB7EB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5CE96DE81C0E13C3003ED05C /* RubricViewController.h */,
-				5CE96DE91C0E13C3003ED05C /* RubricViewController.m */,
-				A853FDDE1C01CE79005ABB49 /* RubricGradingAppCD */,
-				A853FDFB1C01CE79005ABB49 /* RubricGradingAppCDTests */,
-				A853FE061C01CE79005ABB49 /* RubricGradingAppCDUITests */,
-				A853FDDD1C01CE79005ABB49 /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		A853FDDD1C01CE79005ABB49 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A853FDDC1C01CE79005ABB49 /* RubricGradingAppCD.app */,
-				A853FDF81C01CE79005ABB49 /* RubricGradingAppCDTests.xctest */,
-				A853FE031C01CE79005ABB49 /* RubricGradingAppCDUITests.xctest */,
+				05F329D21C18F2A6008AB7EB /* RubricGradingAppCD.app */,
+				05F329D41C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest */,
+				05F329D61C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A853FDDE1C01CE79005ABB49 /* RubricGradingAppCD */ = {
+		05F329091C18F2A6008AB7EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A853FDE21C01CE79005ABB49 /* AppDelegate.h */,
-				A853FDE31C01CE79005ABB49 /* AppDelegate.m */,
-				A853FDE81C01CE79005ABB49 /* Main.storyboard */,
-				5C116FAE1C17BC9E00E634C7 /* OralRubricViewController.h */,
-				5C116FAF1C17BC9E00E634C7 /* OralRubricViewController.m */,
-				5CE96DE51C0E1037003ED05C /* FacultyTableViewController.h */,
-				5CE96DE61C0E1037003ED05C /* FacultyTableViewController.m */,
-				A853FDEE1C01CE79005ABB49 /* Assets.xcassets */,
-				A853FDF01C01CE79005ABB49 /* LaunchScreen.storyboard */,
-				A853FDF31C01CE79005ABB49 /* Info.plist */,
-				A853FDEB1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld */,
-				A853FDDF1C01CE79005ABB49 /* Supporting Files */,
-				A853FE151C01D5BC005ABB49 /* LoginViewController.h */,
-				A853FE161C01D5BC005ABB49 /* LoginViewController.m */,
-				A853FE1B1C01D5F8005ABB49 /* AdminTableViewController.h */,
-				A853FE1C1C01D5F8005ABB49 /* AdminTableViewController.m */,
-				A853FE1E1C027E74005ABB49 /* AddProjectViewController.h */,
-				A853FE1F1C027E74005ABB49 /* AddProjectViewController.m */,
-				A853FE4A1C03DA94005ABB49 /* StudentsListTableViewController.h */,
-				A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */,
-				A853FE381C02C8D1005ABB49 /* Person.h */,
-				A853FE391C02C8D1005ABB49 /* Person.m */,
-				A853FE471C02D5D3005ABB49 /* Professor.h */,
-				A853FE481C02D5D3005ABB49 /* Professor.m */,
-				A853FE2C1C02C8D1005ABB49 /* Admin.h */,
-				A853FE2D1C02C8D1005ABB49 /* Admin.m */,
-				A853FE211C0287BB005ABB49 /* Project.h */,
-				A853FE221C0287BB005ABB49 /* Project.m */,
-				A853FE441C02CB42005ABB49 /* Student.h */,
-				A853FE451C02CB42005ABB49 /* Student.m */,
-			);
-			path = RubricGradingAppCD;
-			sourceTree = "<group>";
-		};
-		A853FDDF1C01CE79005ABB49 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A853FDE01C01CE79005ABB49 /* main.m */,
-				A853FE251C028EDE005ABB49 /* RubricGradingAppCD-Prefix.pch */,
+				05F329071C18F2A6008AB7EB /* main.m */,
+				05F329081C18F2A6008AB7EB /* RubricGradingAppCD-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A853FDFB1C01CE79005ABB49 /* RubricGradingAppCDTests */ = {
+		05F3291C1C18F2A6008AB7EB /* RubricGradingAppCD */ = {
 			isa = PBXGroup;
 			children = (
-				A853FDFC1C01CE79005ABB49 /* RubricGradingAppCDTests.m */,
-				A853FDFE1C01CE79005ABB49 /* Info.plist */,
+				05F328F91C18F2A6008AB7EB /* AppDelegate.h */,
+				05F328FA1C18F2A6008AB7EB /* AppDelegate.m */,
+				05F328FC1C18F2A6008AB7EB /* Main.storyboard */,
+				05F328FD1C18F2A6008AB7EB /* OralRubricViewController.h */,
+				05F328FE1C18F2A6008AB7EB /* OralRubricViewController.m */,
+				05F328FF1C18F2A6008AB7EB /* FacultyTableViewController.h */,
+				05F329001C18F2A6008AB7EB /* FacultyTableViewController.m */,
+				05F329011C18F2A6008AB7EB /* Assets.xcassets */,
+				05F329031C18F2A6008AB7EB /* LaunchScreen.storyboard */,
+				05F329041C18F2A6008AB7EB /* Info.plist */,
+				05F329061C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld */,
+				05F329091C18F2A6008AB7EB /* Supporting Files */,
+				05F3290A1C18F2A6008AB7EB /* LoginViewController.h */,
+				05F3290B1C18F2A6008AB7EB /* LoginViewController.m */,
+				05F3290C1C18F2A6008AB7EB /* AdminTableViewController.h */,
+				05F3290D1C18F2A6008AB7EB /* AdminTableViewController.m */,
+				05F3290E1C18F2A6008AB7EB /* AddProjectViewController.h */,
+				05F3290F1C18F2A6008AB7EB /* AddProjectViewController.m */,
+				05F329101C18F2A6008AB7EB /* StudentsListTableViewController.h */,
+				05F329111C18F2A6008AB7EB /* StudentsListTableViewController.m */,
+				05F329121C18F2A6008AB7EB /* Person.h */,
+				05F329131C18F2A6008AB7EB /* Person.m */,
+				05F329141C18F2A6008AB7EB /* Professor.h */,
+				05F329151C18F2A6008AB7EB /* Professor.m */,
+				05F329161C18F2A6008AB7EB /* Admin.h */,
+				05F329171C18F2A6008AB7EB /* Admin.m */,
+				05F329181C18F2A6008AB7EB /* Project.h */,
+				05F329191C18F2A6008AB7EB /* Project.m */,
+				05F3291A1C18F2A6008AB7EB /* Student.h */,
+				05F3291B1C18F2A6008AB7EB /* Student.m */,
 			);
-			path = RubricGradingAppCDTests;
+			name = RubricGradingAppCD;
+			path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD";
 			sourceTree = "<group>";
 		};
-		A853FE061C01CE79005ABB49 /* RubricGradingAppCDUITests */ = {
+		05F3292D1C18F2A6008AB7EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A853FE071C01CE79005ABB49 /* RubricGradingAppCDUITests.m */,
-				A853FE091C01CE79005ABB49 /* Info.plist */,
+				05F3292B1C18F2A6008AB7EB /* main.m */,
+				05F3292C1C18F2A6008AB7EB /* RubricGradingAppCD-Prefix.pch */,
 			);
-			path = RubricGradingAppCDUITests;
+			name = "Supporting Files";
+			path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD";
+			sourceTree = "<group>";
+		};
+		05F329421C18F2A6008AB7EB /* RubricGradingAppCDTests */ = {
+			isa = PBXGroup;
+			children = (
+				05F329401C18F2A6008AB7EB /* RubricGradingAppCDTests.m */,
+				05F329411C18F2A6008AB7EB /* Info.plist */,
+			);
+			name = RubricGradingAppCDTests;
+			path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCDTests";
+			sourceTree = "<group>";
+		};
+		05F329451C18F2A6008AB7EB /* RubricGradingAppCDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				05F329431C18F2A6008AB7EB /* RubricGradingAppCDUITests.m */,
+				05F329441C18F2A6008AB7EB /* Info.plist */,
+			);
+			name = RubricGradingAppCDUITests;
+			path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCDUITests";
+			sourceTree = "<group>";
+		};
+		05F329491C18F2A6008AB7EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05F329461C18F2A6008AB7EB /* RubricGradingAppCD.app */,
+				05F329471C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest */,
+				05F329481C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest */,
+			);
+			name = Products;
+			path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch";
+			sourceTree = "<group>";
+		};
+		A853FDD31C01CE79005ABB49 = {
+			isa = PBXGroup;
+			children = (
+				05F328F41C18F2A6008AB7EB /* RubricGradingAppCD.xcodeproj */,
+				05F328F71C18F2A6008AB7EB /* RubricViewController.h */,
+				05F328F81C18F2A6008AB7EB /* RubricViewController.m */,
+				05F3291C1C18F2A6008AB7EB /* RubricGradingAppCD */,
+				05F3291D1C18F2A6008AB7EB /* AppDelegate.h */,
+				05F3291E1C18F2A6008AB7EB /* AppDelegate.m */,
+				05F329201C18F2A6008AB7EB /* Main.storyboard */,
+				05F329211C18F2A6008AB7EB /* OralRubricViewController.h */,
+				05F329221C18F2A6008AB7EB /* OralRubricViewController.m */,
+				05F329231C18F2A6008AB7EB /* FacultyTableViewController.h */,
+				05F329241C18F2A6008AB7EB /* FacultyTableViewController.m */,
+				05F329251C18F2A6008AB7EB /* Assets.xcassets */,
+				05F329271C18F2A6008AB7EB /* LaunchScreen.storyboard */,
+				05F329281C18F2A6008AB7EB /* Info.plist */,
+				05F3292A1C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld */,
+				05F3292D1C18F2A6008AB7EB /* Supporting Files */,
+				05F3292E1C18F2A6008AB7EB /* LoginViewController.h */,
+				05F3292F1C18F2A6008AB7EB /* LoginViewController.m */,
+				05F329301C18F2A6008AB7EB /* AdminTableViewController.h */,
+				05F329311C18F2A6008AB7EB /* AdminTableViewController.m */,
+				05F329321C18F2A6008AB7EB /* AddProjectViewController.h */,
+				05F329331C18F2A6008AB7EB /* AddProjectViewController.m */,
+				05F329341C18F2A6008AB7EB /* StudentsListTableViewController.h */,
+				05F329351C18F2A6008AB7EB /* StudentsListTableViewController.m */,
+				05F329361C18F2A6008AB7EB /* Person.h */,
+				05F329371C18F2A6008AB7EB /* Person.m */,
+				05F329381C18F2A6008AB7EB /* Professor.h */,
+				05F329391C18F2A6008AB7EB /* Professor.m */,
+				05F3293A1C18F2A6008AB7EB /* Admin.h */,
+				05F3293B1C18F2A6008AB7EB /* Admin.m */,
+				05F3293C1C18F2A6008AB7EB /* Project.h */,
+				05F3293D1C18F2A6008AB7EB /* Project.m */,
+				05F3293E1C18F2A6008AB7EB /* Student.h */,
+				05F3293F1C18F2A6008AB7EB /* Student.m */,
+				05F329421C18F2A6008AB7EB /* RubricGradingAppCDTests */,
+				05F329451C18F2A6008AB7EB /* RubricGradingAppCDUITests */,
+				05F329491C18F2A6008AB7EB /* Products */,
+			);
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,8 +513,14 @@
 				Base,
 			);
 			mainGroup = A853FDD31C01CE79005ABB49;
-			productRefGroup = A853FDDD1C01CE79005ABB49 /* Products */;
+			productRefGroup = A853FDD31C01CE79005ABB49;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 05F328F51C18F2A6008AB7EB /* Products */;
+					ProjectRef = 05F328F41C18F2A6008AB7EB /* RubricGradingAppCD.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A853FDDB1C01CE79005ABB49 /* RubricGradingAppCD */,
@@ -301,14 +530,50 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		05F329D21C18F2A6008AB7EB /* RubricGradingAppCD.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = RubricGradingAppCD.app;
+			remoteRef = 05F329D11C18F2A6008AB7EB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		05F329D41C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RubricGradingAppCDTests.xctest;
+			remoteRef = 05F329D31C18F2A6008AB7EB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		05F329D61C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RubricGradingAppCDUITests.xctest;
+			remoteRef = 05F329D51C18F2A6008AB7EB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		A853FDDA1C01CE79005ABB49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A853FDF21C01CE79005ABB49 /* LaunchScreen.storyboard in Resources */,
-				A853FDEF1C01CE79005ABB49 /* Assets.xcassets in Resources */,
-				A853FDEA1C01CE79005ABB49 /* Main.storyboard in Resources */,
+				05F329C51C18F2A6008AB7EB /* RubricGradingAppCD.app in Resources */,
+				05F329621C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */,
+				05F329981C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */,
+				05F3298F1C18F2A6008AB7EB /* Assets.xcassets in Resources */,
+				05F329BC1C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F3295C1C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */,
+				05F329C81C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest in Resources */,
+				05F329C21C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F329501C18F2A6008AB7EB /* Main.storyboard in Resources */,
+				05F329861C18F2A6008AB7EB /* Main.storyboard in Resources */,
+				05F329951C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F329591C18F2A6008AB7EB /* Assets.xcassets in Resources */,
+				05F329921C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */,
+				05F329CB1C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest in Resources */,
+				05F3295F1C18F2A6008AB7EB /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,6 +581,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F329601C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F329931C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */,
+				05F329961C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F3295D1C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */,
+				05F3295A1C18F2A6008AB7EB /* Assets.xcassets in Resources */,
+				05F329C91C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest in Resources */,
+				05F329871C18F2A6008AB7EB /* Main.storyboard in Resources */,
+				05F329CC1C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest in Resources */,
+				05F329901C18F2A6008AB7EB /* Assets.xcassets in Resources */,
+				05F329631C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */,
+				05F329C31C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F329BD1C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F329991C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */,
+				05F329C61C18F2A6008AB7EB /* RubricGradingAppCD.app in Resources */,
+				05F329511C18F2A6008AB7EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +603,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05F329611C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F329941C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */,
+				05F329971C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F3295E1C18F2A6008AB7EB /* LaunchScreen.storyboard in Resources */,
+				05F3295B1C18F2A6008AB7EB /* Assets.xcassets in Resources */,
+				05F329CA1C18F2A6008AB7EB /* RubricGradingAppCDTests.xctest in Resources */,
+				05F329881C18F2A6008AB7EB /* Main.storyboard in Resources */,
+				05F329CD1C18F2A6008AB7EB /* RubricGradingAppCDUITests.xctest in Resources */,
+				05F329911C18F2A6008AB7EB /* Assets.xcassets in Resources */,
+				05F329641C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */,
+				05F329C41C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F329BE1C18F2A6008AB7EB /* Info.plist in Resources */,
+				05F3299A1C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld in Resources */,
+				05F329C71C18F2A6008AB7EB /* RubricGradingAppCD.app in Resources */,
+				05F329521C18F2A6008AB7EB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,21 +628,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A853FE201C027E74005ABB49 /* AddProjectViewController.m in Sources */,
-				5CE96DE71C0E1037003ED05C /* FacultyTableViewController.m in Sources */,
-				A853FE491C02D5D3005ABB49 /* Professor.m in Sources */,
-				A853FE1D1C01D5F8005ABB49 /* AdminTableViewController.m in Sources */,
-				A853FE3D1C02C8D1005ABB49 /* Admin.m in Sources */,
-				5C116FB01C17BC9E00E634C7 /* OralRubricViewController.m in Sources */,
-				A853FE431C02C8D1005ABB49 /* Person.m in Sources */,
-				A853FE231C0287BB005ABB49 /* Project.m in Sources */,
-				A853FDE41C01CE79005ABB49 /* AppDelegate.m in Sources */,
-				A853FE4C1C03DA94005ABB49 /* StudentsListTableViewController.m in Sources */,
-				A853FE461C02CB42005ABB49 /* Student.m in Sources */,
-				A853FDED1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld in Sources */,
-				A853FDE11C01CE79005ABB49 /* main.m in Sources */,
-				A853FE171C01D5BC005ABB49 /* LoginViewController.m in Sources */,
-				5CE96DEA1C0E13C3003ED05C /* RubricViewController.m in Sources */,
+				05F329AA1C18F2A6008AB7EB /* Person.m in Sources */,
+				05F3297A1C18F2A6008AB7EB /* Admin.m in Sources */,
+				05F3296B1C18F2A6008AB7EB /* AdminTableViewController.m in Sources */,
+				05F329BF1C18F2A6008AB7EB /* RubricGradingAppCDUITests.m in Sources */,
+				05F329A71C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */,
+				05F329B61C18F2A6008AB7EB /* Student.m in Sources */,
+				05F3294A1C18F2A6008AB7EB /* RubricViewController.m in Sources */,
+				05F329771C18F2A6008AB7EB /* Professor.m in Sources */,
+				05F329B31C18F2A6008AB7EB /* Project.m in Sources */,
+				05F329891C18F2A6008AB7EB /* OralRubricViewController.m in Sources */,
+				05F329651C18F2A6008AB7EB /* main.m in Sources */,
+				05F329831C18F2A6008AB7EB /* AppDelegate.m in Sources */,
+				05F329A41C18F2A6008AB7EB /* AddProjectViewController.m in Sources */,
+				05F329741C18F2A6008AB7EB /* Person.m in Sources */,
+				05F3296E1C18F2A6008AB7EB /* AddProjectViewController.m in Sources */,
+				05F329681C18F2A6008AB7EB /* LoginViewController.m in Sources */,
+				05F329AD1C18F2A6008AB7EB /* Professor.m in Sources */,
+				05F329531C18F2A6008AB7EB /* OralRubricViewController.m in Sources */,
+				05F3297D1C18F2A6008AB7EB /* Project.m in Sources */,
+				05F3298C1C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */,
+				05F3299E1C18F2A6008AB7EB /* LoginViewController.m in Sources */,
+				05F329B91C18F2A6008AB7EB /* RubricGradingAppCDTests.m in Sources */,
+				05F329711C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */,
+				05F329A11C18F2A6008AB7EB /* AdminTableViewController.m in Sources */,
+				05F3294D1C18F2A6008AB7EB /* AppDelegate.m in Sources */,
+				05F329801C18F2A6008AB7EB /* Student.m in Sources */,
+				05F329B01C18F2A6008AB7EB /* Admin.m in Sources */,
+				05F329561C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */,
+				05F3299B1C18F2A6008AB7EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +664,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A853FDFD1C01CE79005ABB49 /* RubricGradingAppCDTests.m in Sources */,
+				05F3298A1C18F2A6008AB7EB /* OralRubricViewController.m in Sources */,
+				05F3297B1C18F2A6008AB7EB /* Admin.m in Sources */,
+				05F329811C18F2A6008AB7EB /* Student.m in Sources */,
+				05F3299F1C18F2A6008AB7EB /* LoginViewController.m in Sources */,
+				05F329781C18F2A6008AB7EB /* Professor.m in Sources */,
+				05F329841C18F2A6008AB7EB /* AppDelegate.m in Sources */,
+				05F329A21C18F2A6008AB7EB /* AdminTableViewController.m in Sources */,
+				05F329A81C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */,
+				05F329A51C18F2A6008AB7EB /* AddProjectViewController.m in Sources */,
+				05F329541C18F2A6008AB7EB /* OralRubricViewController.m in Sources */,
+				05F329B71C18F2A6008AB7EB /* Student.m in Sources */,
+				05F329AE1C18F2A6008AB7EB /* Professor.m in Sources */,
+				05F329B41C18F2A6008AB7EB /* Project.m in Sources */,
+				05F329751C18F2A6008AB7EB /* Person.m in Sources */,
+				05F329B11C18F2A6008AB7EB /* Admin.m in Sources */,
+				05F3299C1C18F2A6008AB7EB /* main.m in Sources */,
+				05F3297E1C18F2A6008AB7EB /* Project.m in Sources */,
+				05F3294B1C18F2A6008AB7EB /* RubricViewController.m in Sources */,
+				05F3298D1C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */,
+				05F3294E1C18F2A6008AB7EB /* AppDelegate.m in Sources */,
+				05F329691C18F2A6008AB7EB /* LoginViewController.m in Sources */,
+				05F329BA1C18F2A6008AB7EB /* RubricGradingAppCDTests.m in Sources */,
+				05F329AB1C18F2A6008AB7EB /* Person.m in Sources */,
+				05F329C01C18F2A6008AB7EB /* RubricGradingAppCDUITests.m in Sources */,
+				05F329721C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */,
+				05F3296C1C18F2A6008AB7EB /* AdminTableViewController.m in Sources */,
+				05F329661C18F2A6008AB7EB /* main.m in Sources */,
+				05F3296F1C18F2A6008AB7EB /* AddProjectViewController.m in Sources */,
+				05F329571C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +700,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A853FE081C01CE79005ABB49 /* RubricGradingAppCDUITests.m in Sources */,
+				05F3298B1C18F2A6008AB7EB /* OralRubricViewController.m in Sources */,
+				05F3297C1C18F2A6008AB7EB /* Admin.m in Sources */,
+				05F329821C18F2A6008AB7EB /* Student.m in Sources */,
+				05F329A01C18F2A6008AB7EB /* LoginViewController.m in Sources */,
+				05F329791C18F2A6008AB7EB /* Professor.m in Sources */,
+				05F329851C18F2A6008AB7EB /* AppDelegate.m in Sources */,
+				05F329A31C18F2A6008AB7EB /* AdminTableViewController.m in Sources */,
+				05F329A91C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */,
+				05F329A61C18F2A6008AB7EB /* AddProjectViewController.m in Sources */,
+				05F329551C18F2A6008AB7EB /* OralRubricViewController.m in Sources */,
+				05F329B81C18F2A6008AB7EB /* Student.m in Sources */,
+				05F329AF1C18F2A6008AB7EB /* Professor.m in Sources */,
+				05F329B51C18F2A6008AB7EB /* Project.m in Sources */,
+				05F329761C18F2A6008AB7EB /* Person.m in Sources */,
+				05F329B21C18F2A6008AB7EB /* Admin.m in Sources */,
+				05F3299D1C18F2A6008AB7EB /* main.m in Sources */,
+				05F3297F1C18F2A6008AB7EB /* Project.m in Sources */,
+				05F3294C1C18F2A6008AB7EB /* RubricViewController.m in Sources */,
+				05F3298E1C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */,
+				05F3294F1C18F2A6008AB7EB /* AppDelegate.m in Sources */,
+				05F3296A1C18F2A6008AB7EB /* LoginViewController.m in Sources */,
+				05F329BB1C18F2A6008AB7EB /* RubricGradingAppCDTests.m in Sources */,
+				05F329AC1C18F2A6008AB7EB /* Person.m in Sources */,
+				05F329C11C18F2A6008AB7EB /* RubricGradingAppCDUITests.m in Sources */,
+				05F329731C18F2A6008AB7EB /* StudentsListTableViewController.m in Sources */,
+				05F3296D1C18F2A6008AB7EB /* AdminTableViewController.m in Sources */,
+				05F329671C18F2A6008AB7EB /* main.m in Sources */,
+				05F329701C18F2A6008AB7EB /* AddProjectViewController.m in Sources */,
+				05F329581C18F2A6008AB7EB /* FacultyTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,20 +748,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A853FDE81C01CE79005ABB49 /* Main.storyboard */ = {
+		05F328FC1C18F2A6008AB7EB /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A853FDE91C01CE79005ABB49 /* Base */,
+				05F328FB1C18F2A6008AB7EB /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		A853FDF01C01CE79005ABB49 /* LaunchScreen.storyboard */ = {
+		05F329031C18F2A6008AB7EB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A853FDF11C01CE79005ABB49 /* Base */,
+				05F329021C18F2A6008AB7EB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		05F329201C18F2A6008AB7EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05F3291F1C18F2A6008AB7EB /* Base */,
+			);
+			name = Main.storyboard;
+			path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD";
+			sourceTree = "<group>";
+		};
+		05F329271C18F2A6008AB7EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				05F329261C18F2A6008AB7EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -596,15 +979,24 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		A853FDEB1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld */ = {
+		05F329061C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				A853FDEC1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodel */,
+				05F329051C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodel */,
 			);
-			currentVersion = A853FDEC1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodel */;
+			currentVersion = 05F329051C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodel */;
 			path = RubricGradingAppCD.xcdatamodeld;
 			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
+		};
+		05F3292A1C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				05F329291C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodel */,
+			);
+			currentVersion = 05F329291C18F2A6008AB7EB /* RubricGradingAppCD.xcdatamodel */;
+			name = RubricGradingAppCD.xcdatamodeld;
+			path = "../../Desktop/RubricGradinApp-CoreData-MH-Grading-branch/RubricGradingAppCD/RubricGradingAppCD.xcdatamodeld";
+			sourceTree = "<group>";
 		};
 /* End XCVersionGroup section */
 	};
