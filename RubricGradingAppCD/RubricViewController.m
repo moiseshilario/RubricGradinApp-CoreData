@@ -99,13 +99,18 @@
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+   
     
-    p1 = 5 * 0.25;
-    p2 = 5 * 0.05;
-    p3 = 5 * 0.20;
-    p4 = 5 * 0.20;
-    p5 = 5 * 0.15;
-    p6 = 5 * 0.15;
+    
+    if (pickerView) {
+        
+   
+//    p1 = 5 * 0.25;
+//    p2 = 5 * 0.05;
+//    p3 = 5 * 0.20;
+//    p4 = 5 * 0.20;
+//    p5 = 5 * 0.15;
+//    p6 = 5 * 0.15;
     
     if (pickerView == self.pickerOverallProduct) {
         
@@ -286,7 +291,7 @@
     
            // to convert the sumation to percentage
     
-    
+    }
 }
 - (IBAction)Total:(id)sender {
     sum = p1+p2+p3+p4+p5+p6;

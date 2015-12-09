@@ -125,14 +125,16 @@
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     
+    if (pickerView) {
+        
     
-    pl1 = 5 * 0.10;
-    pl2 = 5 * 0.05;
-    pl3 = 5 * 0.05;
-    pl4 = 5 * 0.60;
-    pl5 = 5 * 0.05;
-    pl6 = 5 * 0.05;
-    pl7 = 5 * 0.10;
+//    pl1 = 5 * 0.10;
+//    pl2 = 5 * 0.05;
+//    pl3 = 5 * 0.05;
+//    pl4 = 5 * 0.60;
+//    pl5 = 5 * 0.05;
+//    pl6 = 5 * 0.05;
+//    pl7 = 5 * 0.10;
     if (pickerView == self.pickerOrganization) {
         
         switch (row) {
@@ -343,7 +345,7 @@
         
     }
  
-    
+    }
 }
 
 - (IBAction)oralSumation:(id)sender {
