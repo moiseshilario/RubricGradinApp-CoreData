@@ -662,7 +662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZK-4b-ct3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4198" y="3074"/>
+            <point key="canvasLocation" x="4263" y="3064"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qgw-g8-teE">
@@ -903,17 +903,11 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="oralTotalGrading" destination="Z30-U5-7M2" id="oBC-Tt-K8q"/>
-                        <outlet property="peckerWrintingPro" destination="5AI-E1-h2V" id="KSh-Nr-foY"/>
                         <outlet property="pickerAppearance" destination="5AI-E1-h2V" id="YIP-R3-TWz"/>
                         <outlet property="pickerCommunication" destination="W8n-rN-zDl" id="i0Y-xg-ESH"/>
                         <outlet property="pickerContent" destination="d7b-V2-wWF" id="5CY-H3-WMq"/>
-                        <outlet property="pickerContentAnalysis" destination="DPi-lh-CIX" id="qzi-jf-w6I"/>
-                        <outlet property="pickerDepthAnalysis" destination="W8n-rN-zDl" id="xCr-AV-KJO"/>
-                        <outlet property="pickerDepthContent" destination="d7b-V2-wWF" id="8HS-4a-n6x"/>
                         <outlet property="pickerGrammar" destination="NjX-2x-nDF" id="vS5-9h-Pin"/>
                         <outlet property="pickerOrganization" destination="3Kh-si-tVc" id="lpt-xb-Z5x"/>
-                        <outlet property="pickerOverallProduct" destination="3Kh-si-tVc" id="S0H-JR-YdA"/>
-                        <outlet property="pickerQuality" destination="NjX-2x-nDF" id="nxJ-JX-QVD"/>
                         <outlet property="pickerStyle" destination="DPi-lh-CIX" id="I3x-av-pxj"/>
                         <outlet property="pickerVerbal" destination="q8n-IK-yqD" id="Fec-WW-pmU"/>
                     </connections>

@@ -37,7 +37,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.gradingOralScale = @[@"(5)",@"(4)",@"(3)",@"(2)",@"(1)"];
+    self.gradingOralScale = @[@"Select(1 to 5)",@"(5)",@"(4)",@"(3)",@"(2)",@"(1)"];
     // Do any additional setup after loading the view.
 }
 
@@ -70,25 +70,25 @@
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     
     if (pickerView == self.pickerOrganization) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.pickerStyle) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.pickerCommunication) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.pickerContent) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.pickerGrammar) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.pickerAppearance) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.pickerVerbal) {
-        return 5;
+        return 6;
     }
     
     return 0;
@@ -138,23 +138,23 @@
     if (pickerView == self.pickerOrganization) {
         
         switch (row) {
-            case 0:
+            case 1:
                 pl1 = 0;
                 pl1 = 5 * 0.10;
                 break;
-            case 1:
+            case 2:
                 pl1 = 0;
                 pl1 = 4 * 0.10;
                 break;
-            case 2:
+            case 3:
                 pl1 = 0;
                 pl1 = 3 * 0.10;
                 break;
-            case 3:
+            case 4:
                 pl1 = 0;
                 pl1 = 2 * 0.10;
                 break;
-            case 4:
+            case 5:
                 pl1 = 0;
                 pl1 = 1 * 0.10;
                 break;
@@ -167,23 +167,23 @@
     if (pickerView == self.pickerStyle) {
         
         switch (row) {
-            case 0:
+            case 1:
                 pl2 = 0;
                 pl2 = 5 * 0.05;
                 break;
-            case 1:
+            case 2:
                 pl2 = 0;
                 pl2 = 4 * 0.05;
                 break;
-            case 2:
+            case 3:
                 pl2 = 0;
                 pl2 = 3 * 0.05;
                 break;
-            case 3:
+            case 4:
                 pl2 = 0;
                 pl2 = 2 * 0.05;
                 break;
-            case 4:
+            case 5:
                 pl2 = 0;
                 pl2 = 1 * 0.05;
                 break;
@@ -197,23 +197,23 @@
     if (pickerView == self.pickerCommunication) {
         
         switch (row) {
-            case 0:
+            case 1:
                 pl3 = 0;
                 pl3 = 5 * 0.05;
                 break;
-            case 1:
+            case 2:
                 pl3 = 0;
                 pl3 = 4 * 0.05;
                 break;
-            case 2:
+            case 3:
                 pl3 = 0;
                 pl3 = 3 * 0.05;
                 break;
-            case 3:
+            case 4:
                 pl3 = 0;
                 pl3 = 2 * 0.05;
                 break;
-            case 4:
+            case 5:
                 pl3 = 0;
                 pl3 = 1 * 0.05;
                 break;
@@ -227,23 +227,23 @@
         
         
         switch (row) {
-            case 0:
+            case 1:
                 pl4 = 0;
                 pl4 = 5 * 0.60;
                 break;
-            case 1:
+            case 2:
                 pl4 = 0;
                 pl4 = 4 * 0.60;
                 break;
-            case 2:
+            case 3:
                 pl4 = 0;
                 pl4 = 3 * 0.60;
                 break;
-            case 3:
+            case 4:
                 pl4 = 0;
                 pl4 = 2 * 0.60;
                 break;
-            case 4:
+            case 5:
                 pl4 = 0;
                 pl4 = 1 * 0.60;
                 break;
@@ -257,23 +257,23 @@
     if (pickerView == self.pickerGrammar) {
         
         switch (row) {
-            case 0:
+            case 1:
                 pl5 = 0;
                 pl5 = 5 * 0.05;
                 break;
-            case 1:
+            case 2:
                 pl5 = 0;
                 pl5 = 4 * 0.05;
                 break;
-            case 2:
+            case 3:
                 pl5 = 0;
                 pl5 = 3 * 0.05;
                 break;
-            case 3:
+            case 4:
                 pl5 = 0;
                 pl5 = 2 * 0.05;
                 break;
-            case 4:
+            case 5:
                 pl5 = 0;
                 pl5 = 1 * 0.05;
                 break;
@@ -287,23 +287,23 @@
     if (pickerView == self.pickerAppearance) {
         
         switch (row) {
-            case 0:
+            case 1:
                 pl6 = 0;
                 pl6 = 5 * 0.05;
                 break;
-            case 1:
+            case 2:
                 pl6 = 0;
                 pl6 = 4 * 0.05;
                 break;
-            case 2:
+            case 3:
                 pl6 = 0;
                 pl6 = 3 * 0.05;
                 break;
-            case 3:
+            case 4:
                 pl6 = 0;
                 pl6 = 2 * 0.05;
                 break;
-            case 4:
+            case 5:
                 pl6 = 0;
                 pl6 = 1 * 0.05;
                 break;
@@ -317,23 +317,23 @@
     if (pickerView == self.pickerVerbal) {
         
         switch (row) {
-            case 0:
+            case 1:
                 pl7 = 0;
                 pl7 = 5 * 0.10;
                 break;
-            case 1:
+            case 2:
                 pl7 = 0;
                 pl7 = 4 * 0.10;
                 break;
-            case 2:
+            case 3:
                 pl7 = 0;
                 pl7 = 3 * 0.10;
                 break;
-            case 3:
+            case 4:
                 pl7 = 0;
                 pl7 = 2 * 0.10;
                 break;
-            case 4:
+            case 5:
                 pl7 = 0;
                 pl7 = 1 * 0.10;
                 break;
@@ -344,15 +344,28 @@
 
         
     }
+        
+        [self oralCalc];
  
     }
 }
 
-- (IBAction)oralSumation:(id)sender {
-    sum = pl1+pl2+pl3+pl4+pl5+pl6+pl7;
-    sum = (sum / 5)*100;
+-(NSString *)oralCalc {
     
-    self.oralTotalGrading.text = [NSString stringWithFormat:@"%.f",sum];    
+    NSString *calc = [[NSString alloc]init];
+    sum = pl1+pl2+pl3+pl4+pl5+pl6+pl7;
+    sum = (sum / 5) * 100;
+    calc = [NSString stringWithFormat:@"%.f",sum];
+    return calc;
+    
+    
+}
+
+
+- (IBAction)oralSumation:(id)sender {
+    
+    
+    self.oralTotalGrading.text = [self oralCalc];
     
 }
 

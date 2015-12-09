@@ -55,24 +55,24 @@
 
 }
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    // As we have just one to five grading scale
+    // As we have just select diraction and one to five grading scale
     if (pickerView == self.pickerOverallProduct) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.pickerContentAnalysis) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.pickerDepthAnalysis) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.pickerDepthContent) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.pickerQuality) {
-        return 5;
+        return 6;
     }
     if (pickerView == self.peckerWrintingPro) {
-        return 5;
+        return 6;
     }
     return 0;
 }
@@ -117,23 +117,23 @@
         // As in the Rubric the firt criteria has wight 0.05 therefore we multiply the point gaving in 0.25
         
        switch (row) {
-           case 0:
+           case 1:
                p1 = 0;
                p1 = 5 * 0.25;
              break;
-           case 1:
+           case 2:
                p1 = 0;
                p1 = 4 * 0.25;
                break;
-           case 2:
+           case 3:
                p1 = 0;
                p1 = 3 * 0.25;
                break;
-           case 3:
+           case 4:
                p1 = 0;
                p1 = 2 * 0.25;
                break;
-           case 4:
+           case 5:
                p1 = 0;
                p1 = 1 * 0.25;
                break;
@@ -146,23 +146,23 @@
             // this has weigh 0.05
             
             switch (row) {
-                case 0:
+                case 1:
                     p2 = 0;
                     p2 = 5 * 0.05;
                     break;
-                case 1:
+                case 2:
                       p2 = 0;
                     p2 = 4 * 0.05;
                     break;
-                case 2:
+                case 3:
                       p2 = 0;
                     p2 = 3 * 0.05;
                     break;
-                case 3:
+                case 4:
                       p2 = 0;
                     p2 = 2 * 0.05;
                     break;
-                case 4:
+                case 5:
                       p2 = 0;
                     p2 = 1 * 0.05;
                     break;
@@ -175,23 +175,23 @@
         // this has weigh 0.20
         
         switch (row) {
-            case 0:
+            case 1:
                 p3 = 0;
                 p3 = 5 * 0.20;
                 break;
-            case 1:
+            case 2:
                 p3 = 0;
                 p3 = 4 * 0.20;
                 break;
-            case 2:
+            case 3:
                 p3 = 0;
                 p3 = 3 * 0.20;
                 break;
-            case 3:
+            case 4:
                 p3 = 0;
                 p3 = 2 * 0.20;
                 break;
-            case 4:
+            case 5:
                 p3 = 0;
                 p3 = 1 * 0.20;
                 break;
@@ -204,23 +204,23 @@
         // this has weigh 0.20
         
         switch (row) {
-            case 0:
+            case 1:
                 p4 = 0;
                 p4 = 5 * 0.20;
                 break;
-            case 1:
+            case 2:
                 p4 = 0;
                 p4 = 4 * 0.20;
                 break;
-            case 2:
+            case 3:
                 p4 = 0;
                 p4 = 3 * 0.20;
                 break;
-            case 3:
+            case 4:
                 p4 = 0;
                 p4 = 2 * 0.20;
                 break;
-            case 4:
+            case 5:
                 p4 = 0;
                 p4 = 1 * 0.20;
                 break;
@@ -233,23 +233,23 @@
         // this has weigh 0.15
         
         switch (row) {
-            case 0:
+            case 1:
                 p5 = 0;
                 p5 = 5 * 0.15;
                 break;
-            case 1:
+            case 2:
                 p5 = 0;
                 p5 = 4 * 0.15;
                 break;
-            case 2:
+            case 3:
                 p5 = 0;
                 p5 = 3 * 0.15;
                 break;
-            case 3:
+            case 4:
                 p5 = 0;
                 p5 = 2 * 0.15;
                 break;
-            case 4:
+            case 5:
                 p5 = 0;
                 p5 = 1 * 0.15;
                 break;
@@ -262,23 +262,23 @@
         // this has weigh 0.15
         
         switch (row) {
-            case 0:
+            case 1:
                 p6 = 0;
                 p6 = 5 * 0.15;
                 break;
-            case 1:
+            case 2:
                 p6 = 0;
                 p6 = 4 * 0.15;
                 break;
-            case 2:
+            case 3:
                 p6 = 0;
                 p6 = 3 * 0.15;
                 break;
-            case 3:
+            case 4:
                 p6 = 0;
                 p6 = 2 * 0.15;
                 break;
-            case 4:
+            case 5:
                 p6 = 0;
                 p6 = 1 * 0.15;
                 break;
@@ -290,24 +290,42 @@
            // Here the sum of the grading
     
            // to convert the sumation to percentage
-    
+    [self calc];
+        
     }
 }
-- (IBAction)Total:(id)sender {
+
+-(NSString *)calc {
+    
+    NSString *calc = [[NSString alloc]init];
     sum = p1+p2+p3+p4+p5+p6;
     sum = (sum / 5) * 100;
+    calc = [NSString stringWithFormat:@"%.f",sum];
+    return calc;
     
     
-    self.totalGrading.text = [NSString stringWithFormat:@"%.f",sum];
+}
+
+
+
+- (IBAction)Total:(id)sender {
+    
+    self.totalGrading.text=[self calc];
+    
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-   // self.gradingScale = @[@"Sophisticated(5)",@"Competent(4)",@"Competent(3)",@"Not Competent(2)",@"Not Competent(1)"];
+   
     
-    self.gradingScale = @[@"(5)",@"(4)",@"(3)",@"(2)",@"(1)"];
+      /* I have faced the bug when the user does not select grad it makes problem
+         in order to forc user to select grade. adding "Select(1 to 5)" .
+       
+    */
+    
+    self.gradingScale = @[@"Select(1 to 5)",@"(5)",@"(4)",@"(3)",@"(2)",@"(1)"];
 }
 
 - (void)didReceiveMemoryWarning {
