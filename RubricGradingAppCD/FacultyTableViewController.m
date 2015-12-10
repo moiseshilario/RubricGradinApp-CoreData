@@ -7,6 +7,8 @@
 //
 
 #import "FacultyTableViewController.h"
+#import "Student.h"
+#import "Project.h"
 
 @interface FacultyTableViewController ()
 
@@ -17,11 +19,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  NSError *error = nil;
+    if (![self.fetchedResultsController performFetch:&error]) {
+        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+        abort();
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,24 +34,26 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return [[self.fetchedResultsController fetchedObjects]count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FacultyCell" forIndexPath:indexPath];
     
     // Configure the cell...
+    Project *proj = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell.textLabel.text = proj.name;
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -94,5 +98,27 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (NSFetchedResultsController *)fetchedResultsController{
+    if (_fetchedResultsController != nil) {
+        return _fetchedResultsController;
+    }
+    
+      NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Project"
+                                   inManagedObjectContext:self.managedObjectContext];
+
+     [fetchRequest setEntity:entity];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
+    NSArray *sortDescriptors = @[sortDescriptor];
+    [fetchRequest setSortDescriptors:sortDescriptors];
+    
+    _fetchedResultsController = [[NSFetchedResultsController alloc]
+                                 initWithFetchRequest:fetchRequest
+                                 managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
+    return _fetchedResultsController;
+}
 
 @end
