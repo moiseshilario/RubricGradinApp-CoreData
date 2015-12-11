@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Person.h"
 
 @interface LoginViewController : UIViewController
 
@@ -15,7 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-
+@property (nonatomic) Person *person;
 
 - (IBAction)loginPressed:(id)sender;
 
