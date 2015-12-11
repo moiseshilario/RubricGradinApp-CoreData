@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C1FAC671C1A76BD00C841FF /* FacultyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FAC621C1A76BD00C841FF /* FacultyTableViewController.m */; };
+		5C1FAC681C1A76BD00C841FF /* OralRubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FAC641C1A76BD00C841FF /* OralRubricViewController.m */; };
+		5C1FAC691C1A76BD00C841FF /* RubricViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FAC661C1A76BD00C841FF /* RubricViewController.m */; };
 		A84A98361C0ED079007A33D5 /* FacultyListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A84A98351C0ED079007A33D5 /* FacultyListTableViewController.m */; };
 		A853FDE11C01CE79005ABB49 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDE01C01CE79005ABB49 /* main.m */; };
 		A853FDE41C01CE79005ABB49 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDE31C01CE79005ABB49 /* AppDelegate.m */; };
@@ -45,6 +48,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C1FAC611C1A76BD00C841FF /* FacultyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FacultyTableViewController.h; path = "../../../../../Volumes/KINGSTON/RubricGradinApp-CoreData/RubricGradingAppCD/FacultyTableViewController.h"; sourceTree = "<group>"; };
+		5C1FAC621C1A76BD00C841FF /* FacultyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FacultyTableViewController.m; path = "../../../../../Volumes/KINGSTON/RubricGradinApp-CoreData/RubricGradingAppCD/FacultyTableViewController.m"; sourceTree = "<group>"; };
+		5C1FAC631C1A76BD00C841FF /* OralRubricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OralRubricViewController.h; path = "../../../../../Volumes/KINGSTON/RubricGradinApp-CoreData/RubricGradingAppCD/OralRubricViewController.h"; sourceTree = "<group>"; };
+		5C1FAC641C1A76BD00C841FF /* OralRubricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OralRubricViewController.m; path = "../../../../../Volumes/KINGSTON/RubricGradinApp-CoreData/RubricGradingAppCD/OralRubricViewController.m"; sourceTree = "<group>"; };
+		5C1FAC651C1A76BD00C841FF /* RubricViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RubricViewController.h; path = "../../../../../Volumes/KINGSTON/RubricGradinApp-CoreData/RubricGradingAppCD/RubricViewController.h"; sourceTree = "<group>"; };
+		5C1FAC661C1A76BD00C841FF /* RubricViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RubricViewController.m; path = "../../../../../Volumes/KINGSTON/RubricGradinApp-CoreData/RubricGradingAppCD/RubricViewController.m"; sourceTree = "<group>"; };
 		A84A98341C0ED079007A33D5 /* FacultyListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacultyListTableViewController.h; sourceTree = "<group>"; };
 		A84A98351C0ED079007A33D5 /* FacultyListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacultyListTableViewController.m; sourceTree = "<group>"; };
 		A853FDDC1C01CE79005ABB49 /* RubricGradingAppCD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RubricGradingAppCD.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +140,12 @@
 		A853FDDE1C01CE79005ABB49 /* RubricGradingAppCD */ = {
 			isa = PBXGroup;
 			children = (
+				5C1FAC611C1A76BD00C841FF /* FacultyTableViewController.h */,
+				5C1FAC621C1A76BD00C841FF /* FacultyTableViewController.m */,
+				5C1FAC631C1A76BD00C841FF /* OralRubricViewController.h */,
+				5C1FAC641C1A76BD00C841FF /* OralRubricViewController.m */,
+				5C1FAC651C1A76BD00C841FF /* RubricViewController.h */,
+				5C1FAC661C1A76BD00C841FF /* RubricViewController.m */,
 				A853FDE21C01CE79005ABB49 /* AppDelegate.h */,
 				A853FDE31C01CE79005ABB49 /* AppDelegate.m */,
 				A853FDE81C01CE79005ABB49 /* Main.storyboard */,
@@ -325,9 +340,12 @@
 			files = (
 				A84A98361C0ED079007A33D5 /* FacultyListTableViewController.m in Sources */,
 				A853FE201C027E74005ABB49 /* AddProjectViewController.m in Sources */,
+				5C1FAC671C1A76BD00C841FF /* FacultyTableViewController.m in Sources */,
 				A853FE491C02D5D3005ABB49 /* Professor.m in Sources */,
 				A853FE1D1C01D5F8005ABB49 /* AdminTableViewController.m in Sources */,
+				5C1FAC681C1A76BD00C841FF /* OralRubricViewController.m in Sources */,
 				A853FE3D1C02C8D1005ABB49 /* Admin.m in Sources */,
+				5C1FAC691C1A76BD00C841FF /* RubricViewController.m in Sources */,
 				A853FE431C02C8D1005ABB49 /* Person.m in Sources */,
 				A853FE231C0287BB005ABB49 /* Project.m in Sources */,
 				A853FDE41C01CE79005ABB49 /* AppDelegate.m in Sources */,
