@@ -20,12 +20,29 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    self.projectNameField.text = self.currentProject.name;
+    self.briefDescriptionField.text = self.currentProject.briefDescription;
+    
+    NSMutableArray *array = [NSMutableArray arrayWithArray:[self.currentProject.professorFaculty allObjects]];
+    self.facultyArray = array;
+    array = [NSMutableArray arrayWithArray:[self.currentProject.student allObjects]];
+    self.studentsArray = array;
+    self.selectedChair = self.currentProject.professorChair;
+    
+    NSInteger index = [self.facultyArray indexOfObjectIdenticalTo:self.selectedChair];
+    
+    [self.chairPicker selectRow:index inComponent:0 animated:YES];
+    
     self.studentTableView.delegate = self;
     self.studentTableView.dataSource = self;
     
     self.facultyTableView.delegate = self;
     self.facultyTableView.dataSource = self;
     
+    
+    self.chairPicker.delegate = self;
+    self.chairPicker.dataSource = self;
+    self.chairPicker.showsSelectionIndicator = YES;    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -35,9 +52,20 @@
 
 
 - (IBAction)cancel:(id)sender {
+    [self.delegate addProjectControllerDidCancel:self.currentProject];
 }
 
 - (IBAction)save:(id)sender {
+    [self.currentProject setName:self.projectNameField.text];
+    [self.currentProject setBriefDescription:self.briefDescriptionField.text];
+    NSSet *set = [[NSSet alloc] initWithArray:self.facultyArray];
+    [self.currentProject setProfessorFaculty:set];
+    set = [[NSSet alloc] initWithArray:self.studentsArray];
+    [self.currentProject setStudent:set];
+    [self.currentProject setProfessorChair:self.selectedChair];
+    
+    [self.delegate addProjectControllerDidSave];
+    
 }
 
 
@@ -93,7 +121,7 @@
     }
 }
 
-#pragma mark - Delegate functions
+#pragma mark - Student List Delegate functions
 
 -(void)studentsListDidCancel{
     [self dismissViewControllerAnimated:YES completion:nil];
@@ -106,6 +134,8 @@
     [self.studentTableView reloadData];
 }
 
+#pragma mark - Faculty List Delegate functions
+
 -(void)facultyListDidCancel{
     [self dismissViewControllerAnimated:YES completion:nil];
 }
@@ -116,5 +146,25 @@
     [self dismissViewControllerAnimated:YES completion:nil];
     [self.facultyTableView reloadData];
 }
+
+#pragma mark -  PickerView Delegate functions
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1;
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return [self.allProfessorsArray count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    Professor *prof = [self.allProfessorsArray objectAtIndex: row];
+    return prof.name;
+}
+
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    NSLog(@"You selected this: %@", [self.allProfessorsArray objectAtIndex: row]);
+    self.selectedChair = [self.allProfessorsArray objectAtIndex: row];
+}
+
 
 @end

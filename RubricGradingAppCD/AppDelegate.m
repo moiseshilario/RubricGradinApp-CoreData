@@ -28,11 +28,12 @@
     LoginViewController *controller = (LoginViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
     
-    
-    //[self initProfessors];
-    //[self initStudents];
-    //[self initAdmin];
-    //[self initObjects];
+    NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
+    NSString* dataFile = [documentsPath stringByAppendingPathComponent:@"RubricGradingAppCD.sqlite"];
+    if(![[NSFileManager defaultManager] fileExistsAtPath:dataFile]){
+        [self initObjects];
+
+    }
     
     
     // Override point for customization after application launch.
@@ -179,24 +180,24 @@
                    insertNewObjectForEntityForName:@"Student"
                    inManagedObjectContext:[self managedObjectContext]];
     s4.name = @"James";
-    s4.username = @"abishek001";
-    s4.password = @"passwordAbishek";
+    s4.username = @"james001";
+    s4.password = @"passwordJames";
     s4.type = @"student";
     
     Student *s5 = [NSEntityDescription
                    insertNewObjectForEntityForName:@"Student"
                    inManagedObjectContext:[self managedObjectContext]];
     s5.name = @"Elza";
-    s5.username = @"abishek001";
-    s5.password = @"passwordAbishek";
+    s5.username = @"elza001";
+    s5.password = @"passwordElza";
     s5.type = @"student";
     
     Student *s6 = [NSEntityDescription
                    insertNewObjectForEntityForName:@"Student"
                    inManagedObjectContext:[self managedObjectContext]];
     s6.name = @"Maria";
-    s6.username = @"abishek001";
-    s6.password = @"passwordAbishek";
+    s6.username = @"maria001";
+    s6.password = @"passwordMaria";
     s6.type = @"student";
     
     Student *s7 = [NSEntityDescription
@@ -204,31 +205,31 @@
                    inManagedObjectContext:[self managedObjectContext]];
     s7.name = @"Emily";
     s7.username = @"abishek001";
-    s7.password = @"passwordAbishek";
+    s7.password = @"passwordEmily";
     s7.type = @"student";
     
     Student *s8 = [NSEntityDescription
                    insertNewObjectForEntityForName:@"Student"
                    inManagedObjectContext:[self managedObjectContext]];
     s8.name = @"Paul";
-    s8.username = @"abishek001";
-    s8.password = @"passwordAbishek";
+    s8.username = @"paul001";
+    s8.password = @"passwordPaul";
     s8.type = @"student";
     
     Student *s9 = [NSEntityDescription
                    insertNewObjectForEntityForName:@"Student"
                    inManagedObjectContext:[self managedObjectContext]];
     s9.name = @"Swain";
-    s9.username = @"abishek001";
-    s9.password = @"passwordAbishek";
+    s9.username = @"swain001";
+    s9.password = @"passwordSwain";
     s9.type = @"student";
     
     Student *s10 = [NSEntityDescription
                    insertNewObjectForEntityForName:@"Student"
                    inManagedObjectContext:[self managedObjectContext]];
     s10.name = @"Drake";
-    s10.username = @"abishek001";
-    s10.password = @"passwordAbishek";
+    s10.username = @"drake001";
+    s10.password = @"passwordDrake";
     s10.type = @"student";
     
      //INITIALIZING ADMIN
@@ -270,24 +271,24 @@
                      insertNewObjectForEntityForName:@"Professor"
                      inManagedObjectContext:[self managedObjectContext]];
     p4.name = @"Dr. Brinkman";
-    p4.username = @"vitolo001";
-    p4.password = @"passwordVitolo";
+    p4.username = @"brinkman001";
+    p4.password = @"passwordBrinkman";
     p4.type = @"professor";
     
     Professor *p5 = [NSEntityDescription
                      insertNewObjectForEntityForName:@"Professor"
                      inManagedObjectContext:[self managedObjectContext]];
     p5.name = @"Mr. Cannell";
-    p5.username = @"vitolo001";
-    p5.password = @"passwordVitolo";
+    p5.username = @"cannell001";
+    p5.password = @"passwordCannell";
     p5.type = @"professor";
     
     Professor *p6 = [NSEntityDescription
                      insertNewObjectForEntityForName:@"Professor"
                      inManagedObjectContext:[self managedObjectContext]];
     p6.name = @"Dr. Tang";
-    p6.username = @"vitolo001";
-    p6.password = @"passwordVitolo";
+    p6.username = @"tang001";
+    p6.password = @"passwordTang";
     p6.type = @"professor";
     
    //INITIALIZING A PROJECT
