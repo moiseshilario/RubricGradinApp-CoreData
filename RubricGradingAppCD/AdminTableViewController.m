@@ -120,7 +120,23 @@
         apvc.currentProject = newProject;
         apvc.allProfessorsArray = [self allProfessors];
         apvc.allStudentsArray = [self allStudents];
+        apvc.typeOfSegue = @"add";
     }
+    
+    if([segue.identifier isEqualToString:@"projectDetail"]){
+        UINavigationController *navigation = (UINavigationController*) [segue destinationViewController];
+        
+        AddProjectViewController *apvc = (AddProjectViewController *)[navigation topViewController];
+        apvc.delegate = self;
+        
+        NSIndexPath *index = [self.tableView indexPathForSelectedRow];
+        Project *selectedProject = [self.fetchedResultsController objectAtIndexPath:index];
+        apvc.currentProject = selectedProject;
+        apvc.allProfessorsArray = [self allProfessors];
+        apvc.allStudentsArray = [self allStudents];
+        apvc.typeOfSegue = @"edit";
+    }
+
     
 }
 
@@ -255,8 +271,11 @@
 
 #pragma mark - AddProject Delegate functions
 
--(void)addProjectControllerDidCancel:(Project *)projectToDelete {
-    [self.managedObjectContext deleteObject:projectToDelete];
+-(void)addProjectControllerDidCancel:(Project *)projectToDelete type:(NSString *)typeOfSegue{
+    if ([typeOfSegue isEqualToString:@"add"]) {
+        [self.managedObjectContext deleteObject:projectToDelete];
+    }
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }

@@ -31,6 +31,7 @@
 @property (nonatomic) NSMutableArray *studentsSelectedRows;
 @property (nonatomic) Professor *selectedChair;
 @property (weak, nonatomic) IBOutlet UIPickerView *chairPicker;
+@property (nonatomic) NSString *typeOfSegue;
 
 @property (nonatomic, weak) id <AddProjectViewControllerDelegate> delegate;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
@@ -44,7 +45,7 @@
 @protocol AddProjectViewControllerDelegate <NSObject>
 
 - (void)addProjectControllerDidSave;
-- (void)addProjectControllerDidCancel:(Project *) projectToDelete;
+- (void)addProjectControllerDidCancel:(Project *) projectToDelete type: (NSString*)typeOfSegue;
 
 @end
 

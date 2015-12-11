@@ -52,7 +52,7 @@
 
 
 - (IBAction)cancel:(id)sender {
-    [self.delegate addProjectControllerDidCancel:self.currentProject];
+    [self.delegate addProjectControllerDidCancel:self.currentProject type:self.typeOfSegue];
 }
 
 - (IBAction)save:(id)sender {
