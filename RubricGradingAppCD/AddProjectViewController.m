@@ -11,7 +11,7 @@
 #import "Professor.h"
 
 @interface AddProjectViewController ()
-
+@property (nonatomic) NSMutableArray *professorNames;
 @end
 
 @implementation AddProjectViewController
@@ -19,6 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self fillProfessorNamesArray];
     
     self.projectNameField.text = self.currentProject.name;
     self.briefDescriptionField.text = self.currentProject.briefDescription;
@@ -29,9 +30,8 @@
     self.studentsArray = array;
     self.selectedChair = self.currentProject.professorChair;
     
-    NSInteger index = [self.facultyArray indexOfObjectIdenticalTo:self.selectedChair];
+
     
-    [self.chairPicker selectRow:index inComponent:0 animated:YES];
     
     self.studentTableView.delegate = self;
     self.studentTableView.dataSource = self;
@@ -42,7 +42,20 @@
     
     self.chairPicker.delegate = self;
     self.chairPicker.dataSource = self;
-    self.chairPicker.showsSelectionIndicator = YES;    
+    self.chairPicker.showsSelectionIndicator = YES;
+    
+    if([self.typeOfSegue isEqualToString:@"edit"]){
+        NSLog(@"NAMES IN THE ARRAY: %@", self.professorNames);
+        NSLog(@"NAME of the professor: %@", self.currentProject.professorChair.name);
+    
+    NSInteger index = [self.professorNames indexOfObject:self.currentProject.professorChair.name];
+    [self.chairPicker reloadAllComponents];
+        if (self.currentProject.professorChair == NULL) {
+            index = 0;
+        }
+    [self.chairPicker selectRow:index inComponent:0 animated:YES];
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -63,6 +76,7 @@
     set = [[NSSet alloc] initWithArray:self.studentsArray];
     [self.currentProject setStudent:set];
     [self.currentProject setProfessorChair:self.selectedChair];
+    NSLog(@"SELECTED CHAIR: %@", self.selectedChair.name);
     
     [self.delegate addProjectControllerDidSave];
     
@@ -164,6 +178,15 @@
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     NSLog(@"You selected this: %@", [self.allProfessorsArray objectAtIndex: row]);
     self.selectedChair = [self.allProfessorsArray objectAtIndex: row];
+}
+
+-(void)fillProfessorNamesArray {
+    self.professorNames = [[NSMutableArray alloc]init];
+    for (Professor *p in self.allProfessorsArray) {
+        [self.professorNames addObject:p.name];
+            }
+    NSLog(@"PRINT ---- %@", self.professorNames);
+
 }
 
 

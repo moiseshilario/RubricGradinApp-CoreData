@@ -28,12 +28,9 @@
     LoginViewController *controller = (LoginViewController *)navigationController.topViewController;
     controller.managedObjectContext = self.managedObjectContext;
     
-    NSString* documentsPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex:0];
-    NSString* dataFile = [documentsPath stringByAppendingPathComponent:@"RubricGradingAppCD.sqlite"];
-    if(![[NSFileManager defaultManager] fileExistsAtPath:dataFile]){
-        [self initObjects];
+    
+       // [self initObjects];
 
-    }
     
     
     // Override point for customization after application launch.
