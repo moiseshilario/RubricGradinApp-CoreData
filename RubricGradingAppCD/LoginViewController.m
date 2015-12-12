@@ -115,6 +115,7 @@
         UINavigationController *navigation = (UINavigationController *)[segue destinationViewController];
         FacultyTableViewController *flvc = (FacultyTableViewController*)[navigation topViewController];
         flvc.managedObjectContext = self.managedObjectContext;
+        flvc.facultyUserName = self.usernameField.text;
         
     }
 }
