@@ -25,6 +25,7 @@
 		A853FE461C02CB42005ABB49 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE451C02CB42005ABB49 /* Student.m */; };
 		A853FE491C02D5D3005ABB49 /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE481C02D5D3005ABB49 /* Professor.m */; };
 		A853FE4C1C03DA94005ABB49 /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */; };
+		D4AD13E61C1CD91D003E0B5D /* FacultyProjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4AD13E51C1CD91D003E0B5D /* FacultyProjectsTableViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		A853FE481C02D5D3005ABB49 /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Professor.m; sourceTree = "<group>"; };
 		A853FE4A1C03DA94005ABB49 /* StudentsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsListTableViewController.h; sourceTree = "<group>"; };
 		A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsListTableViewController.m; sourceTree = "<group>"; };
+		D4AD13E41C1CD91D003E0B5D /* FacultyProjectsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacultyProjectsTableViewController.h; sourceTree = "<group>"; };
+		D4AD13E51C1CD91D003E0B5D /* FacultyProjectsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacultyProjectsTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 				A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */,
 				A84A98341C0ED079007A33D5 /* FacultyListTableViewController.h */,
 				A84A98351C0ED079007A33D5 /* FacultyListTableViewController.m */,
+				D4AD13E41C1CD91D003E0B5D /* FacultyProjectsTableViewController.h */,
+				D4AD13E51C1CD91D003E0B5D /* FacultyProjectsTableViewController.m */,
 				A853FE381C02C8D1005ABB49 /* Person.h */,
 				A853FE391C02C8D1005ABB49 /* Person.m */,
 				A853FE471C02D5D3005ABB49 /* Professor.h */,
@@ -335,6 +340,7 @@
 				A853FE461C02CB42005ABB49 /* Student.m in Sources */,
 				A853FDED1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld in Sources */,
 				A853FDE11C01CE79005ABB49 /* main.m in Sources */,
+				D4AD13E61C1CD91D003E0B5D /* FacultyProjectsTableViewController.m in Sources */,
 				A853FE171C01D5BC005ABB49 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

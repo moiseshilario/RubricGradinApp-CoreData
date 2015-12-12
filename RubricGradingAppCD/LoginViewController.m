@@ -7,9 +7,9 @@
 //
 
 #import "LoginViewController.h"
-#import "Person.h"
 #import "AppDelegate.h"
 #import "AdminTableViewController.h"
+#import "FacultyListTableViewController.h"
 
 
 @interface LoginViewController ()
@@ -44,7 +44,7 @@
 -(BOOL)verifyUsername: (NSString *)userName withPassword: (NSString*)password {
     
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Admin" inManagedObjectContext:self.managedObjectContext];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Person" inManagedObjectContext:self.managedObjectContext];
     [fetchRequest setEntity:entity];
     // Specify criteria for filtering which objects to fetch
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"username == %@", userName];
@@ -58,6 +58,7 @@
     else {
         for (Person *p in fetchedObjects) {
             if([p.username isEqualToString:userName] && [p.password isEqualToString:password]){
+                self.person = p;
                 return YES;
             }
             else {
@@ -76,15 +77,18 @@
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Correct"                                                                       message:@"Welcome" preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {
-            [self performSegueWithIdentifier:@"adminProjects" sender:self];
+            if ([self.person.type isEqualToString:@"professor"]){
+                
+                [self performSegueWithIdentifier:@"facultyProjects" sender:self];
+            }
+            else
+                [self performSegueWithIdentifier:@"adminProjects" sender:self];
         }];
         
         [alert addAction:defaultAction];
         [self presentViewController:alert animated:YES completion:nil];
         
-        
-    }
-    else {
+    }else {
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Incorrect"                                                                       message:@"The password or username you entered is incorrect. Please try again." preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Try again" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
@@ -101,10 +105,13 @@
         UINavigationController *navigation = (UINavigationController *)[segue destinationViewController];
         AdminTableViewController *atvc = (AdminTableViewController*)[navigation topViewController];
         atvc.managedObjectContext = self.managedObjectContext;
-    
+        
+    }
+    if([segue.identifier isEqualToString:@"facultyProjects"]){
         
     }
 }
+
 
 @end
 
