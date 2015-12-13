@@ -7,10 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Professor.h"
 
 @interface FacultyTableViewController : UITableViewController
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic) NSString *facultyUserName;
+@property (nonatomic) Professor *selectedProfessor;
+@property  (nonatomic) NSArray *facultyProjects;
 @end

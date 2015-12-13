@@ -29,9 +29,7 @@
     controller.managedObjectContext = self.managedObjectContext;
     
     
-    //[self initProfessors];
-    //[self initStudents];
-    //[self initAdmin];
+    
     //[self initObjects];
     
     
@@ -270,24 +268,24 @@
                      insertNewObjectForEntityForName:@"Professor"
                      inManagedObjectContext:[self managedObjectContext]];
     p4.name = @"Dr. Brinkman";
-    p4.username = @"vitolo001";
-    p4.password = @"passwordVitolo";
+    p4.username = @"brinkman001";
+    p4.password = @"passwordBrinkman";
     p4.type = @"professor";
     
     Professor *p5 = [NSEntityDescription
                      insertNewObjectForEntityForName:@"Professor"
                      inManagedObjectContext:[self managedObjectContext]];
     p5.name = @"Mr. Cannell";
-    p5.username = @"vitolo001";
-    p5.password = @"passwordVitolo";
+    p5.username = @"cannel001";
+    p5.password = @"passwordCannell";
     p5.type = @"professor";
     
     Professor *p6 = [NSEntityDescription
                      insertNewObjectForEntityForName:@"Professor"
                      inManagedObjectContext:[self managedObjectContext]];
     p6.name = @"Dr. Tang";
-    p6.username = @"vitolo001";
-    p6.password = @"passwordVitolo";
+    p6.username = @"tang001";
+    p6.password = @"passwordTang";
     p6.type = @"professor";
     
    //INITIALIZING A PROJECT
@@ -297,6 +295,7 @@
     [p addStudentObject:s2];
     [p addProfessorFacultyObject:p1];
     [p addProfessorFacultyObject:p2];
+    [p addProfessorFacultyObject:p6];
     p.professorChair = p3;
     p.briefDescription = @"An app to grade the students";
     p.admin = a1;

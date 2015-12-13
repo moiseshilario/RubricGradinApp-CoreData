@@ -14,7 +14,7 @@
 @interface FacultyTableViewController ()
 
 @property (nonatomic) NSString *facultyName;
-
+-(void)getSelectedProfessor;
 @end
 
 @implementation FacultyTableViewController
@@ -24,18 +24,9 @@
     [super viewDidLoad];
     NSLog(@"the faculty name is:  %@",self.facultyUserName);
     
-    if ([self.facultyUserName isEqualToString:@"sasi001"]) {
-        self.facultyName = @"Dr. Sasi";
-    }
+    [self getSelectedProfessor];
     
-    
-  NSError *error = nil;
-    if (![self.fetchedResultsController performFetch:&error]) {
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -50,15 +41,17 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return [[self.fetchedResultsController fetchedObjects]count];
+    return [[self.selectedProfessor.projectFaculty allObjects]count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FacultyCell" forIndexPath:indexPath];
+    self.facultyProjects = [self.selectedProfessor.projectFaculty allObjects];
+    
     
     // Configure the cell...
-    Project *proj = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    Project *proj = [self.facultyProjects objectAtIndex:indexPath.row];
     cell.textLabel.text = proj.name;
     
     return cell;
@@ -109,39 +102,25 @@
 }
 */
 
-- (NSFetchedResultsController *)fetchedResultsController{
-    if (_fetchedResultsController != nil) {
-        return _fetchedResultsController;
+-(void)getSelectedProfessor{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Professor" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    // Specify criteria for filtering which objects to fetch
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"username == %@", self.facultyUserName];
+    [fetchRequest setPredicate:predicate];
+    // Specify how the fetched objects should be sorted
+    
+    
+    NSError *error = nil;
+    NSArray *fetchedObjects = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if (fetchedObjects == nil) {
+        NSLog(@"error");
     }
-    
-      NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    
-    NSEntityDescription *entity = [NSEntityDescription
-                                   entityForName:@"Project"
-                                   inManagedObjectContext:self.managedObjectContext];
+    else {
+        self.selectedProfessor = [fetchedObjects objectAtIndex:0];
+    }
 
-     [fetchRequest setEntity:entity];
-    
-// Specify criteria for filtering which objects to fetch
-    
-    
-//NSPredicate *predicate = [NSPredicate predicateWithFormat:@"username == %@",self.facultyName];
-//[fetchRequest setPredicate:predicate];
-    
-    
-    
-// Specify how the fetched objects should be sorted
-
-    
-
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
-    NSArray *sortDescriptors = @[sortDescriptor];
-    [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    _fetchedResultsController = [[NSFetchedResultsController alloc]
-                                 initWithFetchRequest:fetchRequest
-                                 managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
-    return _fetchedResultsController;
 }
 
 @end
