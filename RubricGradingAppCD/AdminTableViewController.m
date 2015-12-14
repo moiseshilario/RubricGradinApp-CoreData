@@ -130,17 +130,12 @@
         apvc.delegate = self;
         
         NSIndexPath *index = [self.tableView indexPathForSelectedRow];
-        NSLog(@"INDEEEEEEEEEX %@", index);
         Project *selectedProject = (Project *)[self.fetchedResultsController objectAtIndexPath:index];
         apvc.currentProject = selectedProject;
-        NSLog(@"Selected Project Chair: %@", selectedProject.professorChair);
-        NSLog(@"Selected Project SOMETHING=================== : %@", selectedProject.name);
         apvc.allProfessorsArray = [self allProfessors];
         apvc.allStudentsArray = [self allStudents];
         apvc.typeOfSegue = @"edit";
     }
-
-    
 }
 
 #pragma mark - Fecthed Result Controller section

@@ -30,9 +30,6 @@
     self.studentsArray = array;
     self.selectedChair = self.currentProject.professorChair;
     
-
-    
-    
     self.studentTableView.delegate = self;
     self.studentTableView.dataSource = self;
     
@@ -45,17 +42,14 @@
     self.chairPicker.showsSelectionIndicator = YES;
     
     if([self.typeOfSegue isEqualToString:@"edit"]){
-        NSLog(@"NAMES IN THE ARRAY: %@", self.professorNames);
-        NSLog(@"NAME of the professor: %@", self.currentProject.professorChair.name);
-    
-    NSInteger index = [self.professorNames indexOfObject:self.currentProject.professorChair.name];
-    [self.chairPicker reloadAllComponents];
+        NSInteger index = [self.professorNames indexOfObject:self.currentProject.professorChair.name];
+        [self.chairPicker reloadAllComponents];
         if (self.currentProject.professorChair == NULL) {
             index = 0;
         }
-    [self.chairPicker selectRow:index inComponent:0 animated:YES];
+        [self.chairPicker selectRow:index inComponent:0 animated:YES];
     }
-
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -76,10 +70,7 @@
     set = [[NSSet alloc] initWithArray:self.studentsArray];
     [self.currentProject setStudent:set];
     [self.currentProject setProfessorChair:self.selectedChair];
-    NSLog(@"SELECTED CHAIR: %@", self.selectedChair.name);
-    
     [self.delegate addProjectControllerDidSave];
-    
 }
 
 
@@ -184,9 +175,7 @@
     self.professorNames = [[NSMutableArray alloc]init];
     for (Professor *p in self.allProfessorsArray) {
         [self.professorNames addObject:p.name];
-            }
-    NSLog(@"PRINT ---- %@", self.professorNames);
-
+    }
 }
 
 

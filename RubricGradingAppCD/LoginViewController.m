@@ -63,9 +63,7 @@
             else {
                 return NO;
             }
-            
         }
-        
     }
     return NO;
 }
@@ -101,8 +99,6 @@
         UINavigationController *navigation = (UINavigationController *)[segue destinationViewController];
         AdminTableViewController *atvc = (AdminTableViewController*)[navigation topViewController];
         atvc.managedObjectContext = self.managedObjectContext;
-    
-        
     }
 }
 

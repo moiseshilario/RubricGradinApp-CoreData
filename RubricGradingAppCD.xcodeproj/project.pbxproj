@@ -25,6 +25,7 @@
 		A853FE461C02CB42005ABB49 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE451C02CB42005ABB49 /* Student.m */; };
 		A853FE491C02D5D3005ABB49 /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE481C02D5D3005ABB49 /* Professor.m */; };
 		A853FE4C1C03DA94005ABB49 /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */; };
+		A8BCD98F1C1E8D4300A5D425 /* AppData.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BCD98E1C1E8D4300A5D425 /* AppData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,8 @@
 		A853FE481C02D5D3005ABB49 /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Professor.m; sourceTree = "<group>"; };
 		A853FE4A1C03DA94005ABB49 /* StudentsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsListTableViewController.h; sourceTree = "<group>"; };
 		A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsListTableViewController.m; sourceTree = "<group>"; };
+		A8BCD98D1C1E8D4300A5D425 /* AppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppData.h; sourceTree = "<group>"; };
+		A8BCD98E1C1E8D4300A5D425 /* AppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,17 @@
 				A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */,
 				A84A98341C0ED079007A33D5 /* FacultyListTableViewController.h */,
 				A84A98351C0ED079007A33D5 /* FacultyListTableViewController.m */,
+			);
+			path = RubricGradingAppCD;
+			sourceTree = "<group>";
+		};
+		A853FDDF1C01CE79005ABB49 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A8BCD98D1C1E8D4300A5D425 /* AppData.h */,
+				A8BCD98E1C1E8D4300A5D425 /* AppData.m */,
+				A853FDE01C01CE79005ABB49 /* main.m */,
+				A853FE251C028EDE005ABB49 /* RubricGradingAppCD-Prefix.pch */,
 				A853FE381C02C8D1005ABB49 /* Person.h */,
 				A853FE391C02C8D1005ABB49 /* Person.m */,
 				A853FE471C02D5D3005ABB49 /* Professor.h */,
@@ -159,15 +173,6 @@
 				A853FE221C0287BB005ABB49 /* Project.m */,
 				A853FE441C02CB42005ABB49 /* Student.h */,
 				A853FE451C02CB42005ABB49 /* Student.m */,
-			);
-			path = RubricGradingAppCD;
-			sourceTree = "<group>";
-		};
-		A853FDDF1C01CE79005ABB49 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A853FDE01C01CE79005ABB49 /* main.m */,
-				A853FE251C028EDE005ABB49 /* RubricGradingAppCD-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -332,6 +337,7 @@
 				A853FE231C0287BB005ABB49 /* Project.m in Sources */,
 				A853FDE41C01CE79005ABB49 /* AppDelegate.m in Sources */,
 				A853FE4C1C03DA94005ABB49 /* StudentsListTableViewController.m in Sources */,
+				A8BCD98F1C1E8D4300A5D425 /* AppData.m in Sources */,
 				A853FE461C02CB42005ABB49 /* Student.m in Sources */,
 				A853FDED1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld in Sources */,
 				A853FDE11C01CE79005ABB49 /* main.m in Sources */,

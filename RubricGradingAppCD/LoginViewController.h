@@ -17,8 +17,6 @@
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 
-
-
 - (IBAction)loginPressed:(id)sender;
 
 @end
