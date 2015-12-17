@@ -19,6 +19,6 @@
 @property (nonatomic) Person *person;
 
 - (IBAction)loginPressed:(id)sender;
-
+-(BOOL)verifyUsername: (NSString *)userName withPassword: (NSString*)password;
 
 @end
