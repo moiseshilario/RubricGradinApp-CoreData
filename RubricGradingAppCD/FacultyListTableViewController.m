@@ -6,25 +6,30 @@
 //  Copyright © 2015 iosProject. All rights reserved.
 //
 
-#import "FacultyListTableViewController.h"
-#import "Professor.h"
+#import "FacultyTableViewController.h"
+#import "Student.h"
+#import "Project.h"
+#import "LoginViewController.h"
+#import "RubricViewController.h"
 
-@interface FacultyListTableViewController ()
+@interface FacultyTableViewController ()
 
+@property (nonatomic) NSString *facultyName;
+@property (nonatomic) Project *selectedProject;
+-(void)getSelectedProfessor;
 @end
 
-@implementation FacultyListTableViewController
+@implementation FacultyTableViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    self.tableView.allowsMultipleSelection = YES;
-    // Uncomment the following line to preserve selection between presentations.
-    self.clearsSelectionOnViewWillAppear = NO;
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [super viewDidLoad];
+    NSLog(@"the faculty name is:  %@",self.facultyUserName);
+    
+    [self getSelectedProfessor];
+    
+    
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -33,50 +38,33 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.allProfessorsArray count];
+    
+    return [[self.selectedProfessor.projectFaculty allObjects]count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FacultyCell" forIndexPath:indexPath];
+    self.facultyProjects = [self.selectedProfessor.projectFaculty allObjects];
+    
     
     // Configure the cell...
-    Professor *p = [self.allProfessorsArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = p.name;
-    
-    if([self.selectedRows containsObject:indexPath]) {
-        cell.accessoryType = UITableViewCellAccessoryCheckmark;
-        [tableView selectRowAtIndexPath:indexPath
-                               animated:NO
-                         scrollPosition:UITableViewScrollPositionNone];
-        
-    }
-    else {
-        cell.accessoryType = UITableViewCellAccessoryNone;
-        
-    }
+    Project *proj = [self.facultyProjects objectAtIndex:indexPath.row];
+    cell.textLabel.text = proj.name;
+    cell.detailTextLabel.text = [proj.grade stringValue];
     
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
-    
-    
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSIndexPath *selectedIndexPath = [tableView indexPathForSelectedRow];
+    self.selectedProject = [self.facultyProjects objectAtIndex:selectedIndexPath.row];
 }
-
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
-    
-}
-
-
-
 /*
  // Override to support conditional editing of the table view.
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -111,29 +99,53 @@
  }
  */
 
-/*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
 
-- (IBAction)cancel:(id)sender {
-    [self.delegate facultyListDidCancel];
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    
+    
+    RubricViewController *rvc = (RubricViewController *) [segue destinationViewController];
+    
+    Project *p = self.selectedProject;
+    rvc.currentProject = p;
+    
+    
 }
 
-- (IBAction)done:(id)sender {
-    self.selectedProfessors = [[NSMutableArray alloc] init];
-    self.selectedRows = [[NSMutableArray alloc] initWithArray:[self.tableView indexPathsForSelectedRows]];
-    for (NSIndexPath *index in self.selectedRows) {
-        [self.selectedProfessors addObject: [self.allProfessorsArray objectAtIndex:index.row]];
+
+-(void)getSelectedProfessor{
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Professor" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    // Specify criteria for filtering which objects to fetch
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"username == %@", self.facultyUserName];
+    [fetchRequest setPredicate:predicate];
+    // Specify how the fetched objects should be sorted
+    
+    
+    NSError *error = nil;
+    NSArray *fetchedObjects = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
+    if (fetchedObjects == nil) {
+        NSLog(@"error");
+    }
+    else {
+        self.selectedProfessor = [fetchedObjects objectAtIndex:0];
     }
     
-    [self.delegate facultyListDidDone: self.selectedProfessors inSelectedRows:self.selectedRows];
 }
 
+#pragma mark - Rubric Delegate
+
+-(void)rubricViewControllerDidSubmit{
+    NSError *error = nil;
+    if (![self.managedObjectContext save:&error]) {
+        NSLog(@"Error saving data");
+    }
+}
 
 @end
+
