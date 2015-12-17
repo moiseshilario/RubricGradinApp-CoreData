@@ -17,28 +17,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6w7-xc-1Rf">
-                                <rect key="frame" x="60" y="318" width="294" height="30"/>
+                                <rect key="frame" x="60" y="265" width="294" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jOi-IF-QnO">
-                                <rect key="frame" x="60" y="391" width="294" height="30"/>
+                                <rect key="frame" x="60" y="318" width="294" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmg-Yy-pKw">
-                                <rect key="frame" x="159" y="485" width="97" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RmU-aE-6wF"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iUO-5i-J5Y">
                                 <rect key="frame" x="0.0" y="64" width="414" height="150"/>
                                 <subviews>
@@ -62,6 +51,17 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.51764705879999995" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmg-Yy-pKw">
+                                <rect key="frame" x="159" y="381" width="97" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RmU-aE-6wF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.99607843139999996" green="0.90196078430000004" blue="0.60784313729999995" alpha="1" colorSpace="calibratedRGB"/>
@@ -119,6 +119,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yco-sN-itF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2079" y="30"/>
+        </scene>
+        <!--Faculty Projects-->
+        <scene sceneID="HOL-hX-3V0">
+            <objects>
+                <tableViewController id="Uno-oU-TsA" customClass="FacultyProjectsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="T5W-Ia-mT3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="SpG-tP-oFV">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SpG-tP-oFV" id="NOL-dz-4yj">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <animations/>
+                                </tableViewCellContentView>
+                                <animations/>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Uno-oU-TsA" id="8MH-zA-xwj"/>
+                            <outlet property="delegate" destination="Uno-oU-TsA" id="xV2-eu-jjn"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Faculty Projects" id="97U-Ef-0hL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Bk-iC-erU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2112" y="1430"/>
         </scene>
         <!--Add a Project-->
         <scene sceneID="7g8-SC-TgK">
@@ -320,7 +352,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UTy-SX-BCd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4443" y="653"/>
+            <point key="canvasLocation" x="4275" y="733"/>
         </scene>
         <!--Select the faculty-->
         <scene sceneID="IBQ-Qb-zIv">
@@ -401,7 +433,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b6z-83-8d2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1586" y="25"/>
+            <point key="canvasLocation" x="1590" y="977"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YaW-RC-Zek">
@@ -420,7 +452,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lb3-h8-bgw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3817" y="653"/>
+            <point key="canvasLocation" x="3817" y="733"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a4a-uD-xV4">

@@ -15,7 +15,6 @@
 		A853FDEF1C01CE79005ABB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A853FDEE1C01CE79005ABB49 /* Assets.xcassets */; };
 		A853FDF21C01CE79005ABB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A853FDF01C01CE79005ABB49 /* LaunchScreen.storyboard */; };
 		A853FDFD1C01CE79005ABB49 /* RubricGradingAppCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FDFC1C01CE79005ABB49 /* RubricGradingAppCDTests.m */; };
-		A853FE081C01CE79005ABB49 /* RubricGradingAppCDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE071C01CE79005ABB49 /* RubricGradingAppCDUITests.m */; };
 		A853FE171C01D5BC005ABB49 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE161C01D5BC005ABB49 /* LoginViewController.m */; };
 		A853FE1D1C01D5F8005ABB49 /* AdminTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE1C1C01D5F8005ABB49 /* AdminTableViewController.m */; };
 		A853FE201C027E74005ABB49 /* AddProjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE1F1C027E74005ABB49 /* AddProjectViewController.m */; };
@@ -25,6 +24,8 @@
 		A853FE461C02CB42005ABB49 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE451C02CB42005ABB49 /* Student.m */; };
 		A853FE491C02D5D3005ABB49 /* Professor.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE481C02D5D3005ABB49 /* Professor.m */; };
 		A853FE4C1C03DA94005ABB49 /* StudentsListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */; };
+		A8A4CEE21C20C1DB00E15B5C /* FacultyProjectsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A4CEE11C20C1DB00E15B5C /* FacultyProjectsTableViewController.m */; };
+		A8A4CEE41C20D2AF00E15B5C /* RubricGradingAppCDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A8A4CEE31C20D2AF00E15B5C /* RubricGradingAppCDUITests.m */; };
 		A8BCD98F1C1E8D4300A5D425 /* AppData.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BCD98E1C1E8D4300A5D425 /* AppData.m */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +62,6 @@
 		A853FDFC1C01CE79005ABB49 /* RubricGradingAppCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubricGradingAppCDTests.m; sourceTree = "<group>"; };
 		A853FDFE1C01CE79005ABB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A853FE031C01CE79005ABB49 /* RubricGradingAppCDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RubricGradingAppCDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A853FE071C01CE79005ABB49 /* RubricGradingAppCDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RubricGradingAppCDUITests.m; sourceTree = "<group>"; };
 		A853FE091C01CE79005ABB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A853FE151C01D5BC005ABB49 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		A853FE161C01D5BC005ABB49 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
@@ -82,6 +82,9 @@
 		A853FE481C02D5D3005ABB49 /* Professor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Professor.m; sourceTree = "<group>"; };
 		A853FE4A1C03DA94005ABB49 /* StudentsListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StudentsListTableViewController.h; sourceTree = "<group>"; };
 		A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StudentsListTableViewController.m; sourceTree = "<group>"; };
+		A8A4CEE01C20C1DB00E15B5C /* FacultyProjectsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacultyProjectsTableViewController.h; sourceTree = "<group>"; };
+		A8A4CEE11C20C1DB00E15B5C /* FacultyProjectsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacultyProjectsTableViewController.m; sourceTree = "<group>"; };
+		A8A4CEE31C20D2AF00E15B5C /* RubricGradingAppCDUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RubricGradingAppCDUITests.m; sourceTree = "<group>"; };
 		A8BCD98D1C1E8D4300A5D425 /* AppData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppData.h; sourceTree = "<group>"; };
 		A8BCD98E1C1E8D4300A5D425 /* AppData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -152,6 +155,8 @@
 				A853FE4B1C03DA94005ABB49 /* StudentsListTableViewController.m */,
 				A84A98341C0ED079007A33D5 /* FacultyListTableViewController.h */,
 				A84A98351C0ED079007A33D5 /* FacultyListTableViewController.m */,
+				A8A4CEE01C20C1DB00E15B5C /* FacultyProjectsTableViewController.h */,
+				A8A4CEE11C20C1DB00E15B5C /* FacultyProjectsTableViewController.m */,
 			);
 			path = RubricGradingAppCD;
 			sourceTree = "<group>";
@@ -189,8 +194,8 @@
 		A853FE061C01CE79005ABB49 /* RubricGradingAppCDUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A853FE071C01CE79005ABB49 /* RubricGradingAppCDUITests.m */,
 				A853FE091C01CE79005ABB49 /* Info.plist */,
+				A8A4CEE31C20D2AF00E15B5C /* RubricGradingAppCDUITests.m */,
 			);
 			path = RubricGradingAppCDUITests;
 			sourceTree = "<group>";
@@ -338,6 +343,7 @@
 				A853FDE41C01CE79005ABB49 /* AppDelegate.m in Sources */,
 				A853FE4C1C03DA94005ABB49 /* StudentsListTableViewController.m in Sources */,
 				A8BCD98F1C1E8D4300A5D425 /* AppData.m in Sources */,
+				A8A4CEE21C20C1DB00E15B5C /* FacultyProjectsTableViewController.m in Sources */,
 				A853FE461C02CB42005ABB49 /* Student.m in Sources */,
 				A853FDED1C01CE79005ABB49 /* RubricGradingAppCD.xcdatamodeld in Sources */,
 				A853FDE11C01CE79005ABB49 /* main.m in Sources */,
@@ -357,7 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A853FE081C01CE79005ABB49 /* RubricGradingAppCDUITests.m in Sources */,
+				A8A4CEE41C20D2AF00E15B5C /* RubricGradingAppCDUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
