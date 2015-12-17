@@ -179,6 +179,8 @@
 }
 
 
-- (IBAction)Keyboard:(id)sender {
-    [self.view endEditing:YES];}
+
+- (IBAction)Backgroundtap:(id)sender {
+ [self.view endEditing:YES];
+}
 @end

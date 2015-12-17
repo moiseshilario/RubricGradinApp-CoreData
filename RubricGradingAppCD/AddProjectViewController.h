@@ -15,9 +15,10 @@
 
 
 @interface AddProjectViewController : UIViewController <UITableViewDelegate, UITableViewDataSource,StudentsListTableViewControllerDelegate, FacultyListTableViewControllerDelegate, UIPickerViewDelegate, UIPickerViewDataSource>
-- (IBAction)Keyboard:(id)sender;
 
 
+
+- (IBAction)Backgroundtap:(id)sender;
 
 
 @property (weak, nonatomic) IBOutlet UITextField *projectNameField;
