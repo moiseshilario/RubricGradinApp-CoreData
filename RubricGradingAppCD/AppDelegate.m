@@ -32,7 +32,7 @@
     
     AppData *data = [[AppData alloc ]init];
     data.managedObjectContext = self.managedObjectContext;
-    //[data initObjects];
+    [data initObjects];
     
     return YES;
 }

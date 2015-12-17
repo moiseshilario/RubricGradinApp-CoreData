@@ -165,5 +165,28 @@
     XCTAssertFalse(app.tables.tableRows.staticTexts[@"test to delete 2"].exists);
 }
 
+-(void)testPicker {
+XCUIApplication *app = [[XCUIApplication alloc] init];
+XCUIElement *usernameTextField = app.textFields[@"Username"];
+[usernameTextField tap];
+[usernameTextField typeText:@"sasi001"];
+
+XCUIElement *element = [[[[app.otherElements containingType:XCUIElementTypeNavigationBar identifier:@"Login"] childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element childrenMatchingType:XCUIElementTypeOther].element;
+[element doubleTap];
+
+XCUIElement *passwordSecureTextField = app.secureTextFields[@"Password"];
+[passwordSecureTextField tap];
+[passwordSecureTextField typeText:@"passwordSasi"];
+[element doubleTap];
+[app.buttons[@"Login"] tap];
+[app.alerts[@"Correct"].collectionViews.buttons[@"OK"] tap];
+[app.tables.staticTexts[@"Project 2"] tap];
+[app.buttons[@"Total"] tap];
+
+
+
+
+XCTAssertTrue(app.staticTexts[@"0"].exists);
+}
 
 @end
