@@ -1,35 +1,34 @@
 //
-//  FacultyListTableViewController.m
+//  StudentsListTableViewController.m
 //  RubricGradingAppCD
 //
-//  Created by Moises Hilario Rodrigues on 12/2/15.
+//  Created by Moises Hilario Rodrigues on 11/23/15.
 //  Copyright © 2015 iosProject. All rights reserved.
 //
 
-#import "FacultyTableViewController.h"
+#import "StudentsListTableViewController.h"
 #import "Student.h"
-#import "Project.h"
-#import "LoginViewController.h"
-#import "RubricViewController.h"
 
-@interface FacultyTableViewController ()
+@interface StudentsListTableViewController ()
 
-@property (nonatomic) NSString *facultyName;
-@property (nonatomic) Project *selectedProject;
--(void)getSelectedProfessor;
 @end
 
-@implementation FacultyTableViewController
+@implementation StudentsListTableViewController
+
+
 
 - (void)viewDidLoad {
-    
     [super viewDidLoad];
-    NSLog(@"the faculty name is:  %@",self.facultyUserName);
+    self.tableView.allowsMultipleSelection = YES;
     
-    [self getSelectedProfessor];
+    // Uncomment the following line to preserve selection between presentations.
+    self.clearsSelectionOnViewWillAppear = NO;
     
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
 }
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -38,33 +37,37 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return [[self.selectedProfessor.projectFaculty allObjects]count];
+    return [self.allStudentsArray count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"FacultyCell" forIndexPath:indexPath];
-    self.facultyProjects = [self.selectedProfessor.projectFaculty allObjects];
     
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    Project *proj = [self.facultyProjects objectAtIndex:indexPath.row];
-    cell.textLabel.text = proj.name;
-    cell.detailTextLabel.text = [proj.grade stringValue];
+    Student *student = [self.allStudentsArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = student.name;
     
+    if([self.selectedRows containsObject:indexPath]) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        [tableView selectRowAtIndexPath:indexPath
+                               animated:NO
+                         scrollPosition:UITableViewScrollPositionNone];
+    }
+    else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        
+    }
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    NSIndexPath *selectedIndexPath = [tableView indexPathForSelectedRow];
-    self.selectedProject = [self.facultyProjects objectAtIndex:selectedIndexPath.row];
-}
+
 /*
  // Override to support conditional editing of the table view.
  - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -99,53 +102,36 @@
  }
  */
 
-
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    
-    
-    RubricViewController *rvc = (RubricViewController *) [segue destinationViewController];
-    
-    Project *p = self.selectedProject;
-    rvc.currentProject = p;
-    
-    
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
 }
 
-
--(void)getSelectedProfessor{
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Professor" inManagedObjectContext:self.managedObjectContext];
-    [fetchRequest setEntity:entity];
-    // Specify criteria for filtering which objects to fetch
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"username == %@", self.facultyUserName];
-    [fetchRequest setPredicate:predicate];
-    // Specify how the fetched objects should be sorted
-    
-    
-    NSError *error = nil;
-    NSArray *fetchedObjects = [self.managedObjectContext executeFetchRequest:fetchRequest error:&error];
-    if (fetchedObjects == nil) {
-        NSLog(@"error");
-    }
-    else {
-        self.selectedProfessor = [fetchedObjects objectAtIndex:0];
-    }
-    
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
 }
 
-#pragma mark - Rubric Delegate
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
--(void)rubricViewControllerDidSubmit{
-    NSError *error = nil;
-    if (![self.managedObjectContext save:&error]) {
-        NSLog(@"Error saving data");
-    }
+- (IBAction)cancel:(id)sender {
+    [self.delegate studentsListDidCancel];
 }
 
+- (IBAction)done:(id)sender {
+    self.selectedStudents = [[NSMutableArray alloc] init];
+    self.selectedRows = [[NSMutableArray alloc] initWithArray:[self.tableView indexPathsForSelectedRows]];
+    for (NSIndexPath *index in self.selectedRows) {
+        [self.selectedStudents addObject: [self.allStudentsArray objectAtIndex:index.row]];
+        
+    }
+    [self.delegate studentsListDidDone: self.selectedStudents inSelectedRows:self.selectedRows];
+}
 @end
-
