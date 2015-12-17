@@ -30,7 +30,7 @@
     
     
     
-    //[self initObjects];
+    [self initObjects];
     
     
     // Override point for customization after application launch.
