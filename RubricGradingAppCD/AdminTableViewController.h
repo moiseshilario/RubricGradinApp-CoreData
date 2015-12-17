@@ -10,7 +10,7 @@
 #import "AddProjectViewController.h"
 
 
-@interface AdminTableViewController : UITableViewController <AddProjectViewControllerDelegate>
+@interface AdminTableViewController : UITableViewController <AddProjectViewControllerDelegate,NSFetchedResultsControllerDelegate>
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;

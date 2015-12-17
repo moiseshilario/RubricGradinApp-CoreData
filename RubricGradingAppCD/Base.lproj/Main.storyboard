@@ -98,6 +98,9 @@
                                     <animations/>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <segue destination="D6Z-3S-YSH" kind="presentation" identifier="projectDetail" id="jbJ-1e-Yo3"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -121,6 +124,7 @@
         <!--Add a Project-->
         <scene sceneID="7g8-SC-TgK">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3j-km-Hlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="FOT-86-LOl" customClass="AddProjectViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RCv-mH-Hcs"/>
@@ -221,19 +225,6 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.51764705879999995" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O0d-yQ-HDs">
-                                <rect key="frame" x="16" y="702" width="374" height="26"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Choose a chair...                " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WVW-yg-cee">
-                                <rect key="frame" x="16" y="617" width="375" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Give some description of the project here." translatesAutoresizingMaskIntoConstraints="NO" id="PNG-E4-lnl">
                                 <rect key="frame" x="24" y="149" width="367" height="69"/>
                                 <animations/>
@@ -264,6 +255,9 @@
                                 <animations/>
                                 <color key="backgroundColor" red="0.51764705879999995" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MjS-g7-k2J">
+                                <rect key="frame" x="0.0" y="635" width="414" height="68"/>
+                            </pickerView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.87450980392156863" blue="0.58431372549019611" alpha="1" colorSpace="calibratedRGB"/>
@@ -282,15 +276,14 @@
                     </navigationItem>
                     <connections>
                         <outlet property="briefDescriptionField" destination="PNG-E4-lnl" id="Lcs-fN-T48"/>
-                        <outlet property="chairField" destination="O0d-yQ-HDs" id="HcU-4X-C7r"/>
+                        <outlet property="chairPicker" destination="MjS-g7-k2J" id="ixL-4c-0Xh"/>
                         <outlet property="facultyTableView" destination="dN7-jS-ckY" id="aDz-kl-HjY"/>
                         <outlet property="projectNameField" destination="ocf-H9-By1" id="4Dm-Uf-I2A"/>
                         <outlet property="studentTableView" destination="2Lv-eF-J3e" id="1Pf-v6-CIf"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3j-km-Hlp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3242" y="30"/>
+            <point key="canvasLocation" x="3342" y="-85"/>
         </scene>
         <!--Select the students-->
         <scene sceneID="s5B-EO-zrQ">
@@ -1000,4 +993,7 @@
     <resources>
         <image name="Image" width="290" height="99"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="jbJ-1e-Yo3"/>
+    </inferredMetricsTieBreakers>
 </document>

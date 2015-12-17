@@ -8,8 +8,8 @@
 
 #import "AdminTableViewController.h"
 #import "Student.h"
+#import "Project.h"
 
-#import "StudentsListTableViewController.h"
 
 @interface AdminTableViewController ()
 
@@ -74,17 +74,21 @@
  }
  */
 
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
- } else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }
- }
- */
+
+// Override to support editing the table view.
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        Project *projectToDelete = [self.fetchedResultsController objectAtIndexPath:indexPath];
+        [self.managedObjectContext deleteObject: projectToDelete];
+        
+        NSError *error = nil;
+        if (![self.managedObjectContext save:&error]) {
+            NSLog(@"Error! %@",error);
+        }
+    }
+    
+}
 
 /*
  // Override to support rearranging the table view.
@@ -116,8 +120,22 @@
         apvc.currentProject = newProject;
         apvc.allProfessorsArray = [self allProfessors];
         apvc.allStudentsArray = [self allStudents];
+        apvc.typeOfSegue = @"add";
     }
     
+    if([segue.identifier isEqualToString:@"projectDetail"]){
+        UINavigationController *navigation = (UINavigationController*) [segue destinationViewController];
+        
+        AddProjectViewController *apvc = (AddProjectViewController *)[navigation topViewController];
+        apvc.delegate = self;
+        
+        NSIndexPath *index = [self.tableView indexPathForSelectedRow];
+        Project *selectedProject = (Project *)[self.fetchedResultsController objectAtIndexPath:index];
+        apvc.currentProject = selectedProject;
+        apvc.allProfessorsArray = [self allProfessors];
+        apvc.allStudentsArray = [self allStudents];
+        apvc.typeOfSegue = @"edit";
+    }
 }
 
 #pragma mark - Fecthed Result Controller section
@@ -134,9 +152,12 @@
     [fetchRequest setEntity:entity];
     
     
+    
     // Edit the sort key as appropriate.
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"name" ascending:YES];
     NSArray *sortDescriptors = @[sortDescriptor];
+    
+    
     
     [fetchRequest setSortDescriptors:sortDescriptors];
     
@@ -144,7 +165,59 @@
     // nil for section name key path means "no sections".
     _fetchedResultsController = [[NSFetchedResultsController alloc]  initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:nil];
     
+    _fetchedResultsController.delegate = self;
+    
     return _fetchedResultsController;
+}
+
+-(void) controllerWillChangeContent:(NSFetchedResultsController *)controller {
+    [self.tableView beginUpdates];
+}
+
+-(void) controllerDidChangeContent:(NSFetchedResultsController *)controller{
+    [self.tableView endUpdates];
+}
+
+-(void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath{
+    
+    UITableView *tableView = self.tableView;
+    
+    switch (type) {
+        case NSFetchedResultsChangeInsert:
+            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeDelete:
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+        case NSFetchedResultsChangeUpdate: {
+            Project *changedProject = [self.fetchedResultsController objectAtIndexPath:indexPath];
+            UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+            cell.textLabel.text = changedProject.name;
+        }
+            break;
+            
+            
+        case NSFetchedResultsChangeMove:
+            [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+            [tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+            
+    }
+}
+
+-(void) controller:(NSFetchedResultsController *)controller didChangeSection:(id<NSFetchedResultsSectionInfo>)sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
+    switch (type) {
+        case NSFetchedResultsChangeInsert:
+            [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        case NSFetchedResultsChangeDelete:
+            [self.tableView deleteSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
+            break;
+        default:
+            break;
+    }
 }
 
 -(NSMutableArray *)allProfessors {
@@ -194,6 +267,24 @@
     return allStudents;
 }
 
+#pragma mark - AddProject Delegate functions
+
+-(void)addProjectControllerDidCancel:(Project *)projectToDelete type:(NSString *)typeOfSegue{
+    if ([typeOfSegue isEqualToString:@"add"]) {
+        [self.managedObjectContext deleteObject:projectToDelete];
+    }
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+
+-(void)addProjectControllerDidSave{
+    NSError *error = nil;
+    if (![self.managedObjectContext save:&error]) {
+        NSLog(@"Error saving data");
+    }
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 
