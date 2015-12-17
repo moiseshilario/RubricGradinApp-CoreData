@@ -17,8 +17,6 @@
 #import "LoginViewController.h"
 #import "StudentsListTableViewController.h"
 #import "FacultyListTableViewController.h"
-#import "RubricViewController.h"
-#import "FacultyTableViewController.h"
 
 @interface RubricGradingAppCDTests : XCTestCase {
     
@@ -32,9 +30,6 @@
     LoginViewController *loginVC;
     StudentsListTableViewController *studentListTVC;
     FacultyListTableViewController *facultyListTVC;
-    
-    FacultyTableViewController *facultyTableTVC;
-    RubricViewController *rubricTVC;
     
    
  
@@ -65,8 +60,7 @@
     
     addProjectVC = [storyBoard instantiateViewControllerWithIdentifier:@"AddProjectViewController"];
 
-    rubricTVC = [storyBoard instantiateViewControllerWithIdentifier:@"RubricViewController"];
-
+    
     
     if(!managedObjectModel)
     {
@@ -304,19 +298,7 @@
     
 }
 
-- (void)testCalc {
 
-    rubricTVC.p1 = 5 * 0.25;
-    rubricTVC.p2 = 5 * 0.15;
-    rubricTVC.p3 = 5 * 0.05;
-    rubricTVC.p4 = 5 * 0.20;
-    rubricTVC.p5 = 5 * 0.20;
-    rubricTVC.p6 = 5 * 0.15;
-
-
-    XCTAssertTrue([[rubricTVC calc ] isEqualToString:@"100"], @"");
-
-}
 
 
 
