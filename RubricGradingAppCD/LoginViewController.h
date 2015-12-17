@@ -19,5 +19,6 @@
 @property (nonatomic) Person *person;
 
 - (IBAction)loginPressed:(id)sender;
+- (IBAction)Keyboard:(id)sender;
 
 @end
