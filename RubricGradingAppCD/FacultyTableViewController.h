@@ -16,5 +16,4 @@
 @property (nonatomic) NSString *facultyUserName;
 @property (nonatomic) Professor *selectedProfessor;
 @property  (nonatomic) NSArray *facultyProjects;
-- (IBAction)logout:(id)sender;
 @end

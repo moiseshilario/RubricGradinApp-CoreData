@@ -14,7 +14,6 @@
 
 @property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-- (IBAction)logout:(id)sender;
--(NSMutableArray *)allProfessors ;
+
 
 @end

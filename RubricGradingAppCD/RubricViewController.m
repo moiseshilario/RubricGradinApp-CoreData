@@ -8,8 +8,15 @@
 
 #import "RubricViewController.h"
 
-@interface RubricViewController ()
-
+@interface RubricViewController (){
+    double p1;
+    double p2;
+    double p3;
+    double p4;
+    double p5;
+    double p6;
+    double sum;
+}
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerOverallProduct;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerContentAnalysis;
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerDepthAnalysis;
@@ -45,7 +52,7 @@
     }
     
     return 0;
-    
+
 }
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
     // As we have just select diraction and one to five grading scale
@@ -92,198 +99,198 @@
 }
 
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    
+   
     
     
     if (pickerView) {
         
+   
+//    p1 = 5 * 0.25;
+//    p2 = 5 * 0.05;
+//    p3 = 5 * 0.20;
+//    p4 = 5 * 0.20;
+//    p5 = 5 * 0.15;
+//    p6 = 5 * 0.15;
+    
+    if (pickerView == self.pickerOverallProduct) {
         
-        //    p1 = 5 * 0.25;
-        //    p2 = 5 * 0.05;
-        //    p3 = 5 * 0.20;
-        //    p4 = 5 * 0.20;
-        //    p5 = 5 * 0.15;
-        //    p6 = 5 * 0.15;
+        // As in the Rubric the firt criteria has wight 0.05 therefore we multiply the point gaving in 0.25
         
-        if (pickerView == self.pickerOverallProduct) {
+       switch (row) {
+           case 1:
+               p1 = 0;
+               p1 = 5 * 0.25;
+             break;
+           case 2:
+               p1 = 0;
+               p1 = 4 * 0.25;
+               break;
+           case 3:
+               p1 = 0;
+               p1 = 3 * 0.25;
+               break;
+           case 4:
+               p1 = 0;
+               p1 = 2 * 0.25;
+               break;
+           case 5:
+               p1 = 0;
+               p1 = 1 * 0.25;
+               break;
             
-            // As in the Rubric the firt criteria has wight 0.05 therefore we multiply the point gaving in 0.25
-            
-            switch (row) {
-                case 1:
-                    self.p1 = 0;
-                    self.p1 = 5 * 0.25;
-                    break;
-                case 2:
-                    self.p1 = 0;
-                    self.p1 = 4 * 0.25;
-                    break;
-                case 3:
-                    self.p1 = 0;
-                    self.p1 = 3 * 0.25;
-                    break;
-                case 4:
-                    self.p1 = 0;
-                    self.p1 = 2 * 0.25;
-                    break;
-                case 5:
-                    self.p1 = 0;
-                    self.p1 = 1 * 0.25;
-                    break;
-                    
-                default:
-                    break;
-            }
-        }
+          default:
+              break;
+    }
+    }
         if (pickerView == self.pickerContentAnalysis) {
             // this has weigh 0.05
             
             switch (row) {
                 case 1:
-                    self.p2 = 0;
-                    self.p2 = 5 * 0.05;
+                    p2 = 0;
+                    p2 = 5 * 0.05;
                     break;
                 case 2:
-                    self.p2 = 0;
-                    self.p2 = 4 * 0.05;
+                      p2 = 0;
+                    p2 = 4 * 0.05;
                     break;
                 case 3:
-                    self.p2 = 0;
-                    self.p2 = 3 * 0.05;
+                      p2 = 0;
+                    p2 = 3 * 0.05;
                     break;
                 case 4:
-                    self.p2 = 0;
-                    self.p2 = 2 * 0.05;
+                      p2 = 0;
+                    p2 = 2 * 0.05;
                     break;
                 case 5:
-                    self.p2 = 0;
-                    self.p2 = 1 * 0.05;
+                      p2 = 0;
+                    p2 = 1 * 0.05;
                     break;
                     
                 default:
                     break;
             }
-        }
-        if (pickerView == self.pickerDepthAnalysis) {
-            // this has weigh 0.20
-            
-            switch (row) {
-                case 1:
-                    self.p3 = 0;
-                    self.p3 = 5 * 0.20;
-                    break;
-                case 2:
-                    self.p3 = 0;
-                    self.p3 = 4 * 0.20;
-                    break;
-                case 3:
-                    self.p3 = 0;
-                    self.p3 = 3 * 0.20;
-                    break;
-                case 4:
-                    self.p3 = 0;
-                    self.p3 = 2 * 0.20;
-                    break;
-                case 5:
-                    self.p3 = 0;
-                    self.p3 = 1 * 0.20;
-                    break;
-                    
-                default:
-                    break;
-            }
-        }
-        if (pickerView == self.pickerDepthContent) {
-            // this has weigh 0.20
-            
-            switch (row) {
-                case 1:
-                    self.p4 = 0;
-                    self.p4 = 5 * 0.20;
-                    break;
-                case 2:
-                    self.p4 = 0;
-                    self.p4 = 4 * 0.20;
-                    break;
-                case 3:
-                    self.p4 = 0;
-                    self.p4 = 3 * 0.20;
-                    break;
-                case 4:
-                    self.p4 = 0;
-                    self.p4 = 2 * 0.20;
-                    break;
-                case 5:
-                    self.p4 = 0;
-                    self.p4 = 1 * 0.20;
-                    break;
-                    
-                default:
-                    break;
-            }
-        }
-        if (pickerView == self.pickerQuality) {
-            // this has weigh 0.15
-            
-            switch (row) {
-                case 1:
-                    self.p5 = 0;
-                    self.p5 = 5 * 0.15;
-                    break;
-                case 2:
-                    self.p5 = 0;
-                    self.p5 = 4 * 0.15;
-                    break;
-                case 3:
-                    self.p5 = 0;
-                    self.p5 = 3 * 0.15;
-                    break;
-                case 4:
-                    self.p5 = 0;
-                    self.p5 = 2 * 0.15;
-                    break;
-                case 5:
-                    self.p5 = 0;
-                    self.p5 = 1 * 0.15;
-                    break;
-                    
-                default:
-                    break;
-            }
-        }
-        if (pickerView == self.peckerWrintingPro) {
-            // this has weigh 0.15
-            
-            switch (row) {
-                case 1:
-                    self.p6 = 0;
-                    self.p6 = 5 * 0.15;
-                    break;
-                case 2:
-                    self.p6 = 0;
-                    self.p6 = 4 * 0.15;
-                    break;
-                case 3:
-                    self.p6 = 0;
-                    self.p6 = 3 * 0.15;
-                    break;
-                case 4:
-                    self.p6 = 0;
-                    self.p6 = 2 * 0.15;
-                    break;
-                case 5:
-                    self.p6 = 0;
-                    self.p6 = 1 * 0.15;
-                    break;
-                    
-                default:
-                    break;
-            }
-        }
-        // Here the sum of the grading
+    }
+    if (pickerView == self.pickerDepthAnalysis) {
+        // this has weigh 0.20
         
-        // to convert the sumation to percentage
-        [self calc];
+        switch (row) {
+            case 1:
+                p3 = 0;
+                p3 = 5 * 0.20;
+                break;
+            case 2:
+                p3 = 0;
+                p3 = 4 * 0.20;
+                break;
+            case 3:
+                p3 = 0;
+                p3 = 3 * 0.20;
+                break;
+            case 4:
+                p3 = 0;
+                p3 = 2 * 0.20;
+                break;
+            case 5:
+                p3 = 0;
+                p3 = 1 * 0.20;
+                break;
+                
+            default:
+                break;
+        }
+    }
+    if (pickerView == self.pickerDepthContent) {
+        // this has weigh 0.20
+        
+        switch (row) {
+            case 1:
+                p4 = 0;
+                p4 = 5 * 0.20;
+                break;
+            case 2:
+                p4 = 0;
+                p4 = 4 * 0.20;
+                break;
+            case 3:
+                p4 = 0;
+                p4 = 3 * 0.20;
+                break;
+            case 4:
+                p4 = 0;
+                p4 = 2 * 0.20;
+                break;
+            case 5:
+                p4 = 0;
+                p4 = 1 * 0.20;
+                break;
+                
+            default:
+                break;
+        }
+    }
+    if (pickerView == self.pickerQuality) {
+        // this has weigh 0.15
+        
+        switch (row) {
+            case 1:
+                p5 = 0;
+                p5 = 5 * 0.15;
+                break;
+            case 2:
+                p5 = 0;
+                p5 = 4 * 0.15;
+                break;
+            case 3:
+                p5 = 0;
+                p5 = 3 * 0.15;
+                break;
+            case 4:
+                p5 = 0;
+                p5 = 2 * 0.15;
+                break;
+            case 5:
+                p5 = 0;
+                p5 = 1 * 0.15;
+                break;
+                
+            default:
+                break;
+        }
+    }
+    if (pickerView == self.peckerWrintingPro) {
+        // this has weigh 0.15
+        
+        switch (row) {
+            case 1:
+                p6 = 0;
+                p6 = 5 * 0.15;
+                break;
+            case 2:
+                p6 = 0;
+                p6 = 4 * 0.15;
+                break;
+            case 3:
+                p6 = 0;
+                p6 = 3 * 0.15;
+                break;
+            case 4:
+                p6 = 0;
+                p6 = 2 * 0.15;
+                break;
+            case 5:
+                p6 = 0;
+                p6 = 1 * 0.15;
+                break;
+                
+            default:
+                break;
+        }
+    }
+           // Here the sum of the grading
+    
+           // to convert the sumation to percentage
+    [self calc];
         
     }
 }
@@ -291,9 +298,9 @@
 -(NSString *)calc {
     
     NSString *calc = [[NSString alloc]init];
-    self.sum = self.p1+self.p2+self.p3+self.p4+self.p5+self.p6;
-    self.sum = (self.sum / 5) * 100;
-    calc = [NSString stringWithFormat:@"%.f",self.sum];
+    sum = p1+p2+p3+p4+p5+p6;
+    sum = (sum / 5) * 100;
+    calc = [NSString stringWithFormat:@"%.f",sum];
     return calc;
     
     
@@ -310,23 +317,18 @@
 - (IBAction)submit:(id)sender {
     
     self.writingGrade = [self calc];
-    NSNumberFormatter *f = [[NSNumberFormatter alloc] init];
-    f.numberStyle = NSNumberFormatterDecimalStyle;
-    [self.currentProject setGrade:[f numberFromString:self.writingGrade]];
-    [self.delegate rubricViewControllerDidSubmit];
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+   
     
-    self.totalGrading.text = [self.currentProject.grade stringValue];
-    
-    /* I have faced the bug when the user does not select grad it makes problem
-     in order to forc user to select grade. adding "Select(1 to 5)" .
-     
-     */
+      /* I have faced the bug when the user does not select grad it makes problem
+         in order to forc user to select grade. adding "Select(1 to 5)" .
+       
+    */
     
     self.gradingScale = @[@"Select(1 to 5)",@"(5)",@"(4)",@"(3)",@"(2)",@"(1)"];
 }
@@ -337,30 +339,13 @@
 }
 
 /*
- #pragma mark - Navigation
- 
- // In a storyboard-based application, you will often want to do a little preparation before navigation
- - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- // Get the new view controller using [segue destinationViewController].
- // Pass the selected object to the new view controller.
- }
- */
+#pragma mark - Navigation
 
-
-//- (void)testCalc {
-//    
-//    rubricView.p1 = 5 * 0.25;
-//    rubricView.p2 = 5 * 0.15;
-//    rubricView.p3 = 5 * 0.05;
-//    rubricView.p4 = 5 * 0.20;
-//    rubricView.p5 = 5 * 0.20;
-//    rubricView.p6 = 5 * 0.15;
-//    
-//    
-//    
-//    XCTAssertTrue([[rubricView calc ] isEqualToString:@"100"], @"");
-//    
-//}
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
-

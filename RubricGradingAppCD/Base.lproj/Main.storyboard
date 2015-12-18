@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ooC-e3-p06">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ooC-e3-p06">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -56,6 +56,10 @@
                                 </subviews>
                                 <animations/>
                                 <color key="backgroundColor" red="0.51764705879999995" green="0.0" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="Q7h-Vl-YLE" appends="YES" id="w1a-d2-qjp"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kP5-Sf-RKC">
                                 <rect key="frame" x="0.0" y="586" width="414" height="150"/>
@@ -76,13 +80,18 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Q7h-Vl-YLE">
+                    <connections>
+                        <action selector="backgroundtap:" destination="BYZ-38-t0r" id="EjF-cS-S5J"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="923" y="809"/>
         </scene>
         <!--Projects-->
         <scene sceneID="PNz-Lh-jox">
             <objects>
-                <tableViewController storyboardIdentifier="AdminTableViewController" id="QQo-cv-dk7" customClass="AdminTableViewController" sceneMemberID="viewController">
+                <tableViewController id="QQo-cv-dk7" customClass="AdminTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="jqm-Dc-k1L">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,7 +102,7 @@
                                 <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vAd-eV-0gz" id="Isc-yH-a5c">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -108,22 +117,14 @@
                             <outlet property="delegate" destination="QQo-cv-dk7" id="UqJ-WJ-I6V"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Logout" id="ql9-NB-r2k"/>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Projects" id="Bx7-s9-VFp">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Fov-Cr-Y2k">
-                            <connections>
-                                <action selector="logout:" destination="QQo-cv-dk7" id="j6j-r6-ikQ"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="C28-X2-iOc">
                             <connections>
                                 <segue destination="D6Z-3S-YSH" kind="presentation" identifier="addProject" id="RK0-A4-C82"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yco-sN-itF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,7 +133,7 @@
         <!--Add a Project-->
         <scene sceneID="7g8-SC-TgK">
             <objects>
-                <viewController storyboardIdentifier="AddProjectViewController" id="FOT-86-LOl" customClass="AddProjectViewController" sceneMemberID="viewController">
+                <viewController id="FOT-86-LOl" customClass="AddProjectViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RCv-mH-Hcs"/>
                         <viewControllerLayoutGuide type="bottom" id="LU9-2k-Y9W"/>
@@ -164,7 +165,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="35"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qoH-ph-SW9" id="P4G-a1-oRf">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -181,7 +182,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="35"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zpK-Mb-Eff" id="nq3-Ac-guZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="34.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="34"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <animations/>
                                         </tableViewCellContentView>
@@ -264,7 +265,6 @@
                             </view>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MjS-g7-k2J">
                                 <rect key="frame" x="0.0" y="635" width="414" height="68"/>
-                                <animations/>
                             </pickerView>
                         </subviews>
                         <animations/>
@@ -297,7 +297,7 @@
         <!--Select the students-->
         <scene sceneID="s5B-EO-zrQ">
             <objects>
-                <tableViewController storyboardIdentifier="StudentsListTableViewController" id="pK6-hB-4ie" customClass="StudentsListTableViewController" sceneMemberID="viewController">
+                <tableViewController id="pK6-hB-4ie" customClass="StudentsListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="AVe-Sz-QJP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -308,7 +308,7 @@
                                 <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lfG-Uz-0w2" id="q2Y-Zw-Kpx">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -340,7 +340,7 @@
         <!--Select the faculty-->
         <scene sceneID="IBQ-Qb-zIv">
             <objects>
-                <tableViewController storyboardIdentifier="FacultyListTableViewController" id="OaI-gG-Tua" customClass="FacultyListTableViewController" sceneMemberID="viewController">
+                <tableViewController id="OaI-gG-Tua" customClass="FacultyListTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="h3r-ft-lgI">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -351,7 +351,7 @@
                                 <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gnS-4i-ebG" id="gyA-Oy-zgO">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -489,7 +489,7 @@
                                 <rect key="frame" x="0.0" y="92" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pag-Xp-aZZ" id="Zgf-Yy-7Z0">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -504,18 +504,9 @@
                             <outlet property="delegate" destination="JZs-wx-bYF" id="2Jx-WP-KKk"/>
                         </connections>
                     </tableView>
-                    <toolbarItems>
-                        <barButtonItem title="Logout" id="cBS-yy-Zr7"/>
-                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Faculty" id="LCy-Us-Niq">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="qsv-Rk-fAC">
-                            <connections>
-                                <action selector="logout:" destination="JZs-wx-bYF" id="FHH-OD-Fo1"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="0z2-Nj-BZa"/>
                     </navigationItem>
-                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EC3-uh-CjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -747,9 +738,6 @@
                                 <rect key="frame" x="372" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <connections>
-                                    <segue destination="PM4-Yu-0fq" kind="showDetail" id="uQ1-wE-YHy"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -990,9 +978,6 @@
                                 <rect key="frame" x="372" y="11" width="22" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <connections>
-                                    <segue destination="uqx-9g-dkp" kind="showDetail" id="wts-Il-dAl"/>
-                                </connections>
                             </button>
                         </barButtonItem>
                     </navigationItem>
@@ -1011,87 +996,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G2n-9G-zeZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1979" y="2806"/>
-        </scene>
-        <!--Written Back Button-->
-        <scene sceneID="MrD-Em-zfi">
-            <objects>
-                <viewController id="PM4-Yu-0fq" customClass="WrittenBackButton" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Zaj-ub-3TB"/>
-                        <viewControllerLayoutGuide type="bottom" id="Hhb-qZ-aHh"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CdN-2C-biO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2oL-pi-5aS">
-                                <rect key="frame" x="14" y="158" width="386" height="1667"/>
-                                <animations/>
-                                <string key="text">Overall product &amp; process assessment:                                                                                                                           Sophisticated (5) : Student posed a thoughtful, creative question that engaged them in challenging or provocative development. The project explores interesting domains or contributes to the field in a focused, specific area.  The process followed was methodical, comprehensive, and creative. The product reflects the objectives.                                                                                                                                                                                     Competent (3) : Student posed a valid problem, but the domain is mundane or humdrum.  The process followed did not show major thoroughness on the part of the student to define or to complete. The product is functional, but some of the objectives were compromised.                                                                                                                                                                                                                                                                                                                                               Content foundations / literature analysis:                                                                                                                    Sophisticated (5) : Student gathered information from a variety of quality electronic and print sources, including appropriate licensed databases. Sources are relevant and insightful to the project domain.. Sources were cited appropriately; material was attributed and quoted accurately.                                                                                                                     Competent (3) : Student gathered information from a limited range of sources and displayed minimal effort in selecting quality resources.                                                                                                           Depth of analysis:                                                                                                                                                         Sophisticated (5) : Student carefully analyzed the problem, collected appropriate information to support the development phases of the project, and suitability documented the analysis in each phase.  Voice of the student is evident in the writing, revealing personal grasp.                                                                                                                    Competent (3) : Student provided analysis components, but the analysis lacked insight about the value of the analysis’s conclusions and ramifications.  Voice of the student appears rarely, is stilted.                                                                                           Depth of content:                                                                                                                                                    Sophisticated (5) : Student provides an accurate and complete explanation of key concepts, techniques, procedures, and/or theories, drawing upon relevant literature. Description of each phase indicates an understanding of the phase and its relevance to any project as well as to the specific project.                                                                                                                      Competent (3) : For the most part, explanations of concepts and theories are accurate and complete. The sections are presented, but the writing does not give a comprehensive understanding of the development effort.                                      Overall quality / professionalism:                                                                                                                            Sophisticated (5) : Documentation relevant to each phase is well-done, well-labeled, clear, and connects accurately to the writing.  Attention to detail and thoroughness is evident                                                                                            Competent (3) :Documentation has some errors, some sloppiness, and some inaccuracies.  Attention to detail fails at times.                                                                                                                                   Writing proficiency:                                                                                                                                                             Sophisticated (5) : Sentences are complete, grammatically correct, and flow together easily. Words are chosen for their precise meaning. Clarity and communication of ideas is achieved                                                                                                                     Competent (3) : For the most part, sentences are complete, grammatically correct, and flow together easily. Usually, word choice and prose organization deliver a clear meaning.</string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKK-6i-W9E">
-                                <rect key="frame" x="20" y="134" width="61" height="30"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Back">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back:" destination="PM4-Yu-0fq" eventType="touchUpInside" id="bQg-vH-0gk"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4cp-y0-tfO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2663" y="1806"/>
-        </scene>
-        <!--Oral Back Button-->
-        <scene sceneID="xJn-Oy-Tfg">
-            <objects>
-                <viewController id="uqx-9g-dkp" customClass="OralBackButton" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="o9e-NY-gnL"/>
-                        <viewControllerLayoutGuide type="bottom" id="pwF-Ca-mJ6"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="PhK-fY-qzo">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D55-CP-jhQ">
-                                <rect key="frame" x="11" y="69" width="72" height="27"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="back:" destination="uqx-9g-dkp" eventType="touchUpInside" id="Dxo-5q-fd6"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hxn-CI-dEi">
-                                <rect key="frame" x="5" y="90" width="404" height="928"/>
-                                <animations/>
-                                <string key="text">Organization:                                                                                                                                                                      Sophisticated (5) : Presentation is clear, logical and organized. Listener can follow line of reasoning.                                                                                                           Competent (3) : Presentation is generally clear and well organized. A few minor points may be confusing.                                                                                                      Style:                                                                                                                                                                                  Sophisticated (5) : Level of presentation is appropriate for the audience. Presentation is a planned conversation, paced for audience understanding, not a reading of a paper. Speaker is clearly comfortable in front of the group and can be heard by all.                                                                                                                                                             Competent (3) : Level of presentation is generally appropriate. Pacing is sometimes too fast or slow. The presenter seems slightly uncomfortable at times, and the audience occasionally has trouble hearing him/her.                                                  Use of communication aids:                                                                                                                                          Sophisticated (5) : Communication aids enhance the presentation. They are prepared in a professional manner. Fonts on visuals are large enough to be seen by all. Information is organized to maximize audience understanding.  Details are minimized so that main points stand out.                                                                                                                  Competent (3) : Communication aids contribute to the quality of the presentation. Font size is appropriate for reading. Appropriate information is included. Some material is not supported by visual aids.                                                                    Depth of content:                                                                                                                                                                Sophisticated (5) : Speaker provides an accurate and complete explanation of key concepts and theories, drawing upon relevant literature. Applications of theory are included to illuminate issues. Listeners gain insights.                                                                                                                             Competent (3) : For the most part, explanations of concepts and theories are accurate and complete. Some helpful applications are included.                                                                                                                                           Grammar and word choice:                                                                                                                                  Sophisticated (5):  Sentences are complete, grammatically correct and flow together easily. Words are chosen for their precise meaning.                                                                                                                                                       Competent (3) : For the most part, sentences are complete, grammatically correct and flow together easily. With a few exceptions, words are chosen for their precise meaning.                                                                                           Personal appearance:                                                                                                                                                  Sophisticated (5) : Personal appearance is completely appropriate for the occasion and the audience.                                                                                                         Competent (3) : Personal appearance is generally appropriate for the occasion and audience. However, some aspects of appearance reflect a lack of sensitivity to nuances of the occasion or expectations of the audience.                        Verbal interaction:                                                                                                                                                                      Sophisticated (5) : Consistently clarifies, restates, and responds to questions. Summarizes when needed.
-Competent (3) : Generally responds to audience comments, questions and needs. Misses some opportunities for interaction.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1Um-Eu-Rzz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2709" y="2806"/>
+            <point key="canvasLocation" x="2532" y="1806"/>
         </scene>
     </scenes>
     <resources>

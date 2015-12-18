@@ -103,9 +103,10 @@
     }
 }
 
-- (IBAction)Backgroundtap:(id)sender {
-    [self.view endEditing:YES];
+- (IBAction)backgroundtap:(id)sender {
+      [self.view endEditing:YES];
 }
+
 
 
 

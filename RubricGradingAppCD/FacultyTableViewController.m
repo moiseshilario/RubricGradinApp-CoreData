@@ -122,16 +122,5 @@
     }
 
 }
-- (IBAction)logout:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
-#pragma mark - Rubric Delegate
-
--(void)rubricViewControllerDidSubmit{
-    NSError *error = nil;
-    if (![self.managedObjectContext save:&error]) {
-        NSLog(@"Error saving data");
-    }
-}
 
 @end

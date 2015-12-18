@@ -286,9 +286,6 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (IBAction)logout:(id)sender {
-    NSLog(@"HERERERERER");
-    [self dismissViewControllerAnimated:YES completion:nil];
-}
+
 
 @end

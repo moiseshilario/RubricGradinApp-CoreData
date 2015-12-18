@@ -1,32 +1,28 @@
 //
-//  StudentsListTableViewController.m
+//  FacultyListTableViewController.m
 //  RubricGradingAppCD
 //
-//  Created by Moises Hilario Rodrigues on 11/23/15.
+//  Created by Moises Hilario Rodrigues on 12/2/15.
 //  Copyright © 2015 iosProject. All rights reserved.
 //
 
-#import "StudentsListTableViewController.h"
-#import "Student.h"
+#import "FacultyListTableViewController.h"
+#import "Professor.h"
 
-@interface StudentsListTableViewController ()
+@interface FacultyListTableViewController ()
 
 @end
 
-@implementation StudentsListTableViewController
-
-
+@implementation FacultyListTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.allowsMultipleSelection = YES;
-    
     // Uncomment the following line to preserve selection between presentations.
     self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,31 +37,44 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    return [self.allStudentsArray count];
+    return [self.allProfessorsArray count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
     // Configure the cell...
-    Student *student = [self.allStudentsArray objectAtIndex:indexPath.row];
-    cell.textLabel.text = student.name;
+    Professor *p = [self.allProfessorsArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = p.name;
     
     if([self.selectedRows containsObject:indexPath]) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
         [tableView selectRowAtIndexPath:indexPath
                                animated:NO
                          scrollPosition:UITableViewScrollPositionNone];
+        
     }
     else {
         cell.accessoryType = UITableViewCellAccessoryNone;
         
     }
+    
     return cell;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
+    
+    
+}
+
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
+    
+}
+
 
 
 /*
@@ -102,15 +111,6 @@
  }
  */
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryCheckmark;
-}
-
-- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView cellForRowAtIndexPath:indexPath].accessoryType = UITableViewCellAccessoryNone;
-}
-
 /*
  #pragma mark - Navigation
  
@@ -122,16 +122,18 @@
  */
 
 - (IBAction)cancel:(id)sender {
-    [self.delegate studentsListDidCancel];
+    [self.delegate facultyListDidCancel];
 }
 
 - (IBAction)done:(id)sender {
-    self.selectedStudents = [[NSMutableArray alloc] init];
+    self.selectedProfessors = [[NSMutableArray alloc] init];
     self.selectedRows = [[NSMutableArray alloc] initWithArray:[self.tableView indexPathsForSelectedRows]];
     for (NSIndexPath *index in self.selectedRows) {
-        [self.selectedStudents addObject: [self.allStudentsArray objectAtIndex:index.row]];
-        
+        [self.selectedProfessors addObject: [self.allProfessorsArray objectAtIndex:index.row]];
     }
-    [self.delegate studentsListDidDone: self.selectedStudents inSelectedRows:self.selectedRows];
+    
+    [self.delegate facultyListDidDone: self.selectedProfessors inSelectedRows:self.selectedRows];
 }
+
+
 @end
